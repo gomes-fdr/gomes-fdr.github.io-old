@@ -2,9 +2,144 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Web notes</title><link>https://gomes-fdr.github.io/blog/index.html</link>
 <description>Alguns caracteres perdidos...</description><language>en</language>
-<lastBuildDate>Sat, 09 May 2020 18:53:19 -0300</lastBuildDate>
-<pubDate>Sat, 09 May 2020 18:53:19 -0300</pubDate>
+<lastBuildDate>Sun, 10 May 2020 15:37:59 -0300</lastBuildDate>
+<pubDate>Sun, 10 May 2020 15:37:59 -0300</pubDate>
 <atom:link href="https://gomes-fdr.github.io/blog/feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+Dicas para uso do docker
+</title><description><![CDATA[
+Tags: wiki</p>
+
+<p>Referencias utilizadas:
+<a href="https://youtu.be/aHbE3pTyG-Q">link</a></p>
+
+<p>Instalar um container - docker hub</p>
+
+<pre><code>docker pull postgres:alpine
+</code></pre>
+
+<p>Listar containers instalados</p>
+
+<pre><code>docker images -a
+</code></pre>
+
+<p>Remover um container</p>
+
+<pre><code>docker rmi &lt;nome-do-container&gt;
+</code></pre>
+
+<p>Iniciar um container</p>
+
+<pre><code>docker run --name postgres-0 -e POSTGRES_PASSWORD=1234 -d -p 5432:5432 postgres:alpine
+</code></pre>
+
+<p>Processo docker rodando</p>
+
+<pre><code>docker ps
+</code></pre>
+
+<p>Para subir uma imagem existente</p>
+
+<pre><code>docker start postgres-0 # &lt;container-name&gt;
+</code></pre>
+
+<p>Parar o container</p>
+
+<pre><code> docker stop postgres-0 # &lt;container-name&gt;
+</code></pre>
+
+<p>Para entrar no container</p>
+
+<pre><code>docker exec -it postgres-0 bash
+</code></pre>
+
+<p>Para acessar o banco de dados postgre dentro do container(console postgres)</p>
+
+<pre><code>psql -U postgres
+</code></pre>
+
+<p>Para fazer o dump do banco do container</p>
+
+<pre><code>docker exec -t postgres-0 pg_dumpall -a &gt; dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
+docker exec -t postgres-0 pg_dump -a &gt; dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
+</code></pre>
+
+<p>Para restaurar o banco apartir de um dump file</p>
+
+<pre><code>cat your_dump.sql | docker exec -i your-db-container psql -U postgres
+</code></pre>
+
+<p>VERIFICA SE A PORTA ESTÁ EM USO</p>
+
+<pre><code>netstat -an | grep 5432
+</code></pre>
+
+<p>STOP POSTGRE SERVICE</p>
+
+<pre><code>sudo service postgresql stop
+</code></pre>
+
+<p>Copiar arquivo para container:</p>
+
+<pre><code>docker cp &lt;arquivo&gt; &lt;container_id&gt;:/
+</code></pre>
+
+<p>Acessar o postgres do container:</p>
+
+<pre><code>psql -h localhost -p 5432 -U postgres
+</code></pre>
+
+<p>Para criar um novo banco no postgre via CL:</p>
+
+<pre><code>createdb -U &lt;role&gt; &lt;nome-banco&gt;
+</code></pre>
+
+<h2>Outra maneira de fazer o backup</h2>
+
+<pre><code>docker exec -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; pg_dump -Fc &lt;database_name_here&gt; &gt; db.dump
+</code></pre>
+
+<h2>Cuidado</h2>
+
+<pre><code>docker exec -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; psql -c 'DROP DATABASE &lt;your_db_name&gt;'
+
+docker exec -i -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; pg_restore -C -d postgres &lt; db.dump
+</code></pre>
+
+<p>Exemplo:</p>
+
+<p>Custom format (c)</p>
+
+<pre><code>docker exec -u labwide postgres-0 pg_dump -Fc gestam-dados &gt; gestam-dados.dump
+</code></pre>
+
+<p>SQL format(p)</p>
+
+<pre><code>docker exec -u postgres postgres-0 pg_dump -Fp gestam-dados &gt; gestam-dados.dump
+</code></pre>
+
+<h2>Backup acessando o container</h2>
+
+<h3>copy dump into container</h3>
+
+<pre><code>docker cp local/path/to/db.dump CONTAINER_ID:/db.dump
+</code></pre>
+
+<h3>shell into container</h3>
+
+<pre><code>docker exec -it CONTAINER_ID bash
+</code></pre>
+
+<h3>restore it from within</h3>
+
+<pre><code>pg_restore -U postgres -d DB_NAME --no-owner -1 /db.dump
+</code></pre>
+
+<!-- text end -->
+]]></description><link>https://gomes-fdr.github.io/blog/dicas-para-uso-do-docker.html</link>
+<guid>https://gomes-fdr.github.io/blog/./dicas-para-uso-do-docker.html</guid>
+<dc:creator>Fabiano Gomes</dc:creator>
+<pubDate>Sun, 10 May 2020 15:27:13 -0300</pubDate></item>
 <item><title>
 Ferramentas Para Dev, ASDF
 </title><description><![CDATA[
@@ -91,5 +226,5 @@ Finalizamos por aqui esse tutorial, em caso de dúvidas, deixe seu comentário.<
 ]]></description><link>https://gomes-fdr.github.io/blog/ferramentas-para-dev-asdf11978.html</link>
 <guid>https://gomes-fdr.github.io/blog/./ferramentas-para-dev-asdf11978.html</guid>
 <dc:creator>Fabiano Gomes</dc:creator>
-<pubDate>Sat, 09 May 2020 18:42:20 -0300</pubDate></item>
+<pubDate>Sun, 10 May 2020 15:25:41 -0300</pubDate></item>
 </channel></rss>
