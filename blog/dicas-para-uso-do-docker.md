@@ -1,5 +1,4 @@
 Dicas para uso do docker
-Tags: wiki
 
 Referencias utilizadas:
 [link](https://youtu.be/aHbE3pTyG-Q)
@@ -73,7 +72,7 @@ Para criar um novo banco no postgre via CL:
 
 	docker exec -u <your_postgres_user> <postgres_container_name> pg_dump -Fc <database_name_here> > db.dump
 
-## Cuidado
+## Cuidado!
 
 	docker exec -u <your_postgres_user> <postgres_container_name> psql -c 'DROP DATABASE <your_db_name>'
 
@@ -91,15 +90,17 @@ SQL format(p)
 
 ## Backup acessando o container
 
-### copy dump into container
+**copy dump into container**
 
 	docker cp local/path/to/db.dump CONTAINER_ID:/db.dump
 
-### shell into container
+**shell into container**
 
 	docker exec -it CONTAINER_ID bash
 
-### restore it from within
+**restore it from within**
 
 	pg_restore -U postgres -d DB_NAME --no-owner -1 /db.dump
 
+
+Tags: wiki

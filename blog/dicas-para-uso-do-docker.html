@@ -18,12 +18,11 @@
 <h3><a class="ablack" href="dicas-para-uso-do-docker.html">
 Dicas para uso do docker
 </a></h3>
-<!-- bashblog_timestamp: #202005101527.13# -->
-<div class="subtitle">May 10, 2020 &mdash; 
+<!-- bashblog_timestamp: #202005110757.24# -->
+<div class="subtitle">May 11, 2020 &mdash; 
 Fabiano Gomes
 </div>
 <!-- text begin -->
-Tags: wiki</p>
 
 <p>Referencias utilizadas:
 <a href="https://youtu.be/aHbE3pTyG-Q">link</a></p>
@@ -114,7 +113,7 @@ docker exec -t postgres-0 pg_dump -a &gt; dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
 <pre><code>docker exec -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; pg_dump -Fc &lt;database_name_here&gt; &gt; db.dump
 </code></pre>
 
-<h2>Cuidado</h2>
+<h2>Cuidado!</h2>
 
 <pre><code>docker exec -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; psql -c 'DROP DATABASE &lt;your_db_name&gt;'
 
@@ -135,21 +134,22 @@ docker exec -i -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; pg_
 
 <h2>Backup acessando o container</h2>
 
-<h3>copy dump into container</h3>
+<p><strong>copy dump into container</strong></p>
 
 <pre><code>docker cp local/path/to/db.dump CONTAINER_ID:/db.dump
 </code></pre>
 
-<h3>shell into container</h3>
+<p><strong>shell into container</strong></p>
 
 <pre><code>docker exec -it CONTAINER_ID bash
 </code></pre>
 
-<h3>restore it from within</h3>
+<p><strong>restore it from within</strong></p>
 
 <pre><code>pg_restore -U postgres -d DB_NAME --no-owner -1 /db.dump
 </code></pre>
 
+<p>Tags: <a href='tag_wiki.html'>wiki</a></p>
 <!-- text end -->
 <!-- entry end -->
 </div>

@@ -1,6 +1,4 @@
 Ferramentas Para Dev, ASDF
-Tags: dev-tools
-
 
 Quando começamos a desenvolver software, precisamos montar nossa "caixa de ferramentas" - uma coleção de programas que nos ajudam a ser mais produtivo na criação de software. Se trabalhamos com linguagens interpretadas como javascript, python ou lua - para citar algumas com as quais eu trabalho, é muito comum precisarmos utilizar diferentes versões de interpretadores. É muito complicado e chato fazer isso manualmente, existem diversas ferramentas que resolvem esse tipo de problema dentro do seu escopo, ruby tem o seu gerenciador de ambientes virtuais, python também e por ai vai.
 Felizmente alguém pensou em fazer um gerenciador "genérico" para ajudar um grande número de desenvolvedores das mais diversas linguagens, esse projeto chama-se [ASDF](https://asdf-vm.com) e resolve de uma forma muito elegante o problema de convivência de diferentes interpretadores num mesmo computador, vamos ver como fazer a instalação e configuração dele para alguns interpretadores.
@@ -68,3 +66,5 @@ Aqui cabe um observação importante, como foi dito anteriormente o ASDF não ma
 
 Para outros interpretadores basta repetir o processo, facinho.
 Finalizamos por aqui esse tutorial, em caso de dúvidas, deixe seu comentário.
+
+Tags: wiki

@@ -14,15 +14,104 @@
 <div id="description">Alguns caracteres perdidos...</div>
 </div></div></div>
 <div id="divbody"><div class="content">
-<h3><a class="ablack" href="dicas-para-uso-do-docker.html">
-Dicas para uso do docker
+<h3><a class="ablack" href="minhas-notas-sobre-uso-do-git.html">
+Minhas notas sobre uso do git
 </a></h3>
-<!-- bashblog_timestamp: #202005101527.13# -->
-<div class="subtitle">May 10, 2020 &mdash; 
+<!-- bashblog_timestamp: #202005110818.38# -->
+<div class="subtitle">May 11, 2020 &mdash; 
 Fabiano Gomes
 </div>
 <!-- text begin -->
-Tags: wiki</p>
+
+<p>Para <em>trazer</em> os submodulos de um projeto:</p>
+
+<pre><code>git submodule init
+</code></pre>
+
+<p>Para <em>atualizar</em> os submodulos:</p>
+
+<pre><code>git submodule update
+</code></pre>
+
+<p>Para <em>chavear</em> para um branch especifico dos submodulos:</p>
+
+<pre><code>git submodule foreach 'git checkout develop'
+</code></pre>
+
+<p>Para <em>traze</em>' as atualizações de todos os sbmodulos:</p>
+
+<pre><code>git submodule foreach 'git pull'
+</code></pre>
+
+<p>Para <em>guardar</em> as alterações em uma pilha <em>anonima</em>:</p>
+
+<pre><code>git stash
+</code></pre>
+
+<p>Para aplicar as alterações dessa pilha no branch corrente:</p>
+
+<pre><code>git stash apply
+</code></pre>
+
+<p>Para guardar inclusive untracked files:</p>
+
+<pre><code>git stash -u
+</code></pre>
+
+<p>Para listar a pilha de <em>stashes</em></p>
+
+<pre><code>git stash list
+</code></pre>
+
+<p>Para criar um novo branch a partir de um stash:</p>
+
+<pre><code>git stash branch novo-branch
+</code></pre>
+
+<p>Para acessar um stash especifico, acessa através de stash@{n} - por exemplo:</p>
+
+<pre><code>git stash apply stash@{2} # aplica o stash 2 ao branch corrent
+git stash drop stash@{2} # Apaga o stash 2 da pilha
+</code></pre>
+
+<p>Apagar a pilha de stash:</p>
+
+<pre><code>git stash clear
+</code></pre>
+
+<h2>Comparar modificações</h2>
+
+<p>Configurar ferramenta de diff:</p>
+
+<pre><code>git config --global diff.tool meld
+</code></pre>
+
+<p>Para comparar dois branches usando a ferramenta gráfica <em>Meld</em>:</p>
+
+<pre><code>git difftool -d ticket-4581..develop
+</code></pre>
+
+<p>A lógica é a mesma para fazer um diff entre commits, basta substituir o nome do branch pelo hash do commit(os primeiros 6 digitos são o suficiente).</p>
+
+<h2>Juntar commits</h2>
+
+<p>Para <em>juntar</em> varios commits em um só:</p>
+
+<pre><code>git rebase -i HEAD~&lt;n&gt; # Onde n é a quantidade de commits que desejamos juntar.
+</code></pre>
+
+<p>Neste comando iterativo podemos juntar, squash ou remover algum commit que não queremos - para isso basta remover a linha pick que contém o commit(leia as instruções do modo iterativo).</p>
+
+<p>Tags: <a href='tag_wiki.html'>wiki</a></p>
+<!-- text end -->
+<h3><a class="ablack" href="dicas-para-uso-do-docker.html">
+Dicas para uso do docker
+</a></h3>
+<!-- bashblog_timestamp: #202005110757.24# -->
+<div class="subtitle">May 11, 2020 &mdash; 
+Fabiano Gomes
+</div>
+<!-- text begin -->
 
 <p>Referencias utilizadas:
 <a href="https://youtu.be/aHbE3pTyG-Q">link</a></p>
@@ -113,7 +202,7 @@ docker exec -t postgres-0 pg_dump -a &gt; dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
 <pre><code>docker exec -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; pg_dump -Fc &lt;database_name_here&gt; &gt; db.dump
 </code></pre>
 
-<h2>Cuidado</h2>
+<h2>Cuidado!</h2>
 
 <pre><code>docker exec -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; psql -c 'DROP DATABASE &lt;your_db_name&gt;'
 
@@ -134,31 +223,31 @@ docker exec -i -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; pg_
 
 <h2>Backup acessando o container</h2>
 
-<h3>copy dump into container</h3>
+<p><strong>copy dump into container</strong></p>
 
 <pre><code>docker cp local/path/to/db.dump CONTAINER_ID:/db.dump
 </code></pre>
 
-<h3>shell into container</h3>
+<p><strong>shell into container</strong></p>
 
 <pre><code>docker exec -it CONTAINER_ID bash
 </code></pre>
 
-<h3>restore it from within</h3>
+<p><strong>restore it from within</strong></p>
 
 <pre><code>pg_restore -U postgres -d DB_NAME --no-owner -1 /db.dump
 </code></pre>
 
+<p>Tags: <a href='tag_wiki.html'>wiki</a></p>
 <!-- text end -->
 <h3><a class="ablack" href="ferramentas-para-dev-asdf11978.html">
 Ferramentas Para Dev, ASDF
 </a></h3>
-<!-- bashblog_timestamp: #202005091842.20# -->
-<div class="subtitle">May 09, 2020 &mdash; 
+<!-- bashblog_timestamp: #202005110757.24# -->
+<div class="subtitle">May 11, 2020 &mdash; 
 Fabiano Gomes
 </div>
 <!-- text begin -->
-Tags: dev-tools</p>
 
 <p>Quando começamos a desenvolver software, precisamos montar nossa "caixa de ferramentas" - uma coleção de programas que nos ajudam a ser mais produtivo na criação de software. Se trabalhamos com linguagens interpretadas como javascript, python ou lua - para citar algumas com as quais eu trabalho, é muito comum precisarmos utilizar diferentes versões de interpretadores. É muito complicado e chato fazer isso manualmente, existem diversas ferramentas que resolvem esse tipo de problema dentro do seu escopo, ruby tem o seu gerenciador de ambientes virtuais, python também e por ai vai.
 Felizmente alguém pensou em fazer um gerenciador "genérico" para ajudar um grande número de desenvolvedores das mais diversas linguagens, esse projeto chama-se <a href="https://asdf-vm.com">ASDF</a> e resolve de uma forma muito elegante o problema de convivência de diferentes interpretadores num mesmo computador, vamos ver como fazer a instalação e configuração dele para alguns interpretadores.</p>
@@ -237,6 +326,7 @@ asdf current
 <p>Para outros interpretadores basta repetir o processo, facinho.
 Finalizamos por aqui esse tutorial, em caso de dúvidas, deixe seu comentário.</p>
 
+<p>Tags: <a href='tag_wiki.html'>wiki</a></p>
 <!-- text end -->
 <div id="all_posts"><a href="all_posts.html">View more posts</a> &mdash; <a href="all_tags.html">All tags</a> &mdash; <a href="feed.rss">Subscribe</a></div>
 </div>
