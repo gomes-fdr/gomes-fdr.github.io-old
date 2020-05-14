@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="blog.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Subscribe to this page..." href="feed.rss" />
+<title>Web notes &mdash; Posts tagged "linux"</title>
+</head><body>
+<div id="divbodyholder">
+<div class="headerholder"><div class="header">
+<div id="title">
+<h1 class="nomargin"><a class="ablack" href="https://gomes-fdr.github.io/blog/index.html">Web notes</a></h1>
+<div id="description">Alguns caracteres perdidos...</div>
+</div></div></div>
+<div id="divbody"><div class="content">
+<h3><a class="ablack" href="setup-de-um-linux-para-desenvolvedor-parte-1.html">
+Setup de um Linux para DESENVOLVEDOR parte 1
+</a></h3>
+<!-- bashblog_timestamp: #202005141742.47# -->
+<div class="subtitle">May 14, 2020 &mdash; 
+Fabiano Gomes
+</div>
+<!-- text begin -->
+
+<p>O ambiente de trabalho, no caso uma máquina com Linux, reflete diretamente na qualidade da execução de tarefas, para desenvolvedores de softwares é fortemente recomendado um ambiente simples, robusto e estável. Pensando nisso, neste vasto universo de distribuições, duas opções bem ortodoxas se destacam. Debian e Slackware, você estará muito bem servido com qualquer uma delas, neste tutorial vamos explorar o Slackware Linux, por que?! Porque é divertido!</p>
+
+<h2>Instalação</h2>
+
+<p>Vou considerar que temos uma instalação de Slackware Linux nova, aqui temos duas possibilidades no que toca instalações:</p>
+
+<ul>
+<li>Sem UEFI: Para máquinas com BIOS de antes de 2008(eu acho), no momento de fazer as partições do HD(usando cfdisk) escolher a opção <em>dos</em>;</li>
+<li>Com UEFI: Máquinas com BIOS pós 2008, no momento de fazer as partições do HD(usando cfdisk) escolher a opção <em>gpt</em>;</li>
+</ul>
+
+<h2>Esquema de partições</h2>
+
+<p>Aqui vamos primar por um esquema simples também:</p>
+
+<ul>
+<li>Sem UEFI: 
+<ul>
+<li>sda1: para /, ext4, 50GB</li>
+<li>sda2: para /home, ext4, o que sobrou de espaço em disco após criar sda3</li>
+<li>sda3: para swap - a regra para o tamanho do swap é 2XRAM, sendo no máximo 8GB de tamanho(na prática 4GB de swap resolve tua vida).</li>
+</ul></li>
+<li>Com UEFI: Um pouco mais complexo, este <a href="https://youtu.be/fd0FvvsGaUM">vídeo</a> é uma excelente referência.</li>
+</ul>
+
+<p>Embora a instalação seja importante, considero que a pós-instalação é o que realmente faz a diferença, vamos lá!</p>
+
+<h2>Pós-instalação</h2>
+
+<p>A partir deste ponto é onde quero levantar os diferenciais, na minha modesta opinião.</p>
+
+<p>Ao final de uma instalação de Slackware, temos apenas um super usuário e nada mais, vamos começar a preparar nosso ambiente para não precisarmos nos preocupar com eventuais quebras por instalações/atualizações desnecessárias.</p>
+
+<ol>
+<li>Conectar na internet: Temos duas opções, a mais tradicional, usando um cabo de rede. Ou caso estejamos usando um notebook, devemos instalar o pacote que está no dvd de instalação do Slackware, na seção extra/wicd chamado wicd-xxx.txz, com ele instalado podemos utilizar o comando <code>wicd-curses</code> no terminal e fazer nossa conexão com a rede que desejamos. Aqui é importante lembrar que o serviço NetworkManager deve estar ativo(<code>chmod +x /etc/rc.d/rc.networkmanager</code>)</li>
+<li><p>Após logar como root, vamos escolher um mirror no arquivo /etc/slackpkg/mirrors: Escolha um mirror do Brasil, não vou utilizar o slackware current(não é o objetivo aqui) execute:</p>
+
+<pre><code>slackpkg upgrade
+slackpkg upgrade-all
+</code></pre></li>
+</ol>
+
+<p>Após esse procedimento seu slackware estará atualizadissimo!</p>
+
+<h2>Instalando novos software</h2>
+
+<p>O Slackware tem a má fama de não possuir nenhum gerenciador de pacotes, o que já verificamos não ser verdade no item <em>pós-instalação</em>. Agora vamos adicionar novas ferramentas a nossa caixa de desenvolvimento, o <a href="https://sbopkg.org/">sbopkg</a> é um facilitador para acessarmos o repositório de receitas do <a href="https://slackbuilds.org/">slackbuilds</a>. </p>
+
+<ol>
+<li>Baixar o pacote sbopkg-xxx.tgz e instala-lo com o <code>installpkg sbopkg-xxx.tgz</code>;</li>
+<li>A partir daqui sempre vamos executar o <code>sbopkg</code> para fazer a instalação de novos pacotes no nosso Slackware.</li>
+</ol>
+
+<h2>Próximos passos</h2>
+
+<p>No próximo tutorial vamos configurar um WM(Windown Manager) e adicionar mais ferramentas na nossa caixa de desenvolvimento.</p>
+
+<p>Tags: <a href='tag_wiki.html'>wiki</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_slackware.html'>slackware</a></p>
+<!-- text end -->
+</div>
+<div id="footer">CC by-nc-nd <a href="">Fabiano Gomes</a> &mdash; <a href="mailto:gomes&#46;fdr&#64;gmail&#46;com">gomes&#46;fdr&#64;gmail&#46;com</a><br/>
+Generated with <a href="https://github.com/cfenollosa/bashblog">bashblog</a>, a single bash script to easily create blogs like this one</div>
+</div></div>
+</body></html>
