@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Web notes</title><link>https://gomes-fdr.github.io/blog/index.html</link>
 <description>Alguns caracteres perdidos...</description><language>en</language>
-<lastBuildDate>Thu, 14 May 2020 17:47:10 -0300</lastBuildDate>
-<pubDate>Thu, 14 May 2020 17:47:10 -0300</pubDate>
+<lastBuildDate>Mon, 18 May 2020 08:19:49 -0300</lastBuildDate>
+<pubDate>Mon, 18 May 2020 08:19:49 -0300</pubDate>
 <atom:link href="https://gomes-fdr.github.io/blog/feed.rss" rel="self" type="application/rss+xml" />
 <item><title>
 Setup de um Linux para DESENVOLVEDOR parte 1
@@ -67,6 +67,7 @@ slackpkg upgrade-all
 <p>No próximo tutorial vamos configurar um WM(Windown Manager) e adicionar mais ferramentas na nossa caixa de desenvolvimento.</p>
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_slackware.html'>slackware</a></p>
+
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/setup-de-um-linux-para-desenvolvedor-parte-1.html</link>
 <guid>https://gomes-fdr.github.io/blog/./setup-de-um-linux-para-desenvolvedor-parte-1.html</guid>
@@ -156,6 +157,7 @@ git stash drop stash@{2} # Apaga o stash 2 da pilha
 <p>Neste comando iterativo podemos juntar, squash ou remover algum commit que não queremos - para isso basta remover a linha pick que contém o commit(leia as instruções do modo iterativo).</p>
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a></p>
+
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/minhas-notas-sobre-uso-do-git.html</link>
 <guid>https://gomes-fdr.github.io/blog/./minhas-notas-sobre-uso-do-git.html</guid>
@@ -291,6 +293,7 @@ docker exec -i -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; pg_
 </code></pre>
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a></p>
+
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/dicas-para-uso-do-docker.html</link>
 <guid>https://gomes-fdr.github.io/blog/./dicas-para-uso-do-docker.html</guid>
@@ -378,6 +381,7 @@ asdf current
 Finalizamos por aqui esse tutorial, em caso de dúvidas, deixe seu comentário.</p>
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a></p>
+
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/ferramentas-para-dev-asdf11978.html</link>
 <guid>https://gomes-fdr.github.io/blog/./ferramentas-para-dev-asdf11978.html</guid>
