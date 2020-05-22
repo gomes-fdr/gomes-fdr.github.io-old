@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Web notes</title><link>https://gomes-fdr.github.io/blog/index.html</link>
 <description>Alguns caracteres perdidos...</description><language>en</language>
-<lastBuildDate>Mon, 18 May 2020 08:19:49 -0300</lastBuildDate>
-<pubDate>Mon, 18 May 2020 08:19:49 -0300</pubDate>
+<lastBuildDate>Fri, 22 May 2020 11:37:13 -0300</lastBuildDate>
+<pubDate>Fri, 22 May 2020 11:37:13 -0300</pubDate>
 <atom:link href="https://gomes-fdr.github.io/blog/feed.rss" rel="self" type="application/rss+xml" />
 <item><title>
-Setup de um Linux para DESENVOLVEDOR parte 1
+Setup de um Linux para DESENVOLVEDOR
 </title><description><![CDATA[
 
 <p>O ambiente de trabalho, no caso uma máquina com Linux, reflete diretamente na qualidade da execução de tarefas, para desenvolvedores de softwares é fortemente recomendado um ambiente simples, robusto e estável. Pensando nisso, neste vasto universo de distribuições, duas opções bem ortodoxas se destacam. Debian e Slackware, você estará muito bem servido com qualquer uma delas, neste tutorial vamos explorar o Slackware Linux, por que?! Porque é divertido!</p>
@@ -158,6 +158,7 @@ git stash drop stash@{2} # Apaga o stash 2 da pilha
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a></p>
 
+
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/minhas-notas-sobre-uso-do-git.html</link>
 <guid>https://gomes-fdr.github.io/blog/./minhas-notas-sobre-uso-do-git.html</guid>
@@ -294,6 +295,7 @@ docker exec -i -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; pg_
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a></p>
 
+
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/dicas-para-uso-do-docker.html</link>
 <guid>https://gomes-fdr.github.io/blog/./dicas-para-uso-do-docker.html</guid>
@@ -381,6 +383,7 @@ asdf current
 Finalizamos por aqui esse tutorial, em caso de dúvidas, deixe seu comentário.</p>
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a></p>
+
 
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/ferramentas-para-dev-asdf11978.html</link>
