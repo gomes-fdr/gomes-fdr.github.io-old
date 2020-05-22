@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Web notes</title><link>https://gomes-fdr.github.io/blog/index.html</link>
 <description>Alguns caracteres perdidos...</description><language>en</language>
-<lastBuildDate>Fri, 22 May 2020 16:57:43 -0300</lastBuildDate>
-<pubDate>Fri, 22 May 2020 16:57:43 -0300</pubDate>
+<lastBuildDate>Fri, 22 May 2020 16:59:10 -0300</lastBuildDate>
+<pubDate>Fri, 22 May 2020 16:59:10 -0300</pubDate>
 <atom:link href="https://gomes-fdr.github.io/blog/feed.rss" rel="self" type="application/rss+xml" />
 <item><title>
 Conhecendo deno, <em>a node killer?!</em>
@@ -13,7 +13,7 @@ Conhecendo deno, <em>a node killer?!</em>
 
 <h2>Instalação</h2>
 
-<p>É muito fácil instalar o deno, o site explica de forma bem simplificada como fazer, mas vamos fazer um pouco diferente, utilizando o <a href="https://deno.land/">ASDF</a>:</p>
+<p>É muito fácil instalar o deno, o site explica de forma bem simplificada como fazer, mas vamos fazer um pouco diferente, utilizando o <a href="https://asdf-vm.com">ASDF</a>:</p>
 
 <pre><code>asdf list all deno      # Para ver todoas as versões disponíveis
 asdf install deno 1.0.1 # Instalação da versão mais atual nesta época

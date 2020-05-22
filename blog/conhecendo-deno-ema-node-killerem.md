@@ -4,7 +4,7 @@ Em maio tivemos o lançamento da nova runtime de js, o [deno](https://deno.land/
 
 ## Instalação
 
-É muito fácil instalar o deno, o site explica de forma bem simplificada como fazer, mas vamos fazer um pouco diferente, utilizando o [ASDF](https://deno.land/):
+É muito fácil instalar o deno, o site explica de forma bem simplificada como fazer, mas vamos fazer um pouco diferente, utilizando o [ASDF](https://asdf-vm.com):
 
 	asdf list all deno      # Para ver todoas as versões disponíveis
 	asdf install deno 1.0.1 # Instalação da versão mais atual nesta época
