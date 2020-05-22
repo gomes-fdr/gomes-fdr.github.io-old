@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="blog.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Subscribe to this page..." href="feed.rss" />
+<title>Web notes &mdash; Posts tagged "javascript"</title>
+</head><body>
+<div id="divbodyholder">
+<div class="headerholder"><div class="header">
+<div id="title">
+<h1 class="nomargin"><a class="ablack" href="https://gomes-fdr.github.io/blog/index.html">Web notes</a></h1>
+<div id="description">Alguns caracteres perdidos...</div>
+</div></div></div>
+<div id="divbody"><div class="content">
+<h3><a class="ablack" href="conhecendo-deno-ema-node-killerem.html">
+Conhecendo deno, <em>a node killer?!</em>
+</a></h3>
+<!-- bashblog_timestamp: #202005221655.11# -->
+<div class="subtitle">May 22, 2020 &mdash; 
+Fabiano Gomes
+</div>
+<!-- text begin -->
+
+<p>Em maio tivemos o lançamento da nova runtime de js, o <a href="https://deno.land/">deno</a>. Vamos brincar um pouco.</p>
+
+<h2>Instalação</h2>
+
+<p>É muito fácil instalar o deno, o site explica de forma bem simplificada como fazer, mas vamos fazer um pouco diferente, utilizando o <a href="https://deno.land/">ASDF</a>:</p>
+
+<pre><code>asdf list all deno      # Para ver todoas as versões disponíveis
+asdf install deno 1.0.1 # Instalação da versão mais atual nesta época
+asdf global deno 1.0.1  # Ativando o uso da versão instalada
+</code></pre>
+
+<p>Pronto!</p>
+
+<h2>Primeiro teste</h2>
+
+<p>Vamos ver se tudo está ok:</p>
+
+<pre><code>deno -V
+deno 1.0.1
+</code></pre>
+
+<p>Mãos no código:</p>
+
+<pre><code>deno
+Deno 1.0.1
+exit using ctrl+d or close()
+&gt; 
+let hello = "olá deno"
+console.log(hello)
+olá deno
+undefined
+</code></pre>
+
+<h2>Segundo teste, usando um arquivo</h2>
+
+<pre><code>deno run hello.ts # Sim, typescript é builtin
+Compile file:///hello.ts
+Olá deno
+</code></pre>
+
+<h2>Nota final</h2>
+
+<p>Ainda estou conhecendo mais a respeito do uso de runtimes javascript/typescript, fazem parte da stack que usamos no meu trabalho, acho interessante conehcer as possibildades tando do chamado padrão de mercado, quanto de opções recém chegadas.</p>
+
+<p>Tags: <a href='tag_javascript.html'>javascript</a>, <a href='tag_typescript.html'>typescript</a>, <a href='tag_deno.html'>deno</a></p>
+<!-- text end -->
+</div>
+<div id="footer">CC by-nc-nd <a href="">Fabiano Gomes</a> &mdash; <a href="mailto:gomes&#46;fdr&#64;tuta&#46;io">gomes&#46;fdr&#64;tuta&#46;io</a><br/>
+Generated with <a href="https://github.com/cfenollosa/bashblog">bashblog</a>, a single bash script to easily create blogs like this one</div>
+</div></div>
+</body></html>
