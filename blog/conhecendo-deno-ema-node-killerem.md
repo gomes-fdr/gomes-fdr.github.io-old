@@ -38,7 +38,7 @@ Mãos no código:
 
 ## Nota final
 
-Ainda estou conhecendo mais a respeito do uso de runtimes javascript/typescript, fazem parte da stack que usamos no meu trabalho, acho interessante conehcer as possibildades tando do chamado padrão de mercado, quanto de opções recém chegadas.
+Ainda estou conhecendo mais a respeito do uso de runtimes javascript/typescript, fazem parte da stack que usamos no meu trabalho, acho interessante conhecer as possibildades tanto do chamado padrão de mercado, quanto de opções recém chegadas.
 	
 	
 Tags: javascript, typescript, deno
