@@ -2,9 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Web notes</title><link>https://gomes-fdr.github.io/blog/index.html</link>
 <description>Alguns caracteres perdidos...</description><language>en</language>
-<lastBuildDate>Fri, 05 Jun 2020 08:59:07 -0300</lastBuildDate>
-<pubDate>Fri, 05 Jun 2020 08:59:07 -0300</pubDate>
+<lastBuildDate>Thu, 11 Jun 2020 19:13:27 -0300</lastBuildDate>
+<pubDate>Thu, 11 Jun 2020 19:13:27 -0300</pubDate>
 <atom:link href="https://gomes-fdr.github.io/blog/feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+Aprendendo golang
+</title><description><![CDATA[
+
+<p>Algumas regras que me ajudam a dar um boost no entendimento de novas tecnolgias:</p>
+
+<ul>
+<li>Ler a documentação do projeto <a href="https://golang.org/">golang</a></li>
+<li>Aprender usando testes <a href="https://en.wikipedia.org/wiki/Test-driven_development">TDD</a></li>
+<li>Aprender com exemplos</li>
+<li><a href="https://www.youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg">Vídeos aulas</a> de qualidade, dica do brother <a href="https://gushmsilva.keybase.pub/">Gusta</a></li>
+</ul>
+
+
+<p>Tendo isso como diretiva, vamos começar essa jornada, vamos adionar isso no  arquivo <code>bash_profile</code></p>
+
+<pre><code>export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+</code></pre>
+
+<p>Depois vamos criar os seguintes diretórios:</p>
+
+<pre><code>mkdir -p $GOPATH/src $GOPATH/pkg $GOPATH/bin
+</code></pre>
+
+<p><a href="https://quii.gitbook.io/learn-go-with-tests/">Referências</a></p>
+
+<h2>Coisas que gostei até aqui</h2>
+
+<ul>
+<li>Syntax fácil</li>
+<li>Instalação de pacotes/depedências</li>
+<li>Farta documentação, <a href="https://godoc.org/">Godoc</a></li>
+<li>Geração de binários</li>
+<li>Formatação de código é builtin</li>
+<li>Suite de testes é builtin</li>
+<li>Lembra muito C, na sintaxe</li>
+<li>Lembra muito C, com structs</li>
+<li>Não usa <code>;</code> para finalizar instruções</li>
+<li>[Short|gopher] operator é muito massa</li>
+<li>Controle de imports é builtin</li>
+<li>Controle de uso de variáveis é builtin</li>
+<li>Fazer build é uma barbada(alguém falou makefile?!)</li>
+<li>Code-OSS é um editor honesto</li>
+</ul>
+
+
+<h2>Coisas que vou investigar melhor</h2>
+
+<ul>
+<li>Lidar com módulos</li>
+<li>Compilação cruzada</li>
+<li>Criação de APIs</li>
+<li>Criação de GUIs</li>
+<li>Integração com frontend web</li>
+</ul>
+
+
+<!-- text end -->
+]]></description><link>https://gomes-fdr.github.io/blog/aprendendo-golang.html</link>
+<guid>https://gomes-fdr.github.io/blog/./aprendendo-golang.html</guid>
+<dc:creator>Fabiano Gomes</dc:creator>
+<pubDate>Thu, 11 Jun 2020 19:09:59 -0300</pubDate></item>
 <item><title>
 Notas sobre C++ e o Framework Qt
 </title><description><![CDATA[
@@ -286,6 +349,7 @@ int main() {
 </ul>
 
 <p>Tags: <a href='tag_C++.html'>C++</a>, <a href='tag_tips.html'>tips</a></p>
+
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/notas-sobre-c-e-o-framework-qt.html</link>
 <guid>https://gomes-fdr.github.io/blog/./notas-sobre-c-e-o-framework-qt.html</guid>
@@ -337,6 +401,7 @@ Para que serve?</p>
 <p>Este prompt está usando o tema <code>tylenol</code>, os temas estão em: <code>$HOME/.oh-my-bash/themes</code> e são escolhidos no arquivo de configuração <code>.bashrc</code> - vale a pena explorar.</p>
 
 <p>Tags: <a href='tag_dev-tools.html'>dev-tools</a>, <a href='tag_bash.html'>bash</a></p>
+
 
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/oh-my-bash8667.html</link>
@@ -392,6 +457,7 @@ Olá deno
 <p>Ainda estou conhecendo mais a respeito do uso de runtimes javascript/typescript, fazem parte da stack que usamos no meu trabalho, acho interessante conhecer as possibildades tanto do chamado padrão de mercado, quanto de opções recém chegadas.</p>
 
 <p>Tags: <a href='tag_javascript.html'>javascript</a>, <a href='tag_typescript.html'>typescript</a>, <a href='tag_deno.html'>deno</a></p>
+
 
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/conhecendo-deno-ema-node-killerem.html</link>
@@ -460,6 +526,7 @@ slackpkg upgrade-all
 <p>No próximo tutorial vamos configurar um WM(Windown Manager) e adicionar mais ferramentas na nossa caixa de desenvolvimento.</p>
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_slackware.html'>slackware</a></p>
+
 
 
 
@@ -552,6 +619,7 @@ git stash drop stash@{2} # Apaga o stash 2 da pilha
 <p>Neste comando iterativo podemos juntar, squash ou remover algum commit que não queremos - para isso basta remover a linha pick que contém o commit(leia as instruções do modo iterativo).</p>
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a></p>
+
 
 
 
@@ -695,6 +763,7 @@ docker exec -i -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; pg_
 
 
 
+
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/dicas-para-uso-do-docker.html</link>
 <guid>https://gomes-fdr.github.io/blog/./dicas-para-uso-do-docker.html</guid>
@@ -782,6 +851,7 @@ asdf current
 Finalizamos por aqui esse tutorial, em caso de dúvidas, deixe seu comentário.</p>
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a></p>
+
 
 
 
