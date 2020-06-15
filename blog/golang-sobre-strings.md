@@ -63,6 +63,8 @@ O segundo caractere não pode ser representado usando ASCII, logo cai nos casos 
 
 O terceiro caractere também não pode ser representado usando ASCII e está em um range superior da tabela utf-8 e necessita de 3 bytes para representa-lo.
 
+Em resumo, a tabela ASCII pode representar 2^8 valores diferentes(256), já a tabela de utf-8 pode representar 2^32 valores diferentes(4294967296) - sendo que ASCII está contido nesta tabela, acho que até o alfabeto Klingon está lá.
+
 Este exemplo simples mostra muito bem como fica fácil de lidar com strings em Golang, gostaria de deixar o link para uma excelente explicação complementar de como funciona a lógica por trás da codificação utf-8, ele também é um material criado pela [Ellen Köbes](https://medium.com/deffectivego/wtf-utf-8-85bc66a6279).
 
 Recomendo fortemente.
