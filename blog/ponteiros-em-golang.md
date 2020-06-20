@@ -42,8 +42,7 @@ Assim como em C e C++ dá pra fazer muitas coisas legais e perigosas com ponteir
 
 *Importante lembrar que o uso irresponsável de ponteiros pode trazer efeitos indesejados(eu ouvi garbage colector?!)*
 
+Referências: Série de vídeos do [Claudson Oliveira](https://youtu.be/JepHr8egvBI)
+
 Tags: golang, wiki
-
-
-
 

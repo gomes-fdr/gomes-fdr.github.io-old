@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Web notes</title><link>https://gomes-fdr.github.io/blog/index.html</link>
 <description>Alguns caracteres perdidos...</description><language>en</language>
-<lastBuildDate>Sat, 20 Jun 2020 20:25:41 -0300</lastBuildDate>
-<pubDate>Sat, 20 Jun 2020 20:25:41 -0300</pubDate>
+<lastBuildDate>Sat, 20 Jun 2020 20:34:40 -0300</lastBuildDate>
+<pubDate>Sat, 20 Jun 2020 20:34:40 -0300</pubDate>
 <atom:link href="https://gomes-fdr.github.io/blog/feed.rss" rel="self" type="application/rss+xml" />
 <item><title>
 Ponteiros em golang
@@ -55,8 +55,9 @@ Ponteiros em golang
 
 <p><em>Importante lembrar que o uso irresponsável de ponteiros pode trazer efeitos indesejados(eu ouvi garbage colector?!)</em></p>
 
-<p>Tags: <a href='tag_golang.html'>golang</a>, <a href='tag_wiki.html'>wiki</a></p>
+<p>Referências: Série de vídeos do <a href="https://youtu.be/JepHr8egvBI">Claudson Oliveira</a></p>
 
+<p>Tags: <a href='tag_golang.html'>golang</a>, <a href='tag_wiki.html'>wiki</a></p>
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/ponteiros-em-golang.html</link>
 <guid>https://gomes-fdr.github.io/blog/./ponteiros-em-golang.html</guid>
