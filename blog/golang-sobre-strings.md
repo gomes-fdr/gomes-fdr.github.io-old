@@ -69,3 +69,5 @@ Este exemplo simples mostra muito bem como fica fácil de lidar com strings em G
 
 Recomendo fortemente.
 
+Tags: golang, wiki
+

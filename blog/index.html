@@ -14,6 +14,63 @@
 <div id="description">Alguns caracteres perdidos...</div>
 </div></div></div>
 <div id="divbody"><div class="content">
+<h3><a class="ablack" href="ponteiros-em-golang.html">
+Ponteiros em golang
+</a></h3>
+<!-- bashblog_timestamp: #202006201330.49# -->
+<div class="subtitle">June 20, 2020 &mdash; 
+Fabiano Gomes
+</div>
+<!-- text begin -->
+
+<p>Em tradução livre, ponteiros são objetos que armazenam endereços de memória <a href="https://en.wikipedia.org/wiki/Pointer_(computer_programming">wikipedia</a>. Um dos temas que podemos tratar quando passamos a utilizar ponteiros, é a maneira como <em>passamos</em> informações de uma função para outra.</p>
+
+<p>Por padrão, quando criamos uma função e definimos algum parâmetro, utilizamos a chamada <em>passagem por referência</em> onde este parâmetro, solicita para o computador que ele reserve um pouco de memória para armazenar o conteúdo de cada parâmetro declarado(sim parâmetros são como as variáveis dos nossos programas).</p>
+
+<pre><code>func dobro(a int) int {
+    return a*2
+}
+</code></pre>
+
+<p>No exemplo acima, uma variável do tipo <code>int</code> foi criada, para receber o valor da nossa função <code>dobro</code>, dentro do nosso programa principal, poderíamos utilizar essa função da seguinte maneira:</p>
+
+<pre><code>func main() {
+    x := 10
+
+    fmt.Println("O valor de x  é: ", x)
+    fmt.Println("Seu dobro é: ", dobro(x))
+}
+</code></pre>
+
+<p>A grosso modo, no exemplo acima, criamos duas variáveis de tamanho de um <code>int</code>, como poderíamos fazer a mesma operação sem alocarmos mais uma variável?</p>
+
+<h2>Passagem por referência</h2>
+
+<p>Vamos fazer alguns ajustes na função dobro:</p>
+
+<pre><code>func dobro(a *int) int {
+    return *a * 2
+}
+</code></pre>
+
+<p>Agora a função dobro espera receber um ponteiro, ou se preferir uma referência para uma variável do tipo <code>int</code>, na função principal, a utilização da nossa função que trabalha com referências fica assim:</p>
+
+<pre><code>func main() {
+    x := 10
+
+    fmt.Println("O valor de x  é: ", x)
+    fmt.Println("Seu dobro é: ", dobro(&amp;x))
+}
+</code></pre>
+
+<p>Com essa alteração, passamos a reservar apenas uma variável do tipo <code>int</code>, uma vez que nossa função apenas <em>apontou</em> para o valor da variável x e retornou seu valor multiplicado por 2.</p>
+
+<p>Assim como em C e C++ dá pra fazer muitas coisas legais e perigosas com ponteiros, essa foi uma pequena nota para meu eu do futuro pensar a respeito.</p>
+
+<p><em>Importante lembrar que o uso irresponsável de ponteiros pode trazer efeitos indesejados(eu ouvi garbage colector?!)</em></p>
+
+<p>Tags: <a href='tag_golang.html'>golang</a>, <a href='tag_wiki.html'>wiki</a></p>
+<!-- text end -->
 <h3><a class="ablack" href="golang-sobre-strings.html">
 Golang, sobre strings
 </a></h3>
@@ -95,6 +152,8 @@ e, é, 香
 
 <p>Recomendo fortemente.</p>
 
+<p>Tags: <a href='tag_golang.html'>golang</a>, <a href='tag_wiki.html'>wiki</a></p>
+
 <!-- text end -->
 <h3><a class="ablack" href="aprendendo-golang.html">
 Aprendendo golang
@@ -157,6 +216,9 @@ export PATH=$PATH:$GOPATH/bin
 <li>Criação de GUIs</li>
 <li>Integração com frontend web</li>
 </ul>
+
+
+<p>  Tags: golang, wiki</p>
 
 
 <!-- text end -->
@@ -447,6 +509,8 @@ int main() {
 
 <p>Tags: <a href='tag_C++.html'>C++</a>, <a href='tag_tips.html'>tips</a></p>
 
+
+
 <!-- text end -->
 <h3><a class="ablack" href="oh-my-bash8667.html">
 Oh my bash!
@@ -499,6 +563,8 @@ Para que serve?</p>
 <p>Este prompt está usando o tema <code>tylenol</code>, os temas estão em: <code>$HOME/.oh-my-bash/themes</code> e são escolhidos no arquivo de configuração <code>.bashrc</code> - vale a pena explorar.</p>
 
 <p>Tags: <a href='tag_dev-tools.html'>dev-tools</a>, <a href='tag_bash.html'>bash</a></p>
+
+
 
 
 <!-- text end -->
@@ -556,6 +622,8 @@ Olá deno
 <p>Ainda estou conhecendo mais a respeito do uso de runtimes javascript/typescript, fazem parte da stack que usamos no meu trabalho, acho interessante conhecer as possibildades tanto do chamado padrão de mercado, quanto de opções recém chegadas.</p>
 
 <p>Tags: <a href='tag_javascript.html'>javascript</a>, <a href='tag_typescript.html'>typescript</a>, <a href='tag_deno.html'>deno</a></p>
+
+
 
 
 <!-- text end -->
@@ -626,6 +694,8 @@ slackpkg upgrade-all
 <p>No próximo tutorial vamos configurar um WM(Windown Manager) e adicionar mais ferramentas na nossa caixa de desenvolvimento.</p>
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_slackware.html'>slackware</a></p>
+
+
 
 
 
@@ -722,145 +792,6 @@ git stash drop stash@{2} # Apaga o stash 2 da pilha
 <p>Tags: <a href='tag_wiki.html'>wiki</a></p>
 
 
-
-
-
-<!-- text end -->
-<h3><a class="ablack" href="dicas-para-uso-do-docker.html">
-Dicas para uso do docker
-</a></h3>
-<!-- bashblog_timestamp: #202005110757.24# -->
-<div class="subtitle">May 11, 2020 &mdash; 
-Fabiano Gomes
-</div>
-<!-- text begin -->
-
-<p>Referencias utilizadas:
-<a href="https://youtu.be/aHbE3pTyG-Q">link</a></p>
-
-<p>Instalar um container - docker hub</p>
-
-<pre><code>docker pull postgres:alpine
-</code></pre>
-
-<p>Listar containers instalados</p>
-
-<pre><code>docker images -a
-</code></pre>
-
-<p>Remover um container</p>
-
-<pre><code>docker rmi &lt;nome-do-container&gt;
-</code></pre>
-
-<p>Iniciar um container</p>
-
-<pre><code>docker run --name postgres-0 -e POSTGRES_PASSWORD=1234 -d -p 5432:5432 postgres:alpine
-</code></pre>
-
-<p>Processo docker rodando</p>
-
-<pre><code>docker ps
-</code></pre>
-
-<p>Para subir uma imagem existente</p>
-
-<pre><code>docker start postgres-0 # &lt;container-name&gt;
-</code></pre>
-
-<p>Parar o container</p>
-
-<pre><code> docker stop postgres-0 # &lt;container-name&gt;
-</code></pre>
-
-<p>Para entrar no container</p>
-
-<pre><code>docker exec -it postgres-0 bash
-</code></pre>
-
-<p>Para acessar o banco de dados postgre dentro do container(console postgres)</p>
-
-<pre><code>psql -U postgres
-</code></pre>
-
-<p>Para fazer o dump do banco do container</p>
-
-<pre><code>docker exec -t postgres-0 pg_dumpall -a &gt; dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
-docker exec -t postgres-0 pg_dump -a &gt; dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
-</code></pre>
-
-<p>Para restaurar o banco apartir de um dump file</p>
-
-<pre><code>cat your_dump.sql | docker exec -i your-db-container psql -U postgres
-</code></pre>
-
-<p>VERIFICA SE A PORTA ESTÁ EM USO</p>
-
-<pre><code>netstat -an | grep 5432
-</code></pre>
-
-<p>STOP POSTGRE SERVICE</p>
-
-<pre><code>sudo service postgresql stop
-</code></pre>
-
-<p>Copiar arquivo para container:</p>
-
-<pre><code>docker cp &lt;arquivo&gt; &lt;container_id&gt;:/
-</code></pre>
-
-<p>Acessar o postgres do container:</p>
-
-<pre><code>psql -h localhost -p 5432 -U postgres
-</code></pre>
-
-<p>Para criar um novo banco no postgre via CL:</p>
-
-<pre><code>createdb -U &lt;role&gt; &lt;nome-banco&gt;
-</code></pre>
-
-<h2>Outra maneira de fazer o backup</h2>
-
-<pre><code>docker exec -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; pg_dump -Fc &lt;database_name_here&gt; &gt; db.dump
-</code></pre>
-
-<h2>Cuidado!</h2>
-
-<pre><code>docker exec -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; psql -c 'DROP DATABASE &lt;your_db_name&gt;'
-
-docker exec -i -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; pg_restore -C -d postgres &lt; db.dump
-</code></pre>
-
-<p>Exemplo:</p>
-
-<p>Custom format (c)</p>
-
-<pre><code>docker exec -u labwide postgres-0 pg_dump -Fc gestam-dados &gt; gestam-dados.dump
-</code></pre>
-
-<p>SQL format(p)</p>
-
-<pre><code>docker exec -u postgres postgres-0 pg_dump -Fp gestam-dados &gt; gestam-dados.dump
-</code></pre>
-
-<h2>Backup acessando o container</h2>
-
-<p><strong>copy dump into container</strong></p>
-
-<pre><code>docker cp local/path/to/db.dump CONTAINER_ID:/db.dump
-</code></pre>
-
-<p><strong>shell into container</strong></p>
-
-<pre><code>docker exec -it CONTAINER_ID bash
-</code></pre>
-
-<p><strong>restore it from within</strong></p>
-
-<pre><code>pg_restore -U postgres -d DB_NAME --no-owner -1 /db.dump
-</code></pre>
-
-<p>Tags: <a href='tag_wiki.html'>wiki</a></p>
 
 
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="blog.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Subscribe to this page..." href="feed.rss" />
+<title>Ponteiros em golang</title>
+</head><body>
+<div id="divbodyholder">
+<div class="headerholder"><div class="header">
+<div id="title">
+<h1 class="nomargin"><a class="ablack" href="https://gomes-fdr.github.io/blog/index.html">Web notes</a></h1>
+<div id="description">Alguns caracteres perdidos...</div>
+</div></div></div>
+<div id="divbody"><div class="content">
+<!-- entry begin -->
+<h3><a class="ablack" href="ponteiros-em-golang.html">
+Ponteiros em golang
+</a></h3>
+<!-- bashblog_timestamp: #202006201330.49# -->
+<div class="subtitle">June 20, 2020 &mdash; 
+Fabiano Gomes
+</div>
+<!-- text begin -->
+
+<p>Em tradução livre, ponteiros são objetos que armazenam endereços de memória <a href="https://en.wikipedia.org/wiki/Pointer_(computer_programming">wikipedia</a>. Um dos temas que podemos tratar quando passamos a utilizar ponteiros, é a maneira como <em>passamos</em> informações de uma função para outra.</p>
+
+<p>Por padrão, quando criamos uma função e definimos algum parâmetro, utilizamos a chamada <em>passagem por referência</em> onde este parâmetro, solicita para o computador que ele reserve um pouco de memória para armazenar o conteúdo de cada parâmetro declarado(sim parâmetros são como as variáveis dos nossos programas).</p>
+
+<pre><code>func dobro(a int) int {
+    return a*2
+}
+</code></pre>
+
+<p>No exemplo acima, uma variável do tipo <code>int</code> foi criada, para receber o valor da nossa função <code>dobro</code>, dentro do nosso programa principal, poderíamos utilizar essa função da seguinte maneira:</p>
+
+<pre><code>func main() {
+    x := 10
+
+    fmt.Println("O valor de x  é: ", x)
+    fmt.Println("Seu dobro é: ", dobro(x))
+}
+</code></pre>
+
+<p>A grosso modo, no exemplo acima, criamos duas variáveis de tamanho de um <code>int</code>, como poderíamos fazer a mesma operação sem alocarmos mais uma variável?</p>
+
+<h2>Passagem por referência</h2>
+
+<p>Vamos fazer alguns ajustes na função dobro:</p>
+
+<pre><code>func dobro(a *int) int {
+    return *a * 2
+}
+</code></pre>
+
+<p>Agora a função dobro espera receber um ponteiro, ou se preferir uma referência para uma variável do tipo <code>int</code>, na função principal, a utilização da nossa função que trabalha com referências fica assim:</p>
+
+<pre><code>func main() {
+    x := 10
+
+    fmt.Println("O valor de x  é: ", x)
+    fmt.Println("Seu dobro é: ", dobro(&amp;x))
+}
+</code></pre>
+
+<p>Com essa alteração, passamos a reservar apenas uma variável do tipo <code>int</code>, uma vez que nossa função apenas <em>apontou</em> para o valor da variável x e retornou seu valor multiplicado por 2.</p>
+
+<p>Assim como em C e C++ dá pra fazer muitas coisas legais e perigosas com ponteiros, essa foi uma pequena nota para meu eu do futuro pensar a respeito.</p>
+
+<p><em>Importante lembrar que o uso irresponsável de ponteiros pode trazer efeitos indesejados(eu ouvi garbage colector?!)</em></p>
+
+<p>Tags: <a href='tag_golang.html'>golang</a>, <a href='tag_wiki.html'>wiki</a></p>
+<!-- text end -->
+<!-- entry end -->
+</div>
+<div id="footer">CC by-nc-nd <a href="">Fabiano Gomes</a> &mdash; <a href="mailto:gomes&#46;fdr&#64;tuta&#46;io">gomes&#46;fdr&#64;tuta&#46;io</a><br/>
+Generated with <a href="https://github.com/cfenollosa/bashblog">bashblog</a>, a single bash script to easily create blogs like this one</div>
+</div></div>
+</body></html>

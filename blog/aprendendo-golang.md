@@ -42,3 +42,5 @@ Depois vamos criar os seguintes diretórios:
   * Criação de APIs
   * Criação de GUIs
   * Integração com frontend web
+
+  Tags: golang, wiki
