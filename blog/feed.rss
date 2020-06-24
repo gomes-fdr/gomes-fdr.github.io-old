@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Web notes</title><link>https://gomes-fdr.github.io/blog/index.html</link>
 <description>Alguns caracteres perdidos...</description><language>en</language>
-<lastBuildDate>Sat, 20 Jun 2020 20:34:40 -0300</lastBuildDate>
-<pubDate>Sat, 20 Jun 2020 20:34:40 -0300</pubDate>
+<lastBuildDate>Wed, 24 Jun 2020 18:02:49 -0300</lastBuildDate>
+<pubDate>Wed, 24 Jun 2020 18:02:49 -0300</pubDate>
 <atom:link href="https://gomes-fdr.github.io/blog/feed.rss" rel="self" type="application/rss+xml" />
 <item><title>
 Ponteiros em golang
@@ -67,7 +67,7 @@ Ponteiros em golang
 Golang, sobre strings
 </title><description><![CDATA[
 
-<p>Estas são algumas anotações que estou fazendo durante o excelente vídeo curso da <a href="https://www.youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg">Ellen Köbes</a> - o conteúdo e alguns trechos de código são de lá.</p>
+<p>Estas são algumas anotações que estou fazendo durante o excelente vídeo curso da <a href="https://www.youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg">Ellen Körbes</a> - o conteúdo e alguns trechos de código são de lá.</p>
 
 <h2>O tipo string</h2>
 
@@ -135,13 +135,11 @@ e, é, 香
 
 <p>Em resumo, a tabela ASCII pode representar 2<sup>8</sup> valores diferentes(256), já a tabela de utf-8 pode representar 2<sup>32</sup> valores diferentes(4294967296) - sendo que ASCII está contido nesta tabela, acho que até o alfabeto Klingon está lá.</p>
 
-<p>Este exemplo simples mostra muito bem como fica fácil de lidar com strings em Golang, gostaria de deixar o link para uma excelente explicação complementar de como funciona a lógica por trás da codificação utf-8, ele também é um material criado pela <a href="https://medium.com/deffectivego/wtf-utf-8-85bc66a6279">Ellen Köbes</a>.</p>
+<p>Este exemplo simples mostra muito bem como fica fácil de lidar com strings em Golang, gostaria de deixar o link para uma excelente explicação complementar de como funciona a lógica por trás da codificação utf-8, ele também é um material criado pela <a href="https://medium.com/deffectivego/wtf-utf-8-85bc66a6279">Ellen Körbes</a>.</p>
 
 <p>Recomendo fortemente.</p>
 
 <p>Tags: <a href='tag_golang.html'>golang</a>, <a href='tag_wiki.html'>wiki</a></p>
-
-
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/golang-sobre-strings.html</link>
 <guid>https://gomes-fdr.github.io/blog/./golang-sobre-strings.html</guid>
