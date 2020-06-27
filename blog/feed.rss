@@ -2,9 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Web notes</title><link>https://gomes-fdr.github.io/blog/index.html</link>
 <description>Alguns caracteres perdidos...</description><language>en</language>
-<lastBuildDate>Wed, 24 Jun 2020 18:02:49 -0300</lastBuildDate>
-<pubDate>Wed, 24 Jun 2020 18:02:49 -0300</pubDate>
+<lastBuildDate>Sat, 27 Jun 2020 19:14:28 -0300</lastBuildDate>
+<pubDate>Sat, 27 Jun 2020 19:14:28 -0300</pubDate>
 <atom:link href="https://gomes-fdr.github.io/blog/feed.rss" rel="self" type="application/rss+xml" />
+<item><title>
+Redescobrindo o uso de feeds
+</title><description><![CDATA[
+
+<p>Gosto muito do conteúdo produzido pelo <a href="https://lukesmith.xyz/">Luke Smith</a>, recentemente ele disponibilizou um vídeo falando sobre o uso de rss para consumir conteúdo. Durante muito tempo usei o saudoso google reader, achava uma maneira muito bacana de consumir conteúdo de sites ou blogs.</p>
+
+<p>O Luke estendeu isso de forma muito interessante, para consumir qualquer tipo de mídia(texto, vídeo, musica), isso me fez refletir sobre como as plataformas(google, facebook, tweeter, etc) nos forçam para dentro dentro delas. Criamos um login, e passamos a <em>consumir</em> conteúdo quase que exclusivamente dentro destes bretes vrituais e como podemos ver em diversas palestras sobre o uso maldoso dos algoritmos de indicação e manipulação de assuntos(minions versus mortadelas são o exemplo mais recente no Brasil).</p>
+
+<p>Depois de pensar bastante a respeito, resolvi aderir a esse jeito meio underground do Luke e listo aqui algumas coisas que fiz:</p>
+
+<ul>
+<li>Um serviço de email independente, cifrado e sem adds <a href="https://tutanota.com/secure-email/">Tuta mail</a> - apenas cadastro e controle de conteúdo que considero sensível, controle de finanças por exemplo. As pessoas não pensam muito sobre isso, mas o email é o id mais utilizado ainda hoje, continuo com um email do google, que uso para coisas que julgo não ser problema que o google de uma expiada.</li>
+<li>Um serviço de armazenamento online cifrado de ponta-a-ponta e com um razoável espaço livre <a href="https://mega.nz">Mega</a> - eu usava o drive do google e o dropbox(que possui uma integração bacana com o Linux) - o Mega me oferece ambos.</li>
+<li>Fiz uma seleção dos feeds do Youtube e cancelei todas as minhas inscrições, passei a usar um leitor de feeds, como nos tempos do google reader.</li>
+<li>Esse blog é um reflexo disso também, por que fazer um post no Facebook se posso escrever e gerenciar meu conteúdo de forma simples e honesta(alguém falou <a href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">Cambridge Analytica</a>?)</li>
+</ul>
+
+
+<p>Outro ponto que resolvi mudar, saí de mais de 10 anos usando distribuições Linux baseadas no <a href="https://debian.org">Debian</a> - grande projeto, grande distro, mas não quero mais pensar em atualizações de SO, passei a usar <a href="https://manjaro.org/">Manjaro</a>. É uma distro baseada no <a href="https://www.archlinux.org/">Arch Linux</a> com uma <em>curadoria</em> que reduz os impactos que uma distro <em>Roling release</em> pode apresentar.</p>
+
+<p>Ainda quero avançar mais sobre isso, quero minimizar o uso do celular, nos dias de hoje temos muitas facilidades. O uso de aplicativos de bancos são uma mão na roda, é claro que a existência de Fintechs e bancos que não te cobram nenhum centavo para manter uma conta corrente passam por isso. Uso um celular muito simples, um moto e6 com specs que me atendem perfeitamente, penso em fazer o chamado <a href="https://youtu.be/WSNGK9gmdpg">deGoogle</a> - quero evoluir isso e certamente se tudo der certo farei notas para o eu do futuro.</p>
+
+<p>Isso é um processo que não tem fim e está sempre em evolução, acredito que muito conteúdo bom possa sair disso, útil pra mim e talvez para outros que venham a tomar a <a href="https://en.wikipedia.org/wiki/The_Matrix">pílula vermelha</a>.</p>
+
+<p>Tags: <a href='tag_matrix.html'>matrix</a></p>
+<!-- text end -->
+]]></description><link>https://gomes-fdr.github.io/blog/redescobrindo-o-uso-de-feeds.html</link>
+<guid>https://gomes-fdr.github.io/blog/./redescobrindo-o-uso-de-feeds.html</guid>
+<dc:creator>Fabiano Gomes</dc:creator>
+<pubDate>Sat, 27 Jun 2020 19:14:25 -0300</pubDate></item>
 <item><title>
 Ponteiros em golang
 </title><description><![CDATA[
@@ -929,101 +959,6 @@ docker exec -i -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; pg_
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/dicas-para-uso-do-docker.html</link>
 <guid>https://gomes-fdr.github.io/blog/./dicas-para-uso-do-docker.html</guid>
-<dc:creator>Fabiano Gomes</dc:creator>
-<pubDate>Mon, 11 May 2020 07:57:24 -0300</pubDate></item>
-<item><title>
-Ferramentas Para Dev, ASDF
-</title><description><![CDATA[
-
-<p>Quando começamos a desenvolver software, precisamos montar nossa "caixa de ferramentas" - uma coleção de programas que nos ajudam a ser mais produtivo na criação de software. Se trabalhamos com linguagens interpretadas como javascript, python ou lua - para citar algumas com as quais eu trabalho, é muito comum precisarmos utilizar diferentes versões de interpretadores. É muito complicado e chato fazer isso manualmente, existem diversas ferramentas que resolvem esse tipo de problema dentro do seu escopo, ruby tem o seu gerenciador de ambientes virtuais, python também e por ai vai.
-Felizmente alguém pensou em fazer um gerenciador "genérico" para ajudar um grande número de desenvolvedores das mais diversas linguagens, esse projeto chama-se <a href="https://asdf-vm.com">ASDF</a> e resolve de uma forma muito elegante o problema de convivência de diferentes interpretadores num mesmo computador, vamos ver como fazer a instalação e configuração dele para alguns interpretadores.</p>
-
-<h2>Instalação</h2>
-
-<p>Tudo que estou postando aqui foi retirado do site oficial do <a href="https://asdf-vm.com">ASDF</a> sem dúvida a melhor fonte para funcionalidades mais específicas.</p>
-
-<pre><code>git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.3
-</code></pre>
-
-<h2>Tonar visível para o seu shell</h2>
-
-<pre><code>echo -e '\n. $HOME/.asdf/asdf.sh' &gt;&gt; ~/.bashrc
-echo -e '\n. $HOME/.asdf/completions/asdf.bash' &gt;&gt; ~/.bashrc
-</code></pre>
-
-<h2>Como o ASDF funciona?</h2>
-
-<p>Ele não armazena cada versão de interpretador no site do projeto, ao invés disso através de receitas é feita a instalação das diferentes versões dos interpretadores que você precisa - na linguagem do ASDF, estas receitas são chamadas de plugins. Então a primeira coisa a ser feita após a instalação do ASDF é a escolha de quais linguagens vamos trabalhar, neste exemplo vou mostrar como fazer a instalação de diferntes versões de Lua.</p>
-
-<h2>Listando os plugins disponíveis</h2>
-
-<p>Para saber quais as versões são possíveis de instalar, basta:</p>
-
-<pre><code>asdf list-all lua
-</code></pre>
-
-<p>Uma saída semelhante a essa será exibida:</p>
-
-<pre><code>asdf list-all lua
-5.1
-5.2.0
-5.2.1
-5.2.2
-5.2.3
-5.2.4
-5.3.0
-5.3.1
-5.3.2
-5.3.3
-5.3.4
-5.3.5
-</code></pre>
-
-<h2>Instalando o plugin</h2>
-
-<pre><code>asdf plugin-add lua
-</code></pre>
-
-<h2>Instalando uma versão</h2>
-
-<pre><code>asdf install lua 5.2.4
-</code></pre>
-
-<h2>Tornando a versão instalada ativa</h2>
-
-<pre><code>asdf global lua 5.2.4
-</code></pre>
-
-<p>Aqui cabe um observação importante, como foi dito anteriormente o ASDF não mantém uma cópia dos interpretadores compilados em seu site, ele é apenas um repositório de receitas. Logo essa receita vai baixar os fontes dos respectivos projetos e compila-los - para isso é importante que as dependências necessárias para compilar cada interpretador estejam presentes no seu computador. Em cada repositório de plugin temos uma lista do que é necessário e de como fazer a instalação destas dependências.</p>
-
-<h2>Um exemplo de instalações</h2>
-
-<pre><code>asdf list
-lua
-  5.2.4
-  5.3.5
-python
-  3.7.4
-asdf current
-   lua            5.3.5    (set by /home/fabiano/.tool-versions)
-   python         3.7.4    (set by /home/fabiano/.tool-versions)
-</code></pre>
-
-<p>Para outros interpretadores basta repetir o processo, facinho.
-Finalizamos por aqui esse tutorial, em caso de dúvidas, deixe seu comentário.</p>
-
-<p>Tags: <a href='tag_wiki.html'>wiki</a></p>
-
-
-
-
-
-
-
-
-<!-- text end -->
-]]></description><link>https://gomes-fdr.github.io/blog/ferramentas-para-dev-asdf11978.html</link>
-<guid>https://gomes-fdr.github.io/blog/./ferramentas-para-dev-asdf11978.html</guid>
 <dc:creator>Fabiano Gomes</dc:creator>
 <pubDate>Mon, 11 May 2020 07:57:24 -0300</pubDate></item>
 </channel></rss>

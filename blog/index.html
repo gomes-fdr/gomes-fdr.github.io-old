@@ -14,6 +14,37 @@
 <div id="description">Alguns caracteres perdidos...</div>
 </div></div></div>
 <div id="divbody"><div class="content">
+<h3><a class="ablack" href="redescobrindo-o-uso-de-feeds.html">
+Redescobrindo o uso de feeds
+</a></h3>
+<!-- bashblog_timestamp: #202006271914.25# -->
+<div class="subtitle">June 27, 2020 &mdash; 
+Fabiano Gomes
+</div>
+<!-- text begin -->
+
+<p>Gosto muito do conteúdo produzido pelo <a href="https://lukesmith.xyz/">Luke Smith</a>, recentemente ele disponibilizou um vídeo falando sobre o uso de rss para consumir conteúdo. Durante muito tempo usei o saudoso google reader, achava uma maneira muito bacana de consumir conteúdo de sites ou blogs.</p>
+
+<p>O Luke estendeu isso de forma muito interessante, para consumir qualquer tipo de mídia(texto, vídeo, musica), isso me fez refletir sobre como as plataformas(google, facebook, tweeter, etc) nos forçam para dentro dentro delas. Criamos um login, e passamos a <em>consumir</em> conteúdo quase que exclusivamente dentro destes bretes vrituais e como podemos ver em diversas palestras sobre o uso maldoso dos algoritmos de indicação e manipulação de assuntos(minions versus mortadelas são o exemplo mais recente no Brasil).</p>
+
+<p>Depois de pensar bastante a respeito, resolvi aderir a esse jeito meio underground do Luke e listo aqui algumas coisas que fiz:</p>
+
+<ul>
+<li>Um serviço de email independente, cifrado e sem adds <a href="https://tutanota.com/secure-email/">Tuta mail</a> - apenas cadastro e controle de conteúdo que considero sensível, controle de finanças por exemplo. As pessoas não pensam muito sobre isso, mas o email é o id mais utilizado ainda hoje, continuo com um email do google, que uso para coisas que julgo não ser problema que o google de uma expiada.</li>
+<li>Um serviço de armazenamento online cifrado de ponta-a-ponta e com um razoável espaço livre <a href="https://mega.nz">Mega</a> - eu usava o drive do google e o dropbox(que possui uma integração bacana com o Linux) - o Mega me oferece ambos.</li>
+<li>Fiz uma seleção dos feeds do Youtube e cancelei todas as minhas inscrições, passei a usar um leitor de feeds, como nos tempos do google reader.</li>
+<li>Esse blog é um reflexo disso também, por que fazer um post no Facebook se posso escrever e gerenciar meu conteúdo de forma simples e honesta(alguém falou <a href="https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal">Cambridge Analytica</a>?)</li>
+</ul>
+
+
+<p>Outro ponto que resolvi mudar, saí de mais de 10 anos usando distribuições Linux baseadas no <a href="https://debian.org">Debian</a> - grande projeto, grande distro, mas não quero mais pensar em atualizações de SO, passei a usar <a href="https://manjaro.org/">Manjaro</a>. É uma distro baseada no <a href="https://www.archlinux.org/">Arch Linux</a> com uma <em>curadoria</em> que reduz os impactos que uma distro <em>Roling release</em> pode apresentar.</p>
+
+<p>Ainda quero avançar mais sobre isso, quero minimizar o uso do celular, nos dias de hoje temos muitas facilidades. O uso de aplicativos de bancos são uma mão na roda, é claro que a existência de Fintechs e bancos que não te cobram nenhum centavo para manter uma conta corrente passam por isso. Uso um celular muito simples, um moto e6 com specs que me atendem perfeitamente, penso em fazer o chamado <a href="https://youtu.be/WSNGK9gmdpg">deGoogle</a> - quero evoluir isso e certamente se tudo der certo farei notas para o eu do futuro.</p>
+
+<p>Isso é um processo que não tem fim e está sempre em evolução, acredito que muito conteúdo bom possa sair disso, útil pra mim e talvez para outros que venham a tomar a <a href="https://en.wikipedia.org/wiki/The_Matrix">pílula vermelha</a>.</p>
+
+<p>Tags: <a href='tag_matrix.html'>matrix</a></p>
+<!-- text end -->
 <h3><a class="ablack" href="ponteiros-em-golang.html">
 Ponteiros em golang
 </a></h3>
@@ -699,104 +730,6 @@ slackpkg upgrade-all
 <p>No próximo tutorial vamos configurar um WM(Windown Manager) e adicionar mais ferramentas na nossa caixa de desenvolvimento.</p>
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_slackware.html'>slackware</a></p>
-
-
-
-
-
-
-
-<!-- text end -->
-<h3><a class="ablack" href="minhas-notas-sobre-uso-do-git.html">
-Minhas notas sobre uso do git
-</a></h3>
-<!-- bashblog_timestamp: #202005110818.38# -->
-<div class="subtitle">May 11, 2020 &mdash; 
-Fabiano Gomes
-</div>
-<!-- text begin -->
-
-<p>Para <em>trazer</em> os submodulos de um projeto:</p>
-
-<pre><code>git submodule init
-</code></pre>
-
-<p>Para <em>atualizar</em> os submodulos:</p>
-
-<pre><code>git submodule update
-</code></pre>
-
-<p>Para <em>chavear</em> para um branch especifico dos submodulos:</p>
-
-<pre><code>git submodule foreach 'git checkout develop'
-</code></pre>
-
-<p>Para <em>traze</em>' as atualizações de todos os sbmodulos:</p>
-
-<pre><code>git submodule foreach 'git pull'
-</code></pre>
-
-<p>Para <em>guardar</em> as alterações em uma pilha <em>anonima</em>:</p>
-
-<pre><code>git stash
-</code></pre>
-
-<p>Para aplicar as alterações dessa pilha no branch corrente:</p>
-
-<pre><code>git stash apply
-</code></pre>
-
-<p>Para guardar inclusive untracked files:</p>
-
-<pre><code>git stash -u
-</code></pre>
-
-<p>Para listar a pilha de <em>stashes</em></p>
-
-<pre><code>git stash list
-</code></pre>
-
-<p>Para criar um novo branch a partir de um stash:</p>
-
-<pre><code>git stash branch novo-branch
-</code></pre>
-
-<p>Para acessar um stash especifico, acessa através de stash@{n} - por exemplo:</p>
-
-<pre><code>git stash apply stash@{2} # aplica o stash 2 ao branch corrent
-git stash drop stash@{2} # Apaga o stash 2 da pilha
-</code></pre>
-
-<p>Apagar a pilha de stash:</p>
-
-<pre><code>git stash clear
-</code></pre>
-
-<h2>Comparar modificações</h2>
-
-<p>Configurar ferramenta de diff:</p>
-
-<pre><code>git config --global diff.tool meld
-</code></pre>
-
-<p>Para comparar dois branches usando a ferramenta gráfica <em>Meld</em>:</p>
-
-<pre><code>git difftool -d ticket-4581..develop
-</code></pre>
-
-<p>A lógica é a mesma para fazer um diff entre commits, basta substituir o nome do branch pelo hash do commit(os primeiros 6 digitos são o suficiente).</p>
-
-<h2>Juntar commits</h2>
-
-<p>Para <em>juntar</em> varios commits em um só:</p>
-
-<pre><code>git rebase -i HEAD~&lt;n&gt; # Onde n é a quantidade de commits que desejamos juntar.
-</code></pre>
-
-<p>Neste comando iterativo podemos juntar, squash ou remover algum commit que não queremos - para isso basta remover a linha pick que contém o commit(leia as instruções do modo iterativo).</p>
-
-<p>Tags: <a href='tag_wiki.html'>wiki</a></p>
-
 
 
 
