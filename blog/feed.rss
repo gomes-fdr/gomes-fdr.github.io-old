@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>Web notes</title><link>https://gomes-fdr.github.io/blog/index.html</link>
 <description>Alguns caracteres perdidos...</description><language>en</language>
-<lastBuildDate>Sat, 27 Jun 2020 19:22:04 -0300</lastBuildDate>
-<pubDate>Sat, 27 Jun 2020 19:22:04 -0300</pubDate>
+<lastBuildDate>Sun, 28 Jun 2020 17:41:16 -0300</lastBuildDate>
+<pubDate>Sun, 28 Jun 2020 17:41:16 -0300</pubDate>
 <atom:link href="https://gomes-fdr.github.io/blog/feed.rss" rel="self" type="application/rss+xml" />
 <item><title>
 Redescobrindo o uso de feeds
@@ -30,6 +30,7 @@ Redescobrindo o uso de feeds
 <p>Isso é um processo que não tem fim e está sempre em evolução, acredito que muito conteúdo bom possa sair disso, útil pra mim e talvez para outros que venham a tomar a <a href="https://en.wikipedia.org/wiki/The_Matrix">pílula vermelha</a>.</p>
 
 <p>Tags: <a href='tag_matrix.html'>matrix</a></p>
+
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/redescobrindo-o-uso-de-feeds.html</link>
 <guid>https://gomes-fdr.github.io/blog/./redescobrindo-o-uso-de-feeds.html</guid>
@@ -88,6 +89,7 @@ Ponteiros em golang
 <p>Referências: Série de vídeos do <a href="https://youtu.be/JepHr8egvBI">Claudson Oliveira</a></p>
 
 <p>Tags: <a href='tag_golang.html'>golang</a>, <a href='tag_wiki.html'>wiki</a></p>
+
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/ponteiros-em-golang.html</link>
 <guid>https://gomes-fdr.github.io/blog/./ponteiros-em-golang.html</guid>
@@ -170,6 +172,7 @@ e, é, 香
 <p>Recomendo fortemente.</p>
 
 <p>Tags: <a href='tag_golang.html'>golang</a>, <a href='tag_wiki.html'>wiki</a></p>
+
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/golang-sobre-strings.html</link>
 <guid>https://gomes-fdr.github.io/blog/./golang-sobre-strings.html</guid>
@@ -234,6 +237,7 @@ export PATH=$PATH:$GOPATH/bin
 
 
 <p>  Tags: golang, wiki</p>
+
 
 
 
@@ -527,6 +531,7 @@ int main() {
 
 
 
+
 <!-- text end -->
 ]]></description><link>https://gomes-fdr.github.io/blog/notas-sobre-c-e-o-framework-qt.html</link>
 <guid>https://gomes-fdr.github.io/blog/./notas-sobre-c-e-o-framework-qt.html</guid>
@@ -578,6 +583,7 @@ Para que serve?</p>
 <p>Este prompt está usando o tema <code>tylenol</code>, os temas estão em: <code>$HOME/.oh-my-bash/themes</code> e são escolhidos no arquivo de configuração <code>.bashrc</code> - vale a pena explorar.</p>
 
 <p>Tags: <a href='tag_dev-tools.html'>dev-tools</a>, <a href='tag_bash.html'>bash</a></p>
+
 
 
 
@@ -637,6 +643,7 @@ Olá deno
 <p>Ainda estou conhecendo mais a respeito do uso de runtimes javascript/typescript, fazem parte da stack que usamos no meu trabalho, acho interessante conhecer as possibildades tanto do chamado padrão de mercado, quanto de opções recém chegadas.</p>
 
 <p>Tags: <a href='tag_javascript.html'>javascript</a>, <a href='tag_typescript.html'>typescript</a>, <a href='tag_deno.html'>deno</a></p>
+
 
 
 
@@ -709,6 +716,7 @@ slackpkg upgrade-all
 <p>No próximo tutorial vamos configurar um WM(Windown Manager) e adicionar mais ferramentas na nossa caixa de desenvolvimento.</p>
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a>, <a href='tag_linux.html'>linux</a>, <a href='tag_slackware.html'>slackware</a></p>
+
 
 
 
@@ -805,6 +813,7 @@ git stash drop stash@{2} # Apaga o stash 2 da pilha
 <p>Neste comando iterativo podemos juntar, squash ou remover algum commit que não queremos - para isso basta remover a linha pick que contém o commit(leia as instruções do modo iterativo).</p>
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a></p>
+
 
 
 
@@ -948,6 +957,7 @@ docker exec -i -u &lt;your_postgres_user&gt; &lt;postgres_container_name&gt; pg_
 </code></pre>
 
 <p>Tags: <a href='tag_wiki.html'>wiki</a></p>
+
 
 
 
