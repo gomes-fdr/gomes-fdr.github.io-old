@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Fabiano Gomes">
+  
+  <meta name="generator" content="Hugo 0.73.0" />
+
+  <title>Minhas notas sobre uso do git &middot; Web notes</title>
+
+  <link rel="shortcut icon" href="https://gomes-fdr.github.io/images/favicon.ico">
+  <link rel="stylesheet" href="https://gomes-fdr.github.io/css/spectre.min.css">
+  <link rel="stylesheet" href="https://gomes-fdr.github.io/css/style.css">
+  <link rel="stylesheet" href="https://gomes-fdr.github.io/css/highlight.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  
+
+  
+    <link href="" rel="alternate" type="application/rss+xml" title="Web notes" />
+  
+
+  
+  <meta property="og:title" content="Minhas notas sobre uso do git" />
+<meta property="og:description" content="Para trazer os submodulos de um projeto:
+git submodule init  Para atualizar os submodulos:
+git submodule update  Para chavear para um branch especifico dos submodulos:
+git submodule foreach &#39;git checkout develop&#39;  Para traze&rsquo; as atualizações de todos os sbmodulos:
+git submodule foreach &#39;git pull&#39;  Para guardar as alterações em uma pilha anonima:
+git stash  Para aplicar as alterações dessa pilha no branch corrente:
+git stash apply  Para guardar inclusive untracked files:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gomes-fdr.github.io/post/minhas-notas-sobre-uso-do-git/" />
+<meta property="article:published_time" content="2020-05-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-11T00:00:00+00:00" />
+
+  
+  <meta itemprop="name" content="Minhas notas sobre uso do git">
+<meta itemprop="description" content="Para trazer os submodulos de um projeto:
+git submodule init  Para atualizar os submodulos:
+git submodule update  Para chavear para um branch especifico dos submodulos:
+git submodule foreach &#39;git checkout develop&#39;  Para traze&rsquo; as atualizações de todos os sbmodulos:
+git submodule foreach &#39;git pull&#39;  Para guardar as alterações em uma pilha anonima:
+git stash  Para aplicar as alterações dessa pilha no branch corrente:
+git stash apply  Para guardar inclusive untracked files:">
+<meta itemprop="datePublished" content="2020-05-11T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-11T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="245">
+
+
+
+<meta itemprop="keywords" content="wiki,git," />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Minhas notas sobre uso do git"/>
+<meta name="twitter:description" content="Para trazer os submodulos de um projeto:
+git submodule init  Para atualizar os submodulos:
+git submodule update  Para chavear para um branch especifico dos submodulos:
+git submodule foreach &#39;git checkout develop&#39;  Para traze&rsquo; as atualizações de todos os sbmodulos:
+git submodule foreach &#39;git pull&#39;  Para guardar as alterações em uma pilha anonima:
+git stash  Para aplicar as alterações dessa pilha no branch corrente:
+git stash apply  Para guardar inclusive untracked files:"/>
+
+</head>
+
+<body onload="setPixelFont()">
+  <div class="container p-fixed" style="z-index:3">
+  <nav class="navbar m-2 p-2 s-rounded shadow bg-primary">
+    <section class="navbar-section">
+      <button class="btn btn-action btn-primary s-circle text-gray" id="pixelfont-toggle"><i class="fas fa-robot fa-lg"></i></button>
+    </section>
+    <section class="navbar-section">
+      
+        <a class="btn btn-primary" href='https://gomes-fdr.github.io'>Home</a>
+      
+
+      
+        <a class="btn btn-primary mx-2" href="/about/">About</a>
+      
+
+      
+      <a class="btn btn-accent" href="" target="_blank"><i class="fas fa-rss fa-lg"></i></a>
+      
+    </section>
+  </nav>
+</div>
+
+  <section class="container grid-md">
+  <div class="columns">
+    
+    
+<article class="container p-centered mt-space">
+  <header>
+    <h2 class="text-center">Minhas notas sobre uso do git</h2>
+    <h6 class="text-gray text-italic"></h6>
+  </header>
+  <section class="my-gap">
+    <p>Para <em>trazer</em> os submodulos de um projeto:</p>
+<pre><code>git submodule init
+</code></pre>
+<p>Para <em>atualizar</em> os submodulos:</p>
+<pre><code>git submodule update
+</code></pre>
+<p>Para <em>chavear</em> para um branch especifico dos submodulos:</p>
+<pre><code>git submodule foreach 'git checkout develop'
+</code></pre>
+<p>Para <em>traze</em>&rsquo; as atualizações de todos os sbmodulos:</p>
+<pre><code>git submodule foreach 'git pull'
+</code></pre>
+<p>Para <em>guardar</em> as alterações em uma pilha <em>anonima</em>:</p>
+<pre><code>git stash
+</code></pre>
+<p>Para aplicar as alterações dessa pilha no branch corrente:</p>
+<pre><code>git stash apply
+</code></pre>
+<p>Para guardar inclusive untracked files:</p>
+<pre><code>git stash -u
+</code></pre>
+<p>Para listar a pilha de <em>stashes</em></p>
+<pre><code>git stash list
+</code></pre>
+<p>Para criar um novo branch a partir de um stash:</p>
+<pre><code>git stash branch novo-branch
+</code></pre>
+<p>Para acessar um stash especifico, acessa através de stash@{n} - por exemplo:</p>
+<pre><code>git stash apply stash@{2} # aplica o stash 2 ao branch corrent
+git stash drop stash@{2} # Apaga o stash 2 da pilha
+</code></pre>
+<p>Apagar a pilha de stash:</p>
+<pre><code>git stash clear
+</code></pre>
+<h2 id="comparar-modificações">Comparar modificações</h2>
+<p>Configurar ferramenta de diff:</p>
+<pre><code>git config --global diff.tool meld
+</code></pre>
+<p>Para comparar dois branches usando a ferramenta gráfica <em>Meld</em>:</p>
+<pre><code>git difftool -d ticket-4581..develop
+</code></pre>
+<p>A lógica é a mesma para fazer um diff entre commits, basta substituir o nome do branch pelo hash do commit(os primeiros 6 digitos são o suficiente).</p>
+<h2 id="juntar-commits">Juntar commits</h2>
+<p>Para <em>juntar</em> varios commits em um só:</p>
+<pre><code>git rebase -i HEAD~&lt;n&gt; # Onde n é a quantidade de commits que desejamos juntar.
+</code></pre>
+<p>Neste comando iterativo podemos juntar, squash ou remover algum commit que não queremos - para isso basta remover a linha pick que contém o commit(leia as instruções do modo iterativo).</p>
+
+
+    
+      <code class="text-bold">Tags</code> 
+      
+        <a class="chip text-accent" href="https://gomes-fdr.github.io/tags/wiki">wiki</a>
+      
+        <a class="chip text-accent" href="https://gomes-fdr.github.io/tags/git">git</a>
+      
+    
+  </section>
+  <div class="divider my-gap"></div>
+  <footer class="col-12 d-inline-block">
+    <span class="float-left">
+      <button class="btn btn-action btn-accent shadow s-circle" onclick="window.history.back();"><i class="fas fa-arrow-left"></i></button>
+    </span>
+    <span class="float-right">
+      <div class="text-right float-left mx-2">
+        <span class="text-dark">Fabiano Gomes</span><br>
+        <span class="text-gray">I&#39;m a Programmer.</span>
+      </div>
+      <figure class="avatar avatar-lg">
+        <img id="profile">
+      </figure>
+    </span>
+  </footer>
+</article>
+
+    <footer class="container p-centered text-center my-gap">
+  
+    <div class="container">
+
+  
+    <a class="symbol" href="mailto:gomes.fdr@gmail.com" target="_blank"><i class="fas fa-envelope"></i>
+  
+  </a>
+
+  
+    <a class="symbol" href="https://www.github.com/gomes-fdr" target="_blank"><i class="fab fa-github"></i>
+  
+  </a>
+
+  
+    <a class="symbol" href="https://www.linkedin.com/in/gomes-fdr" target="_blank"><i class="fab fa-linkedin"></i>
+  
+  </a>
+
+  
+    <a class="symbol" href="https://t.me/gomes_fdr" target="_blank"><i class="fab fa-telegram"></i>
+  
+  </a>
+
+</div>
+
+  
+
+  <small class="text-gray">
+  
+    © Copyright 2020 Fabiano Gomes
+  
+  </small>
+</footer>
+
+  </div>
+  </section>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://gomes-fdr.github.io/js/main.js"></script>
+<script src="https://gomes-fdr.github.io/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>

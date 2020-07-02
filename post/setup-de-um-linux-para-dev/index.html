@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Fabiano Gomes">
+  
+  <meta name="generator" content="Hugo 0.73.0" />
+
+  <title>Setup de um Linux para DESENVOLVEDOR &middot; Web notes</title>
+
+  <link rel="shortcut icon" href="https://gomes-fdr.github.io/images/favicon.ico">
+  <link rel="stylesheet" href="https://gomes-fdr.github.io/css/spectre.min.css">
+  <link rel="stylesheet" href="https://gomes-fdr.github.io/css/style.css">
+  <link rel="stylesheet" href="https://gomes-fdr.github.io/css/highlight.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  
+
+  
+    <link href="" rel="alternate" type="application/rss+xml" title="Web notes" />
+  
+
+  
+  <meta property="og:title" content="Setup de um Linux para DESENVOLVEDOR" />
+<meta property="og:description" content="O ambiente de trabalho, no caso uma máquina com Linux, reflete diretamente na qualidade da execução de tarefas, para desenvolvedores de softwares é fortemente recomendado um ambiente simples, robusto e estável. Pensando nisso, neste vasto universo de distribuições, duas opções bem ortodoxas se destacam. Debian e Slackware, você estará muito bem servido com qualquer uma delas, neste tutorial vamos explorar o Slackware Linux, por que?! Porque é divertido!
+Instalação Vou considerar que temos uma instalação de Slackware Linux nova, aqui temos duas possibilidades no que toca instalações:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gomes-fdr.github.io/post/setup-de-um-linux-para-dev/" />
+<meta property="article:published_time" content="2020-05-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-14T00:00:00+00:00" />
+
+  
+  <meta itemprop="name" content="Setup de um Linux para DESENVOLVEDOR">
+<meta itemprop="description" content="O ambiente de trabalho, no caso uma máquina com Linux, reflete diretamente na qualidade da execução de tarefas, para desenvolvedores de softwares é fortemente recomendado um ambiente simples, robusto e estável. Pensando nisso, neste vasto universo de distribuições, duas opções bem ortodoxas se destacam. Debian e Slackware, você estará muito bem servido com qualquer uma delas, neste tutorial vamos explorar o Slackware Linux, por que?! Porque é divertido!
+Instalação Vou considerar que temos uma instalação de Slackware Linux nova, aqui temos duas possibilidades no que toca instalações:">
+<meta itemprop="datePublished" content="2020-05-14T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-14T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="469">
+
+
+
+<meta itemprop="keywords" content="wiki,linux," />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setup de um Linux para DESENVOLVEDOR"/>
+<meta name="twitter:description" content="O ambiente de trabalho, no caso uma máquina com Linux, reflete diretamente na qualidade da execução de tarefas, para desenvolvedores de softwares é fortemente recomendado um ambiente simples, robusto e estável. Pensando nisso, neste vasto universo de distribuições, duas opções bem ortodoxas se destacam. Debian e Slackware, você estará muito bem servido com qualquer uma delas, neste tutorial vamos explorar o Slackware Linux, por que?! Porque é divertido!
+Instalação Vou considerar que temos uma instalação de Slackware Linux nova, aqui temos duas possibilidades no que toca instalações:"/>
+
+</head>
+
+<body onload="setPixelFont()">
+  <div class="container p-fixed" style="z-index:3">
+  <nav class="navbar m-2 p-2 s-rounded shadow bg-primary">
+    <section class="navbar-section">
+      <button class="btn btn-action btn-primary s-circle text-gray" id="pixelfont-toggle"><i class="fas fa-robot fa-lg"></i></button>
+    </section>
+    <section class="navbar-section">
+      
+        <a class="btn btn-primary" href='https://gomes-fdr.github.io'>Home</a>
+      
+
+      
+        <a class="btn btn-primary mx-2" href="/about/">About</a>
+      
+
+      
+      <a class="btn btn-accent" href="" target="_blank"><i class="fas fa-rss fa-lg"></i></a>
+      
+    </section>
+  </nav>
+</div>
+
+  <section class="container grid-md">
+  <div class="columns">
+    
+    
+<article class="container p-centered mt-space">
+  <header>
+    <h2 class="text-center">Setup de um Linux para DESENVOLVEDOR</h2>
+    <h6 class="text-gray text-italic"></h6>
+  </header>
+  <section class="my-gap">
+    <p>O ambiente de trabalho, no caso uma máquina com Linux, reflete diretamente na qualidade da execução de tarefas, para desenvolvedores de softwares é fortemente recomendado um ambiente simples, robusto e estável. Pensando nisso, neste vasto universo de distribuições, duas opções bem ortodoxas se destacam. Debian e Slackware, você estará muito bem servido com qualquer uma delas, neste tutorial vamos explorar o Slackware Linux, por que?! Porque é divertido!</p>
+<h2 id="instalação">Instalação</h2>
+<p>Vou considerar que temos uma instalação de Slackware Linux nova, aqui temos duas possibilidades no que toca instalações:</p>
+<ul>
+<li>Sem UEFI: Para máquinas com BIOS de antes de 2008(eu acho), no momento de fazer as partições do HD(usando cfdisk) escolher a opção <em>dos</em>;</li>
+<li>Com UEFI: Máquinas com BIOS pós 2008, no momento de fazer as partições do HD(usando cfdisk) escolher a opção <em>gpt</em>;</li>
+</ul>
+<h2 id="esquema-de-partições">Esquema de partições</h2>
+<p>Aqui vamos primar por um esquema simples também:</p>
+<ul>
+<li>Sem UEFI:
+<ul>
+<li>sda1: para /, ext4, 50GB</li>
+<li>sda2: para /home, ext4, o que sobrou de espaço em disco após criar sda3</li>
+<li>sda3: para swap - a regra para o tamanho do swap é 2XRAM, sendo no máximo 8GB de tamanho(na prática 4GB de swap resolve tua vida).</li>
+</ul>
+</li>
+<li>Com UEFI: Um pouco mais complexo, este <a href="https://youtu.be/fd0FvvsGaUM">vídeo</a> é uma excelente referência.</li>
+</ul>
+<p>Embora a instalação seja importante, considero que a pós-instalação é o que realmente faz a diferença, vamos lá!</p>
+<h2 id="pós-instalação">Pós-instalação</h2>
+<p>A partir deste ponto é onde quero levantar os diferenciais, na minha modesta opinião.</p>
+<p>Ao final de uma instalação de Slackware, temos apenas um super usuário e nada mais, vamos começar a preparar nosso ambiente para não precisarmos nos preocupar com eventuais quebras por instalações/atualizações desnecessárias.</p>
+<ol>
+<li>
+<p>Conectar na internet: Temos duas opções, a mais tradicional, usando um cabo de rede. Ou caso estejamos usando um notebook, devemos instalar o pacote que está no dvd de instalação do Slackware, na seção extra/wicd chamado wicd-xxx.txz, com ele instalado podemos utilizar o comando <code>wicd-curses</code> no terminal e fazer nossa conexão com a rede que desejamos. Aqui é importante lembrar que o serviço NetworkManager deve estar ativo(<code>chmod +x /etc/rc.d/rc.networkmanager</code>)</p>
+</li>
+<li>
+<p>Após logar como root, vamos escolher um mirror no arquivo /etc/slackpkg/mirrors: Escolha um mirror do Brasil, não vou utilizar o slackware current(não é o objetivo aqui) execute:</p>
+<p>slackpkg upgrade
+slackpkg upgrade-all</p>
+</li>
+</ol>
+<p>Após esse procedimento seu slackware estará atualizadissimo!</p>
+<h2 id="instalando-novos-software">Instalando novos software</h2>
+<p>O Slackware tem a má fama de não possuir nenhum gerenciador de pacotes, o que já verificamos não ser verdade no item <em>pós-instalação</em>. Agora vamos adicionar novas ferramentas a nossa caixa de desenvolvimento, o <a href="https://sbopkg.org/">sbopkg</a> é um facilitador para acessarmos o repositório de receitas do <a href="https://slackbuilds.org/">slackbuilds</a>.</p>
+<ol>
+<li>Baixar o pacote sbopkg-xxx.tgz e instala-lo com o <code>installpkg sbopkg-xxx.tgz</code>;</li>
+<li>A partir daqui sempre vamos executar o <code>sbopkg</code> para fazer a instalação de novos pacotes no nosso Slackware.</li>
+</ol>
+<h2 id="próximos-passos">Próximos passos</h2>
+<p>No próximo tutorial vamos configurar um WM(Windown Manager) e adicionar mais ferramentas na nossa caixa de desenvolvimento.</p>
+
+
+    
+      <code class="text-bold">Tags</code> 
+      
+        <a class="chip text-accent" href="https://gomes-fdr.github.io/tags/wiki">wiki</a>
+      
+        <a class="chip text-accent" href="https://gomes-fdr.github.io/tags/linux">linux</a>
+      
+    
+  </section>
+  <div class="divider my-gap"></div>
+  <footer class="col-12 d-inline-block">
+    <span class="float-left">
+      <button class="btn btn-action btn-accent shadow s-circle" onclick="window.history.back();"><i class="fas fa-arrow-left"></i></button>
+    </span>
+    <span class="float-right">
+      <div class="text-right float-left mx-2">
+        <span class="text-dark">Fabiano Gomes</span><br>
+        <span class="text-gray">I&#39;m a Programmer.</span>
+      </div>
+      <figure class="avatar avatar-lg">
+        <img id="profile">
+      </figure>
+    </span>
+  </footer>
+</article>
+
+    <footer class="container p-centered text-center my-gap">
+  
+    <div class="container">
+
+  
+    <a class="symbol" href="mailto:gomes.fdr@gmail.com" target="_blank"><i class="fas fa-envelope"></i>
+  
+  </a>
+
+  
+    <a class="symbol" href="https://www.github.com/gomes-fdr" target="_blank"><i class="fab fa-github"></i>
+  
+  </a>
+
+  
+    <a class="symbol" href="https://www.linkedin.com/in/gomes-fdr" target="_blank"><i class="fab fa-linkedin"></i>
+  
+  </a>
+
+  
+    <a class="symbol" href="https://t.me/gomes_fdr" target="_blank"><i class="fab fa-telegram"></i>
+  
+  </a>
+
+</div>
+
+  
+
+  <small class="text-gray">
+  
+    © Copyright 2020 Fabiano Gomes
+  
+  </small>
+</footer>
+
+  </div>
+  </section>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://gomes-fdr.github.io/js/main.js"></script>
+<script src="https://gomes-fdr.github.io/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>

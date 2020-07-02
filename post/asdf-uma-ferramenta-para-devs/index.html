@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Fabiano Gomes">
+  
+  <meta name="generator" content="Hugo 0.73.0" />
+
+  <title>Ferramentas Para Dev, ASDF &middot; Web notes</title>
+
+  <link rel="shortcut icon" href="https://gomes-fdr.github.io/images/favicon.ico">
+  <link rel="stylesheet" href="https://gomes-fdr.github.io/css/spectre.min.css">
+  <link rel="stylesheet" href="https://gomes-fdr.github.io/css/style.css">
+  <link rel="stylesheet" href="https://gomes-fdr.github.io/css/highlight.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  
+
+  
+    <link href="" rel="alternate" type="application/rss+xml" title="Web notes" />
+  
+
+  
+  <meta property="og:title" content="Ferramentas Para Dev, ASDF" />
+<meta property="og:description" content="Quando começamos a desenvolver software, precisamos montar nossa &ldquo;caixa de ferramentas&rdquo; - uma coleção de programas que nos ajudam a ser mais produtivo na criação de software. Se trabalhamos com linguagens interpretadas como javascript, python ou lua - para citar algumas com as quais eu trabalho, é muito comum precisarmos utilizar diferentes versões de interpretadores. É muito complicado e chato fazer isso manualmente, existem diversas ferramentas que resolvem esse tipo de problema dentro do seu escopo, ruby tem o seu gerenciador de ambientes virtuais, python também e por ai vai." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gomes-fdr.github.io/post/asdf-uma-ferramenta-para-devs/" />
+<meta property="article:published_time" content="2020-05-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-05-11T00:00:00+00:00" />
+
+  
+  <meta itemprop="name" content="Ferramentas Para Dev, ASDF">
+<meta itemprop="description" content="Quando começamos a desenvolver software, precisamos montar nossa &ldquo;caixa de ferramentas&rdquo; - uma coleção de programas que nos ajudam a ser mais produtivo na criação de software. Se trabalhamos com linguagens interpretadas como javascript, python ou lua - para citar algumas com as quais eu trabalho, é muito comum precisarmos utilizar diferentes versões de interpretadores. É muito complicado e chato fazer isso manualmente, existem diversas ferramentas que resolvem esse tipo de problema dentro do seu escopo, ruby tem o seu gerenciador de ambientes virtuais, python também e por ai vai.">
+<meta itemprop="datePublished" content="2020-05-11T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-05-11T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="447">
+
+
+
+<meta itemprop="keywords" content="wiki," />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ferramentas Para Dev, ASDF"/>
+<meta name="twitter:description" content="Quando começamos a desenvolver software, precisamos montar nossa &ldquo;caixa de ferramentas&rdquo; - uma coleção de programas que nos ajudam a ser mais produtivo na criação de software. Se trabalhamos com linguagens interpretadas como javascript, python ou lua - para citar algumas com as quais eu trabalho, é muito comum precisarmos utilizar diferentes versões de interpretadores. É muito complicado e chato fazer isso manualmente, existem diversas ferramentas que resolvem esse tipo de problema dentro do seu escopo, ruby tem o seu gerenciador de ambientes virtuais, python também e por ai vai."/>
+
+</head>
+
+<body onload="setPixelFont()">
+  <div class="container p-fixed" style="z-index:3">
+  <nav class="navbar m-2 p-2 s-rounded shadow bg-primary">
+    <section class="navbar-section">
+      <button class="btn btn-action btn-primary s-circle text-gray" id="pixelfont-toggle"><i class="fas fa-robot fa-lg"></i></button>
+    </section>
+    <section class="navbar-section">
+      
+        <a class="btn btn-primary" href='https://gomes-fdr.github.io'>Home</a>
+      
+
+      
+        <a class="btn btn-primary mx-2" href="/about/">About</a>
+      
+
+      
+      <a class="btn btn-accent" href="" target="_blank"><i class="fas fa-rss fa-lg"></i></a>
+      
+    </section>
+  </nav>
+</div>
+
+  <section class="container grid-md">
+  <div class="columns">
+    
+    
+<article class="container p-centered mt-space">
+  <header>
+    <h2 class="text-center">Ferramentas Para Dev, ASDF</h2>
+    <h6 class="text-gray text-italic"></h6>
+  </header>
+  <section class="my-gap">
+    <p>Quando começamos a desenvolver software, precisamos montar nossa &ldquo;caixa de ferramentas&rdquo; - uma coleção de programas que nos ajudam a ser mais produtivo na criação de software. Se trabalhamos com linguagens interpretadas como javascript, python ou lua - para citar algumas com as quais eu trabalho, é muito comum precisarmos utilizar diferentes versões de interpretadores. É muito complicado e chato fazer isso manualmente, existem diversas ferramentas que resolvem esse tipo de problema dentro do seu escopo, ruby tem o seu gerenciador de ambientes virtuais, python também e por ai vai.
+Felizmente alguém pensou em fazer um gerenciador &ldquo;genérico&rdquo; para ajudar um grande número de desenvolvedores das mais diversas linguagens, esse projeto chama-se <a href="https://asdf-vm.com">ASDF</a> e resolve de uma forma muito elegante o problema de convivência de diferentes interpretadores num mesmo computador, vamos ver como fazer a instalação e configuração dele para alguns interpretadores.</p>
+<h2 id="instalação">Instalação</h2>
+<p>Tudo que estou postando aqui foi retirado do site oficial do <a href="https://asdf-vm.com">ASDF</a> sem dúvida a melhor fonte para funcionalidades mais específicas.</p>
+<pre><code>git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.3
+</code></pre>
+<h2 id="tonar-visível-para-o-seu-shell">Tonar visível para o seu shell</h2>
+<pre><code>echo -e '\n. $HOME/.asdf/asdf.sh' &gt;&gt; ~/.bashrc
+echo -e '\n. $HOME/.asdf/completions/asdf.bash' &gt;&gt; ~/.bashrc
+</code></pre>
+<h2 id="como-o-asdf-funciona">Como o ASDF funciona?</h2>
+<p>Ele não armazena cada versão de interpretador no site do projeto, ao invés disso através de receitas é feita a instalação das diferentes versões dos interpretadores que você precisa - na linguagem do ASDF, estas receitas são chamadas de plugins. Então a primeira coisa a ser feita após a instalação do ASDF é a escolha de quais linguagens vamos trabalhar, neste exemplo vou mostrar como fazer a instalação de diferntes versões de Lua.</p>
+<h2 id="listando-os-plugins-disponíveis">Listando os plugins disponíveis</h2>
+<p>Para saber quais as versões são possíveis de instalar, basta:</p>
+<pre><code>asdf list-all lua
+</code></pre>
+<p>Uma saída semelhante a essa será exibida:</p>
+<pre><code>asdf list-all lua
+5.1
+5.2.0
+5.2.1
+5.2.2
+5.2.3
+5.2.4
+5.3.0
+5.3.1
+5.3.2
+5.3.3
+5.3.4
+5.3.5
+</code></pre>
+<h2 id="instalando-o-plugin">Instalando o plugin</h2>
+<pre><code>asdf plugin-add lua
+</code></pre>
+<h2 id="instalando-uma-versão">Instalando uma versão</h2>
+<pre><code>asdf install lua 5.2.4
+</code></pre>
+<h2 id="tornando-a-versão-instalada-ativa">Tornando a versão instalada ativa</h2>
+<pre><code>asdf global lua 5.2.4
+</code></pre>
+<p>Aqui cabe um observação importante, como foi dito anteriormente o ASDF não mantém uma cópia dos interpretadores compilados em seu site, ele é apenas um repositório de receitas. Logo essa receita vai baixar os fontes dos respectivos projetos e compila-los - para isso é importante que as dependências necessárias para compilar cada interpretador estejam presentes no seu computador. Em cada repositório de plugin temos uma lista do que é necessário e de como fazer a instalação destas dependências.</p>
+<h2 id="um-exemplo-de-instalações">Um exemplo de instalações</h2>
+<pre><code>asdf list
+lua
+  5.2.4
+  5.3.5
+python
+  3.7.4
+asdf current
+   lua            5.3.5    (set by /home/fabiano/.tool-versions)
+   python         3.7.4    (set by /home/fabiano/.tool-versions)
+</code></pre>
+<p>Para outros interpretadores basta repetir o processo, facinho.
+Finalizamos por aqui esse tutorial, em caso de dúvidas, deixe seu comentário.</p>
+
+
+    
+      <code class="text-bold">Tags</code> 
+      
+        <a class="chip text-accent" href="https://gomes-fdr.github.io/tags/wiki">wiki</a>
+      
+    
+  </section>
+  <div class="divider my-gap"></div>
+  <footer class="col-12 d-inline-block">
+    <span class="float-left">
+      <button class="btn btn-action btn-accent shadow s-circle" onclick="window.history.back();"><i class="fas fa-arrow-left"></i></button>
+    </span>
+    <span class="float-right">
+      <div class="text-right float-left mx-2">
+        <span class="text-dark">Fabiano Gomes</span><br>
+        <span class="text-gray">I&#39;m a Programmer.</span>
+      </div>
+      <figure class="avatar avatar-lg">
+        <img id="profile">
+      </figure>
+    </span>
+  </footer>
+</article>
+
+    <footer class="container p-centered text-center my-gap">
+  
+    <div class="container">
+
+  
+    <a class="symbol" href="mailto:gomes.fdr@gmail.com" target="_blank"><i class="fas fa-envelope"></i>
+  
+  </a>
+
+  
+    <a class="symbol" href="https://www.github.com/gomes-fdr" target="_blank"><i class="fab fa-github"></i>
+  
+  </a>
+
+  
+    <a class="symbol" href="https://www.linkedin.com/in/gomes-fdr" target="_blank"><i class="fab fa-linkedin"></i>
+  
+  </a>
+
+  
+    <a class="symbol" href="https://t.me/gomes_fdr" target="_blank"><i class="fab fa-telegram"></i>
+  
+  </a>
+
+</div>
+
+  
+
+  <small class="text-gray">
+  
+    © Copyright 2020 Fabiano Gomes
+  
+  </small>
+</footer>
+
+  </div>
+  </section>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://gomes-fdr.github.io/js/main.js"></script>
+<script src="https://gomes-fdr.github.io/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+</body>
+</html>
