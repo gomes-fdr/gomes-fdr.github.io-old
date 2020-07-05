@@ -4,7 +4,27 @@
   
   <url>
     <loc>https://gomes-fdr.github.io/</loc>
-    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/linux/</loc>
+    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/post/minha-primeira-treta-com-systemd/</loc>
+    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/post/</loc>
+    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/</loc>
+    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -13,17 +33,7 @@
   </url>
   
   <url>
-    <loc>https://gomes-fdr.github.io/post/</loc>
-    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://gomes-fdr.github.io/post/switch-case-golang/</loc>
-    <lastmod>2020-07-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gomes-fdr.github.io/tags/</loc>
     <lastmod>2020-07-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -80,11 +90,6 @@
   <url>
     <loc>https://gomes-fdr.github.io/tags/javascript/</loc>
     <lastmod>2020-05-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gomes-fdr.github.io/tags/linux/</loc>
-    <lastmod>2020-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
