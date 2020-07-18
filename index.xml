@@ -6,10 +6,20 @@
     <description>Recent content on Fabiano Gomes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 11 Jul 2020 16:18:52 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2020 18:33:50 -0300</lastBuildDate>
     
 	<atom:link href="https://gomes-fdr.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Um Projeto Para Estudo De Tecnologias</title>
+      <link>https://gomes-fdr.github.io/post/um-projeto-para-estudo-de-tecnologias/</link>
+      <pubDate>Sat, 18 Jul 2020 18:33:50 -0300</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/um-projeto-para-estudo-de-tecnologias/</guid>
+      <description>A ideia inicial de fazer esse blog, foi para guardar meus projetos e aprendizados para uma analise futura. É muito bom poder olhar para tras e fazer avaliações e balanços.
+Tenho estudado diversas tecnologias e escolhi algumas delas para subir um projeto de monitoramento de dispositivo por GPS, esse projeto está divido em três grandes partes. Ele vai me forçar a exercitar diversas habilidades, algumas já tenho e outras preciso adquirir ao longo desta jornada, aqui será meu backlog onde vou fazer os registros, tombos e aprendizados.</description>
+    </item>
     
     <item>
       <title>4 dicas Para Aprender Golang</title>
