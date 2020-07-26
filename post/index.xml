@@ -6,10 +6,32 @@
     <description>Recent content in Posts on Fabiano Gomes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 18 Jul 2020 18:33:50 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2020 12:13:29 -0300</lastBuildDate>
     
 	<atom:link href="https://gomes-fdr.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Inicio Do Projeto</title>
+      <link>https://gomes-fdr.github.io/post/inicio-do-projeto/</link>
+      <pubDate>Sun, 26 Jul 2020 12:13:29 -0300</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/inicio-do-projeto/</guid>
+      <description>Vamos começar do começo, não sei nada de typescript.
+Tive uma experiência desagradável com javascript e o ecosistema node, na graduação meu projeto final foi um sistema de automação residencial que usava uma central de controle, uma raspberry PI. Iniciei o projeto utilizando nodejs para criar uma API que controlaria dispositivos via wifi(um IoT posto em prática) - o crescimento da pasta node_modules e a baixa performace do tempo de resposta da API hospedada no pequeno ARM, na época me fizeram optar por outra stack.</description>
+    </item>
+    
+    <item>
+      <title>O Jeito Akita De Ser</title>
+      <link>https://gomes-fdr.github.io/post/o-jeito-akita-de-ser/</link>
+      <pubDate>Sun, 26 Jul 2020 11:48:35 -0300</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/o-jeito-akita-de-ser/</guid>
+      <description>Recentemente escutei o podcast do Lucas Caton, ele estava entrevistando o grande Fabio Akita, anotei algumas coisas:
+ Não leio jornal Não assisto tv, não pago tv. Não discuto politica Prefiro por meu tempo em coisas que eu gosto.  Realmente, faz muito sentido isso.
+Sempre fui uma criatura politica e isso já me rendeu alguns cabelos brancos.
+ Bolsonaro versus Lula Capitalismo versus Comunismo Linux versus Window Ateus versus Religiões Internacional versus Grêmio  Vamos focar no que se gosta, no meu caso:</description>
+    </item>
     
     <item>
       <title>Um Projeto Para Estudo De Tecnologias</title>
@@ -19,6 +41,20 @@
       <guid>https://gomes-fdr.github.io/post/um-projeto-para-estudo-de-tecnologias/</guid>
       <description>A ideia inicial de fazer esse blog, foi para guardar meus projetos e aprendizados para uma analise futura. É muito bom poder olhar para tras e fazer avaliações e balanços.
 Tenho estudado diversas tecnologias e escolhi algumas delas para subir um projeto de monitoramento de dispositivo por GPS, esse projeto está divido em três grandes partes. Ele vai me forçar a exercitar diversas habilidades, algumas já tenho e outras preciso adquirir ao longo desta jornada, aqui será meu backlog onde vou fazer os registros, tombos e aprendizados.</description>
+    </item>
+    
+    <item>
+      <title>4 dicas Para Aprender Golang</title>
+      <link>https://gomes-fdr.github.io/post/4-dicas-para-aprender-golang/</link>
+      <pubDate>Sat, 11 Jul 2020 16:18:52 -0300</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/4-dicas-para-aprender-golang/</guid>
+      <description>Chegando na Golândia: A jornada de um desenvolvedor sênior. Tradução livre do artigo de Phil Estes na opensource.com.
+No verão de 2014&amp;hellip;
+ IBM: &amp;ldquo;Nós gostaríamos de consertar este problema no Docker.&amp;rdquo;
+  Me: &amp;ldquo;OK.&amp;rdquo;
+  IBM: &amp;ldquo;Comece contribuindo e se envolva com o projeto.&amp;rdquo;
+  Me: &amp;ldquo;OK.&amp;rdquo; (Voz interna): &amp;ldquo;Isto é escrito en Go. Como isso é&amp;hellip;?!&amp;rdquo; (Google) &amp;ldquo;Hum, uma linguagem de programação. Eu tenho aprendido algumas delas ao longo da minha carreira.</description>
     </item>
     
     <item>

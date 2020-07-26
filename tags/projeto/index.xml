@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>projeto on Fabiano Gomes</title>
+    <link>https://gomes-fdr.github.io/tags/projeto/</link>
+    <description>Recent content in projeto on Fabiano Gomes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sun, 26 Jul 2020 12:13:29 -0300</lastBuildDate>
+    
+	<atom:link href="https://gomes-fdr.github.io/tags/projeto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inicio Do Projeto</title>
+      <link>https://gomes-fdr.github.io/post/inicio-do-projeto/</link>
+      <pubDate>Sun, 26 Jul 2020 12:13:29 -0300</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/inicio-do-projeto/</guid>
+      <description>Vamos começar do começo, não sei nada de typescript.
+Tive uma experiência desagradável com javascript e o ecosistema node, na graduação meu projeto final foi um sistema de automação residencial que usava uma central de controle, uma raspberry PI. Iniciei o projeto utilizando nodejs para criar uma API que controlaria dispositivos via wifi(um IoT posto em prática) - o crescimento da pasta node_modules e a baixa performace do tempo de resposta da API hospedada no pequeno ARM, na época me fizeram optar por outra stack.</description>
+    </item>
+    
+  </channel>
+</rss>
