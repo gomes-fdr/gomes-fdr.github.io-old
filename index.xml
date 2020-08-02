@@ -6,10 +6,21 @@
     <description>Recent content on Fabiano Gomes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 26 Jul 2020 12:13:29 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2020 19:18:59 -0300</lastBuildDate>
     
 	<atom:link href="https://gomes-fdr.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Novo Setup</title>
+      <link>https://gomes-fdr.github.io/post/novo-setup/</link>
+      <pubDate>Sun, 02 Aug 2020 19:18:59 -0300</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/novo-setup/</guid>
+      <description>Então, aconteceu eu estou neste processo de mudança de SO. Na verdade o SO é o mesmo, Linux, mas eu saí da base Debian para me aventurar no mundo Arch e suas particularidades.
+Manjaro Uma boa distro, faz a parte pesada do processo(instalação) - Usei duas versões, uma com xfce e outra com gnome. Ambas se mostraram bem estáveis e tudo funcionou out-of-the-box.
+Artix Sem systemd, simples assim. Também é arch based e possui versões com Desktop Enviroment com um instalador super amigável, instalando o mínimo necessário para usarmos o pc, podemos dizer que é uma instalação básica.</description>
+    </item>
     
     <item>
       <title>Inicio Do Projeto</title>
