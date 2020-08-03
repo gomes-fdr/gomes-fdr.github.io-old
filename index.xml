@@ -6,10 +6,22 @@
     <description>Recent content on Fabiano Gomes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 02 Aug 2020 19:18:59 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2020 20:31:51 -0300</lastBuildDate>
     
 	<atom:link href="https://gomes-fdr.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Molhou O Role</title>
+      <link>https://gomes-fdr.github.io/post/molhou-o-role/</link>
+      <pubDate>Mon, 03 Aug 2020 20:31:51 -0300</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/molhou-o-role/</guid>
+      <description>Tentei, mas não rolou.
+Com essa frase eu resumo o que foram essas horas usando Artixlinux, depois de quase 20 horas configurando som, lid(fechar da tela do laptop), consumo de energia, etc&amp;hellip; Resolvi baixar a ISO do Debian com os módulos proprietários e em 30 minutos TUDO estava funcionando.
+Sinal dos tempos, eu não tenho mais paciência para testar e configurar computadores. Quero apenas programar e produzir conteúdo.
+Roteiro Depois de instalar e ter um PC usável, tudo muito semelhante ao descrito no post do Artixlinux.</description>
+    </item>
     
     <item>
       <title>Novo Setup</title>
