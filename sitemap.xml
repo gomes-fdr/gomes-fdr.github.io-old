@@ -158,6 +158,11 @@
   </url>
   
   <url>
+    <loc>https://gomes-fdr.github.io/about/</loc>
+    <lastmod>2020-05-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gomes-fdr.github.io/post/dicas-para-uso-do-docker/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
   </url>
@@ -183,7 +188,11 @@
   </url>
   
   <url>
-    <loc>https://gomes-fdr.github.io/about/</loc>
+    <loc>https://gomes-fdr.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/series/</loc>
   </url>
   
 </urlset>

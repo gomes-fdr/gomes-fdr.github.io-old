@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>vida on Fabiano Gomes</title>
-    <link>https://gomes-fdr.github.io/tags/vida/</link>
-    <description>Recent content in vida on Fabiano Gomes</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
-    <lastBuildDate>Sun, 26 Jul 2020 11:48:35 -0300</lastBuildDate>
-    
-	<atom:link href="https://gomes-fdr.github.io/tags/vida/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>O Jeito Akita De Ser</title>
-      <link>https://gomes-fdr.github.io/post/o-jeito-akita-de-ser/</link>
-      <pubDate>Sun, 26 Jul 2020 11:48:35 -0300</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/o-jeito-akita-de-ser/</guid>
-      <description>Recentemente escutei o podcast do Lucas Caton, ele estava entrevistando o grande Fabio Akita, anotei algumas coisas:
- Não leio jornal Não assisto tv, não pago tv. Não discuto politica Prefiro por meu tempo em coisas que eu gosto.  Realmente, faz muito sentido isso.
-Sempre fui uma criatura politica e isso já me rendeu alguns cabelos brancos.
- Bolsonaro versus Lula Capitalismo versus Comunismo Linux versus Window Ateus versus Religiões Internacional versus Grêmio  Vamos focar no que se gosta, no meu caso:</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>vida on Fabiano Gomes</title>
+		<link>https://gomes-fdr.github.io/tags/vida/</link>
+		<description>Recent content in vida on gomes-fdr.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>pt-br</language>
+		<copyright>© Copyright notice | Some rights reserved</copyright>
+		<lastBuildDate>Sun, 26 Jul 2020 11:48:35 -0300</lastBuildDate>
+		
+		<atom:link href="https://gomes-fdr.github.io/tags/vida/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>O Jeito Akita De Ser</title>
+			<link>https://gomes-fdr.github.io/post/o-jeito-akita-de-ser/</link>
+			<pubDate>Sun, 26 Jul 2020 11:48:35 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/o-jeito-akita-de-ser/</guid>
+			<description>
+				
+				Recentemente escutei o podcast do Lucas Caton, ele estava entrevistando o grande Fabio Akita, anotei algumas coisas:
+ Nã...
+				
+			</description>
+		</item>
+		
+	</channel>
 </rss>

@@ -1,244 +1,267 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Fabiano Gomes</title>
-    <link>https://gomes-fdr.github.io/post/</link>
-    <description>Recent content in Posts on Fabiano Gomes</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
-    <lastBuildDate>Sat, 08 Aug 2020 16:27:51 -0300</lastBuildDate>
-    
-	<atom:link href="https://gomes-fdr.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Programador Hello World</title>
-      <link>https://gomes-fdr.github.io/post/programador-hello-world/</link>
-      <pubDate>Sat, 08 Aug 2020 16:27:51 -0300</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/programador-hello-world/</guid>
-      <description>Quando tu trabalha a alguns anos com alguma tecnologia, sempre pinta aquela vontade de experimentar algo novo. Estou passando por esse momento e até para seguir amando minha profissão e ter acesso a novos projetos e desafios é uma prática saudável.
-Nos últimos meses estudei algumas com maior ou menor hype, então vejamos:
- Python: Trabalhei com python em alguns projetos reais. Javascript: Profissionalmente no frontend e alguns estudos no backend.</description>
-    </item>
-    
-    <item>
-      <title>Molhou O Role</title>
-      <link>https://gomes-fdr.github.io/post/molhou-o-role/</link>
-      <pubDate>Mon, 03 Aug 2020 20:31:51 -0300</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/molhou-o-role/</guid>
-      <description>Tentei, mas não rolou.
-Com essa frase eu resumo o que foram essas horas usando Artixlinux, depois de quase 20 horas configurando som, lid(fechar da tela do laptop), consumo de energia, etc&amp;hellip; Resolvi baixar a ISO do Debian com os módulos proprietários e em 30 minutos TUDO estava funcionando.
-Sinal dos tempos, eu não tenho mais paciência para testar e configurar computadores. Quero apenas programar e produzir conteúdo.
-Roteiro Depois de instalar e ter um PC usável, tudo muito semelhante ao descrito no post do Artixlinux.</description>
-    </item>
-    
-    <item>
-      <title>Novo Setup</title>
-      <link>https://gomes-fdr.github.io/post/novo-setup/</link>
-      <pubDate>Sun, 02 Aug 2020 19:18:59 -0300</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/novo-setup/</guid>
-      <description>Então, aconteceu eu estou neste processo de mudança de SO. Na verdade o SO é o mesmo, Linux, mas eu saí da base Debian para me aventurar no mundo Arch e suas particularidades.
-Manjaro Uma boa distro, faz a parte pesada do processo(instalação) - Usei duas versões, uma com xfce e outra com gnome. Ambas se mostraram bem estáveis e tudo funcionou out-of-the-box.
-Artix Sem systemd, simples assim. Também é arch based e possui versões com Desktop Enviroment com um instalador super amigável, instalando o mínimo necessário para usarmos o pc, podemos dizer que é uma instalação básica.</description>
-    </item>
-    
-    <item>
-      <title>Inicio Do Projeto</title>
-      <link>https://gomes-fdr.github.io/post/inicio-do-projeto/</link>
-      <pubDate>Sun, 26 Jul 2020 12:13:29 -0300</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/inicio-do-projeto/</guid>
-      <description>Vamos começar do começo, não sei nada de typescript.
-Tive uma experiência desagradável com javascript e o ecosistema node, na graduação meu projeto final foi um sistema de automação residencial que usava uma central de controle, uma raspberry PI. Iniciei o projeto utilizando nodejs para criar uma API que controlaria dispositivos via wifi(um IoT posto em prática) - o crescimento da pasta node_modules e a baixa performace do tempo de resposta da API hospedada no pequeno ARM, na época me fizeram optar por outra stack.</description>
-    </item>
-    
-    <item>
-      <title>O Jeito Akita De Ser</title>
-      <link>https://gomes-fdr.github.io/post/o-jeito-akita-de-ser/</link>
-      <pubDate>Sun, 26 Jul 2020 11:48:35 -0300</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/o-jeito-akita-de-ser/</guid>
-      <description>Recentemente escutei o podcast do Lucas Caton, ele estava entrevistando o grande Fabio Akita, anotei algumas coisas:
- Não leio jornal Não assisto tv, não pago tv. Não discuto politica Prefiro por meu tempo em coisas que eu gosto.  Realmente, faz muito sentido isso.
-Sempre fui uma criatura politica e isso já me rendeu alguns cabelos brancos.
- Bolsonaro versus Lula Capitalismo versus Comunismo Linux versus Window Ateus versus Religiões Internacional versus Grêmio  Vamos focar no que se gosta, no meu caso:</description>
-    </item>
-    
-    <item>
-      <title>Um Projeto Para Estudo De Tecnologias</title>
-      <link>https://gomes-fdr.github.io/post/um-projeto-para-estudo-de-tecnologias/</link>
-      <pubDate>Sat, 18 Jul 2020 18:33:50 -0300</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/um-projeto-para-estudo-de-tecnologias/</guid>
-      <description>A ideia inicial de fazer esse blog, foi para guardar meus projetos e aprendizados para uma analise futura. É muito bom poder olhar para tras e fazer avaliações e balanços.
-Tenho estudado diversas tecnologias e escolhi algumas delas para subir um projeto de monitoramento de dispositivo por GPS, esse projeto está divido em três grandes partes. Ele vai me forçar a exercitar diversas habilidades, algumas já tenho e outras preciso adquirir ao longo desta jornada, aqui será meu backlog onde vou fazer os registros, tombos e aprendizados.</description>
-    </item>
-    
-    <item>
-      <title>4 dicas Para Aprender Golang</title>
-      <link>https://gomes-fdr.github.io/post/4-dicas-para-aprender-golang/</link>
-      <pubDate>Sat, 11 Jul 2020 16:18:52 -0300</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/4-dicas-para-aprender-golang/</guid>
-      <description>Chegando na Golândia: A jornada de um desenvolvedor sênior. Tradução livre do artigo de Phil Estes na opensource.com.
-No verão de 2014&amp;hellip;
- IBM: &amp;ldquo;Nós gostaríamos de consertar este problema no Docker.&amp;rdquo;
-  Me: &amp;ldquo;OK.&amp;rdquo;
-  IBM: &amp;ldquo;Comece contribuindo e se envolva com o projeto.&amp;rdquo;
-  Me: &amp;ldquo;OK.&amp;rdquo; (Voz interna): &amp;ldquo;Isto é escrito en Go. Como isso é&amp;hellip;?!&amp;rdquo; (Google) &amp;ldquo;Hum, uma linguagem de programação. Eu tenho aprendido algumas delas ao longo da minha carreira.</description>
-    </item>
-    
-    <item>
-      <title>Minha Primeira Treta Com Systemd</title>
-      <link>https://gomes-fdr.github.io/post/minha-primeira-treta-com-systemd/</link>
-      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/minha-primeira-treta-com-systemd/</guid>
-      <description>Recentemente parei de usar a distribuição Linux Debian e seus derivados, nada a ver com a qualidade em si. Mas eu não quero mais ter que instalar um sistema a cada nova release, fica fácil deduzir que fiz a troca por uma distro rolling release, Manjaro para ser mais especifico.
-Estou muito satisfeito, como um bom exemplo de como tem facilitado minha vida, posso citar a necessidade de usar libs de Qt4 em alguns projetos e isso ser facilmente suportado pelo gerenciador de pacotes da distro, o Pacman.</description>
-    </item>
-    
-    <item>
-      <title>Switch case em Golang</title>
-      <link>https://gomes-fdr.github.io/post/switch-case-golang/</link>
-      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/switch-case-golang/</guid>
-      <description>O uso desse condicional evita uma sequência de if/else que por vezes podem tornar dificil a leitura do código.
-Nota histórica  Em C o swicth/case aceitava somente statements do tipo int ou char.
- É partindo disso que quero explorar o quando esse condicional pode ser poderoso em golang, a estrutura básica é a seguinte:
-switch statement; expression { case expression1: //Dosomething case expression2: //Dosomething default: //Dosomething }   statement: The smallest standalone element of an imperative programming language wikipedia - O menor elemento unitário de uma linguagem de programação imperativa(tradução livre).</description>
-    </item>
-    
-    <item>
-      <title>Redescobrindo o uso de feeds</title>
-      <link>https://gomes-fdr.github.io/post/redescobrindo-o-uso-de-feeds/</link>
-      <pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/redescobrindo-o-uso-de-feeds/</guid>
-      <description>Gosto muito do conteúdo produzido pelo Luke Smith, recentemente ele disponibilizou um vídeo falando sobre o uso de rss para consumir conteúdo. Durante muito tempo usei o saudoso google reader, achava uma maneira muito bacana de consumir conteúdo de sites ou blogs.
-O Luke estendeu isso de forma muito interessante, para consumir qualquer tipo de mídia(texto, vídeo, musica), isso me fez refletir sobre como as plataformas(google, facebook, tweeter, etc) nos forçam para dentro dentro delas.</description>
-    </item>
-    
-    <item>
-      <title>Ponteiros em golang</title>
-      <link>https://gomes-fdr.github.io/post/ponteiros-em-golang/</link>
-      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/ponteiros-em-golang/</guid>
-      <description>Em tradução livre, ponteiros são objetos que armazenam endereços de memória [wikipedia](https://en.wikipedia.org/wiki/Pointer_(computer_programming). Um dos temas que podemos tratar quando passamos a utilizar ponteiros, é a maneira como passamos informações de uma função para outra.
-Por padrão, quando criamos uma função e definimos algum parâmetro, utilizamos a chamada passagem por referência onde este parâmetro, solicita para o computador que ele reserve um pouco de memória para armazenar o conteúdo de cada parâmetro declarado(sim parâmetros são como as variáveis dos nossos programas).</description>
-    </item>
-    
-    <item>
-      <title>Golang, sobre strings</title>
-      <link>https://gomes-fdr.github.io/post/golang-sobre-strings/</link>
-      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/golang-sobre-strings/</guid>
-      <description>Estas são algumas anotações que estou fazendo durante o excelente vídeo curso da Ellen Körbes - o conteúdo e alguns trechos de código são de lá.
-O tipo string Uma das coisas que achei muito legal em Go, tudo é utf-8! O código fonte e o tipo string é em utf-8. Bom só quem já usou IDEs como o qtcreator ou o eclipse sabe os tipos de problemas inesperados que podemos ter pelo simples fato de o encode do código fonte poder estar em diversos formatos(lá se vão todas as mensagens para o usuário final com caracteres alienígenas).</description>
-    </item>
-    
-    <item>
-      <title>Aprendendo golang</title>
-      <link>https://gomes-fdr.github.io/post/aprendendo-golang/</link>
-      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/aprendendo-golang/</guid>
-      <description>Algumas regras que me ajudam a dar um boost no entendimento de novas tecnolgias:
- Ler a documentação do projeto golang Aprender usando testes TDD Aprender com exemplos Vídeos aulas de qualidade, dica do brother Gusta  Tendo isso como diretiva, vamos começar essa jornada, vamos adionar isso no arquivo bash_profile
-export GOPATH=$HOME/go export PATH=$PATH:$GOPATH/bin  Depois vamos criar os seguintes diretórios:
-mkdir -p $GOPATH/src $GOPATH/pkg $GOPATH/bin  Referências
-Coisas que gostei até aqui  Syntax fácil Instalação de pacotes/depedências Farta documentação, Godoc Geração de binários Formatação de código é builtin Suite de testes é builtin Lembra muito C, na sintaxe Lembra muito C, com structs Não usa ; para finalizar instruções [Short|gopher] operator é muito massa Controle de imports é builtin Controle de uso de variáveis é builtin Fazer build é uma barbada(alguém falou makefile?</description>
-    </item>
-    
-    <item>
-      <title>Notas sobre C&#43;&#43; e o Framework Qt</title>
-      <link>https://gomes-fdr.github.io/post/notas-sobre-cpp-e-o-framework-qt/</link>
-      <pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/notas-sobre-cpp-e-o-framework-qt/</guid>
-      <description>Uso de notação húngara Bastante usada por programadores vindos do Pascal ou Fortram, tenta, através de notação inferir de que tipo ou contexto está tratando.
-/* g_nWheels : member of a global namespace, integer m_nWheels : member of a structure/class, integer m_wheels, _wheels : member of a structure/class s_wheels : static member of a class c_wheels : static member of a function */  Sobre passagem por referência e por valor Algumas referências para entender como funciona o uso de referências ou valores.</description>
-    </item>
-    
-    <item>
-      <title>Oh my bash!</title>
-      <link>https://gomes-fdr.github.io/post/oh-my-bash/</link>
-      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/oh-my-bash/</guid>
-      <description>Oh my bash é um daqueles projetos que não podem faltar na caixa de ferramentas de qualquer um que use um terminal como base para executar ou mesmo editar código em sistemas baseados em Linux.
-Mas do que se trata isso? Para que serve?
-Bom quando abrimos um terminal, normalmente temos algo do tipo:
-usuario@host:  Não deixa de ser uma informação útil, mas podemos tornar isso muito mais interessante. É ai que entra os serviços do oh-my-bash, vamos lá.</description>
-    </item>
-    
-    <item>
-      <title>Conhecendo deno, a node killer?!</title>
-      <link>https://gomes-fdr.github.io/post/conhecendo-deno-a-node-killer/</link>
-      <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/conhecendo-deno-a-node-killer/</guid>
-      <description>Em maio tivemos o lançamento da nova runtime de js, o deno. Vamos brincar um pouco.
-Instalação É muito fácil instalar o deno, o site explica de forma bem simplificada como fazer, mas vamos fazer um pouco diferente, utilizando o ASDF:
-asdf list all deno # Para ver todoas as versões disponíveis asdf install deno 1.0.1 # Instalação da versão mais atual nesta época asdf global deno 1.0.1 # Ativando o uso da versão instalada  Pronto!</description>
-    </item>
-    
-    <item>
-      <title>Setup de um Linux para DESENVOLVEDOR</title>
-      <link>https://gomes-fdr.github.io/post/setup-de-um-linux-para-dev/</link>
-      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/setup-de-um-linux-para-dev/</guid>
-      <description>O ambiente de trabalho, no caso uma máquina com Linux, reflete diretamente na qualidade da execução de tarefas, para desenvolvedores de softwares é fortemente recomendado um ambiente simples, robusto e estável. Pensando nisso, neste vasto universo de distribuições, duas opções bem ortodoxas se destacam. Debian e Slackware, você estará muito bem servido com qualquer uma delas, neste tutorial vamos explorar o Slackware Linux, por que?! Porque é divertido!
-Instalação Vou considerar que temos uma instalação de Slackware Linux nova, aqui temos duas possibilidades no que toca instalações:</description>
-    </item>
-    
-    <item>
-      <title>Dicas para uso do docker</title>
-      <link>https://gomes-fdr.github.io/post/dicas-para-uso-do-docker/</link>
-      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/dicas-para-uso-do-docker/</guid>
-      <description>Referencias utilizadas: link
+	<channel>
+		<title>Posts on Fabiano Gomes</title>
+		<link>https://gomes-fdr.github.io/post/</link>
+		<description>Recent content in Posts on gomes-fdr.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>pt-br</language>
+		<copyright>© Copyright notice | Some rights reserved</copyright>
+		<lastBuildDate>Sat, 08 Aug 2020 16:27:51 -0300</lastBuildDate>
+		
+		<atom:link href="https://gomes-fdr.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Programador Hello World</title>
+			<link>https://gomes-fdr.github.io/post/programador-hello-world/</link>
+			<pubDate>Sat, 08 Aug 2020 16:27:51 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/programador-hello-world/</guid>
+			<description>
+				
+				Quando tu trabalha a alguns anos com alguma tecnologia, sempre pinta aquela vontade de experimentar algo novo. Estou pas...
+				
+			</description>
+		</item>
+		<item>
+			<title>Molhou O Role</title>
+			<link>https://gomes-fdr.github.io/post/molhou-o-role/</link>
+			<pubDate>Mon, 03 Aug 2020 20:31:51 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/molhou-o-role/</guid>
+			<description>
+				
+				Tentei, mas não rolou.
+Com essa frase eu resumo o que foram essas horas usando Artixlinux, depois de quase 20 horas conf...
+				
+			</description>
+		</item>
+		<item>
+			<title>Novo Setup</title>
+			<link>https://gomes-fdr.github.io/post/novo-setup/</link>
+			<pubDate>Sun, 02 Aug 2020 19:18:59 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/novo-setup/</guid>
+			<description>
+				
+				Então, aconteceu eu estou neste processo de mudança de SO. Na verdade o SO é o mesmo, Linux, mas eu saí da base Debian p...
+				
+			</description>
+		</item>
+		<item>
+			<title>Inicio Do Projeto</title>
+			<link>https://gomes-fdr.github.io/post/inicio-do-projeto/</link>
+			<pubDate>Sun, 26 Jul 2020 12:13:29 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/inicio-do-projeto/</guid>
+			<description>
+				
+				Vamos começar do começo, não sei nada de typescript.
+Tive uma experiência desagradável com javascript e o ecosistema nod...
+				
+			</description>
+		</item>
+		<item>
+			<title>O Jeito Akita De Ser</title>
+			<link>https://gomes-fdr.github.io/post/o-jeito-akita-de-ser/</link>
+			<pubDate>Sun, 26 Jul 2020 11:48:35 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/o-jeito-akita-de-ser/</guid>
+			<description>
+				
+				Recentemente escutei o podcast do Lucas Caton, ele estava entrevistando o grande Fabio Akita, anotei algumas coisas:
+ Nã...
+				
+			</description>
+		</item>
+		<item>
+			<title>Um Projeto Para Estudo De Tecnologias</title>
+			<link>https://gomes-fdr.github.io/post/um-projeto-para-estudo-de-tecnologias/</link>
+			<pubDate>Sat, 18 Jul 2020 18:33:50 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/um-projeto-para-estudo-de-tecnologias/</guid>
+			<description>
+				
+				A ideia inicial de fazer esse blog, foi para guardar meus projetos e aprendizados para uma analise futura. É muito bom p...
+				
+			</description>
+		</item>
+		<item>
+			<title>4 dicas Para Aprender Golang</title>
+			<link>https://gomes-fdr.github.io/post/4-dicas-para-aprender-golang/</link>
+			<pubDate>Sat, 11 Jul 2020 16:18:52 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/4-dicas-para-aprender-golang/</guid>
+			<description>
+				
+				Chegando na Golândia: A jornada de um desenvolvedor sênior. Tradução livre do artigo de Phil Estes na opensource.com.
+No...
+				
+			</description>
+		</item>
+		<item>
+			<title>Minha Primeira Treta Com Systemd</title>
+			<link>https://gomes-fdr.github.io/post/minha-primeira-treta-com-systemd/</link>
+			<pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/minha-primeira-treta-com-systemd/</guid>
+			<description>
+				
+				Recentemente parei de usar a distribuição Linux Debian e seus derivados, nada a ver com a qualidade em si. Mas eu não qu...
+				
+			</description>
+		</item>
+		<item>
+			<title>Switch case em Golang</title>
+			<link>https://gomes-fdr.github.io/post/switch-case-golang/</link>
+			<pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/switch-case-golang/</guid>
+			<description>
+				
+				O uso desse condicional evita uma sequência de if/else que por vezes podem tornar dificil a leitura do código.
+Nota hist...
+				
+			</description>
+		</item>
+		<item>
+			<title>Redescobrindo o uso de feeds</title>
+			<link>https://gomes-fdr.github.io/post/redescobrindo-o-uso-de-feeds/</link>
+			<pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/redescobrindo-o-uso-de-feeds/</guid>
+			<description>
+				
+				Gosto muito do conteúdo produzido pelo Luke Smith, recentemente ele disponibilizou um vídeo falando sobre o uso de rss p...
+				
+			</description>
+		</item>
+		<item>
+			<title>Ponteiros em golang</title>
+			<link>https://gomes-fdr.github.io/post/ponteiros-em-golang/</link>
+			<pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/ponteiros-em-golang/</guid>
+			<description>
+				
+				Em tradução livre, ponteiros são objetos que armazenam endereços de memória [wikipedia](https://en.wikipedia.org/wiki/Po...
+				
+			</description>
+		</item>
+		<item>
+			<title>Golang, sobre strings</title>
+			<link>https://gomes-fdr.github.io/post/golang-sobre-strings/</link>
+			<pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/golang-sobre-strings/</guid>
+			<description>
+				
+				Estas são algumas anotações que estou fazendo durante o excelente vídeo curso da Ellen Körbes - o conteúdo e alguns trec...
+				
+			</description>
+		</item>
+		<item>
+			<title>Aprendendo golang</title>
+			<link>https://gomes-fdr.github.io/post/aprendendo-golang/</link>
+			<pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/aprendendo-golang/</guid>
+			<description>
+				
+				Algumas regras que me ajudam a dar um boost no entendimento de novas tecnolgias:
+ Ler a documentação do projeto golang A...
+				
+			</description>
+		</item>
+		<item>
+			<title>Notas sobre C&#43;&#43; e o Framework Qt</title>
+			<link>https://gomes-fdr.github.io/post/notas-sobre-cpp-e-o-framework-qt/</link>
+			<pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/notas-sobre-cpp-e-o-framework-qt/</guid>
+			<description>
+				
+				Uso de notação húngara Bastante usada por programadores vindos do Pascal ou Fortram, tenta, através de notação inferir d...
+				
+			</description>
+		</item>
+		<item>
+			<title>Oh my bash!</title>
+			<link>https://gomes-fdr.github.io/post/oh-my-bash/</link>
+			<pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/oh-my-bash/</guid>
+			<description>
+				
+				Oh my bash é um daqueles projetos que não podem faltar na caixa de ferramentas de qualquer um que use um terminal como b...
+				
+			</description>
+		</item>
+		<item>
+			<title>Conhecendo deno, a node killer?!</title>
+			<link>https://gomes-fdr.github.io/post/conhecendo-deno-a-node-killer/</link>
+			<pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/conhecendo-deno-a-node-killer/</guid>
+			<description>
+				
+				Em maio tivemos o lançamento da nova runtime de js, o deno. Vamos brincar um pouco.
+Instalação É muito fácil instalar o ...
+				
+			</description>
+		</item>
+		<item>
+			<title>Setup de um Linux para DESENVOLVEDOR</title>
+			<link>https://gomes-fdr.github.io/post/setup-de-um-linux-para-dev/</link>
+			<pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/setup-de-um-linux-para-dev/</guid>
+			<description>
+				
+				O ambiente de trabalho, no caso uma máquina com Linux, reflete diretamente na qualidade da execução de tarefas, para des...
+				
+			</description>
+		</item>
+		<item>
+			<title>Dicas para uso do docker</title>
+			<link>https://gomes-fdr.github.io/post/dicas-para-uso-do-docker/</link>
+			<pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/dicas-para-uso-do-docker/</guid>
+			<description>
+				
+				Referencias utilizadas: link
 Instalar um container - docker hub
-docker pull postgres:alpine  Listar containers instalados
-docker images -a  Remover um container
-docker rmi &amp;lt;nome-do-container&amp;gt;  Iniciar um container
-docker run --name postgres-0 -e POSTGRES_PASSWORD=1234 -d -p 5432:5432 postgres:alpine  Processo docker rodando
-docker ps  Para subir uma imagem existente
-docker start postgres-0 # &amp;lt;container-name&amp;gt;  Parar o container
- docker stop postgres-0 # &amp;lt;container-name&amp;gt;  Para entrar no container</description>
-    </item>
-    
-    <item>
-      <title>Ferramentas Para Dev, ASDF</title>
-      <link>https://gomes-fdr.github.io/post/asdf-uma-ferramenta-para-devs/</link>
-      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/asdf-uma-ferramenta-para-devs/</guid>
-      <description>Quando começamos a desenvolver software, precisamos montar nossa &amp;ldquo;caixa de ferramentas&amp;rdquo; - uma coleção de programas que nos ajudam a ser mais produtivo na criação de software. Se trabalhamos com linguagens interpretadas como javascript, python ou lua - para citar algumas com as quais eu trabalho, é muito comum precisarmos utilizar diferentes versões de interpretadores. É muito complicado e chato fazer isso manualmente, existem diversas ferramentas que resolvem esse tipo de problema dentro do seu escopo, ruby tem o seu gerenciador de ambientes virtuais, python também e por ai vai.</description>
-    </item>
-    
-    <item>
-      <title>Minhas notas sobre uso do git</title>
-      <link>https://gomes-fdr.github.io/post/minhas-notas-sobre-uso-do-git/</link>
-      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomes-fdr.github.io/post/minhas-notas-sobre-uso-do-git/</guid>
-      <description>Para trazer os submodulos de um projeto:
+docker pull postgres:alpine  Listar containers instalado...
+				
+			</description>
+		</item>
+		<item>
+			<title>Ferramentas Para Dev, ASDF</title>
+			<link>https://gomes-fdr.github.io/post/asdf-uma-ferramenta-para-devs/</link>
+			<pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/asdf-uma-ferramenta-para-devs/</guid>
+			<description>
+				
+				Quando começamos a desenvolver software, precisamos montar nossa “caixa de ferramentas” - uma coleção de pro...
+				
+			</description>
+		</item>
+		<item>
+			<title>Minhas notas sobre uso do git</title>
+			<link>https://gomes-fdr.github.io/post/minhas-notas-sobre-uso-do-git/</link>
+			<pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/minhas-notas-sobre-uso-do-git/</guid>
+			<description>
+				
+				Para trazer os submodulos de um projeto:
 git submodule init  Para atualizar os submodulos:
-git submodule update  Para chavear para um branch especifico dos submodulos:
-git submodule foreach &#39;git checkout develop&#39;  Para traze&amp;rsquo; as atualizações de todos os sbmodulos:
-git submodule foreach &#39;git pull&#39;  Para guardar as alterações em uma pilha anonima:
-git stash  Para aplicar as alterações dessa pilha no branch corrente:
-git stash apply  Para guardar inclusive untracked files:</description>
-    </item>
-    
-  </channel>
+git submodule update  Para ch...
+				
+			</description>
+		</item>
+		
+	</channel>
 </rss>

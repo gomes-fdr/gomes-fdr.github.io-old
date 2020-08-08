@@ -1,57 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Fabiano Gomes ">
-<meta name="description" content="Chegando na Golândia: A jornada de um desenvolvedor sênior. Tradução livre do artigo de Phil Estes na opensource.com.
-No verão de 2014&amp;hellip;
- IBM: &amp;ldquo;Nós gostaríamos de consertar este problema no Docker.&amp;rdquo;
-  Me: &amp;ldquo;OK.&amp;rdquo;
-  IBM: &amp;ldquo;Comece contribuindo e se envolva com o projeto.&amp;rdquo;
-  Me: &amp;ldquo;OK.&amp;rdquo; (Voz interna): &amp;ldquo;Isto é escrito en Go. Como isso é&amp;hellip;?!&amp;rdquo; (Google) &amp;ldquo;Hum, uma linguagem de programação. Eu tenho aprendido algumas delas ao longo da minha carreira." />
-<meta name="keywords" content="" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="" />
-<link rel="canonical" href="https://gomes-fdr.github.io/post/4-dicas-para-aprender-golang/" />
-
-
-    <title>
-        
-            4 dicas Para Aprender Golang :: Fabiano Gomes 
-        
-    </title>
-
-
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
-    type="text/css">
-
-
-
-<link rel="stylesheet" href="/main.d1ea4af8fd04fb24a4f8b882ea54bd04eb245427ca4baf527c81a5dab071410b.css">
-
-
-
-
-
-
-<meta itemprop="name" content="4 dicas Para Aprender Golang">
-<meta itemprop="description" content="Chegando na Golândia: A jornada de um desenvolvedor sênior. Tradução livre do artigo de Phil Estes na opensource.com.
+<html lang="pt"><head>
+	
+	<meta name="generator" content="Hugo 0.74.3" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="software,linux,development"><meta name="description" content=""><meta property="og:title" content="4 dicas Para Aprender Golang" />
+<meta property="og:description" content="Chegando na Golândia: A jornada de um desenvolvedor sênior. Tradução livre do artigo de Phil Estes na opensource.com.
 No verão de 2014&hellip;
  IBM: &ldquo;Nós gostaríamos de consertar este problema no Docker.&rdquo;
   Me: &ldquo;OK.&rdquo;
   IBM: &ldquo;Comece contribuindo e se envolva com o projeto.&rdquo;
-  Me: &ldquo;OK.&rdquo; (Voz interna): &ldquo;Isto é escrito en Go. Como isso é&hellip;?!&rdquo; (Google) &ldquo;Hum, uma linguagem de programação. Eu tenho aprendido algumas delas ao longo da minha carreira.">
-<meta itemprop="datePublished" content="2020-07-11T16:18:52-03:00" />
-<meta itemprop="dateModified" content="2020-07-11T16:18:52-03:00" />
-<meta itemprop="wordCount" content="1007">
-
-
-
-<meta itemprop="keywords" content="" />
-
+  Me: &ldquo;OK.&rdquo; (Voz interna): &ldquo;Isto é escrito en Go. Como isso é&hellip;?!&rdquo; (Google) &ldquo;Hum, uma linguagem de programação. Eu tenho aprendido algumas delas ao longo da minha carreira." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gomes-fdr.github.io/post/4-dicas-para-aprender-golang/" />
+<meta property="article:published_time" content="2020-07-11T16:18:52-03:00" />
+<meta property="article:modified_time" content="2020-07-11T16:18:52-03:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="4 dicas Para Aprender Golang"/>
 <meta name="twitter:description" content="Chegando na Golândia: A jornada de um desenvolvedor sênior. Tradução livre do artigo de Phil Estes na opensource.com.
@@ -61,84 +25,69 @@ No verão de 2014&hellip;
   IBM: &ldquo;Comece contribuindo e se envolva com o projeto.&rdquo;
   Me: &ldquo;OK.&rdquo; (Voz interna): &ldquo;Isto é escrito en Go. Como isso é&hellip;?!&rdquo; (Google) &ldquo;Hum, uma linguagem de programação. Eu tenho aprendido algumas delas ao longo da minha carreira."/>
 
-
-
-
-
-
-
-    <meta property="article:published_time" content="2020-07-11 16:18:52 -0300 -03" />
-
-
-
-
-
-
-
-
-    </head>
-
-    <body class="dark-theme">
-        <div class="container">
-            <header class="header">
-    <span class="header__inner">
-        <a href="/" style="text-decoration: none;">
-    <div class="logo">
-        
-            <span class="logo__mark">></span>
-            <span class="logo__text">$ cd /home/</span>
-            <span class="logo__cursor" style=
-                  "
-                   
-                   ">
-            </span>
-        
-    </div>
-</a>
-
-
-        <span class="header__right">
-            
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="https://gomes-fdr.github.io/about/">About</a></li><li><a href="https://gomes-fdr.github.io/post/">Posts</a></li>
-    </ul>
-</nav>
-
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
-
-            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
-</svg>
-</span>
-        </span>
-    </span>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/all.css" />
+	<link rel="stylesheet" href="https://gomes-fdr.github.io/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="https://gomes-fdr.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="https://gomes-fdr.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>4 dicas Para Aprender Golang | Fabiano Gomes</title></head>
+<body><header>
+	
+	<div id="avatar">
+		<a href="https://gomes-fdr.github.io/">
+			<img src="/images/avatar.png" alt="Fabiano Gomes">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="https://gomes-fdr.github.io/">Fabiano Gomes</a></h2></div>
+	<div id="title-description"><p id="subtitle">Software Developer</p><div id=social>
+			<nav>
+				<ul><li><a href="https://www.github.com/gomes-fdr"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="https://www.linkedin.com/in/gomes-fdr"><i title="Linkedin" class="icons fab fa-linkedin-in"></i></a></li><li><a href="mailto:gomes.fdr@gmail.com"><i title="email" class="icons far fa-envelope"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/post">All Posts</a></li>
+				
+				<li><a href="/about">About</a></li>
+				
+				<li><a href="/tags">Tags</a></li>
+				
+				<li><a href="/categories">Categories</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
 </header>
-
-
-            <div class="content">
-                
-    <main class="post">
-
-        <div class="post-info">
-            
-            </p>
-        </div>
-
-        <article>
-            <h2 class="post-title"><a href="https://gomes-fdr.github.io/post/4-dicas-para-aprender-golang/">4 dicas Para Aprender Golang</a></h2>
-
-            
-
-            <div class="post-content">
-                <h2 id="chegando-na-golândia-a-jornada-de-um-desenvolvedor-sênior">Chegando na Golândia: A jornada de um desenvolvedor sênior.</h2>
+<main><div class="post">
+	
+	<div class="author">
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">11</span>
+				<span class="rest">Jul 2020</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">4 dicas Para Aprender Golang</h1>
+		</div>
+	</div>
+	<div class="markdown">
+		<h2 id="chegando-na-golândia-a-jornada-de-um-desenvolvedor-sênior">Chegando na Golândia: A jornada de um desenvolvedor sênior.</h2>
 <p><em>Tradução livre do artigo de <a href="https://opensource.com/users/estesp">Phil Estes</a> na <a href="https://opensource.com/article/18/11/learning-golang">opensource.com</a>.</em></p>
 <p>No verão de 2014&hellip;</p>
 <blockquote>
@@ -171,48 +120,28 @@ No verão de 2014&hellip;
 <p>E, como se vê, aparentemente você pode ensinar a um velho desenvolvedor sênior novos truques - ou pelo menos novas linguagens de programação.</p>
 <p><em>Essa foi uma tradução livre, com o intuito de aprender e ajudar quem está aprendendo Golang e que talvez esteja em uma situação parecida.</em></p>
 
-            </div>
-        </article>
+	</div>
+	
+	
+	
+	
+	
+		
+	
+		
+	
+		
+		
+	</div></div>
 
-        <hr />
-
-        <div class="post-info">
-  		</div>
-    </main>
-
-            </div>
-
-            
-                <footer class="footer">
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>&copy; 2020</span>
-            
-                <span><a href="https://gomes-fdr.github.io">Fabiano Gomes</a></span>
-            
-            
-            <span> <a href="https://gomes-fdr.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
-        </div>
-    </div>
-    <div class="footer__inner">
-        <div class="footer__content">
-            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
-            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
-        </div>
-    </div>
+  </main>
+<footer>
+	 © Copyright notice | Some rights reserved 
+	
+	
+	
 </footer>
 
-            
-        </div>
 
-        
-
-
-
-
-<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
-
-
-
-    </body>
+</body>
 </html>
