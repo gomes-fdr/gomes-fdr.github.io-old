@@ -6,10 +6,21 @@
     <description>Recent content on Fabiano Gomes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Mon, 03 Aug 2020 20:31:51 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2020 16:27:51 -0300</lastBuildDate>
     
 	<atom:link href="https://gomes-fdr.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Programador Hello World</title>
+      <link>https://gomes-fdr.github.io/post/programador-hello-world/</link>
+      <pubDate>Sat, 08 Aug 2020 16:27:51 -0300</pubDate>
+      
+      <guid>https://gomes-fdr.github.io/post/programador-hello-world/</guid>
+      <description>Quando tu trabalha a alguns anos com alguma tecnologia, sempre pinta aquela vontade de experimentar algo novo. Estou passando por esse momento e até para seguir amando minha profissão e ter acesso a novos projetos e desafios é uma prática saudável.
+Nos últimos meses estudei algumas com maior ou menor hype, então vejamos:
+ Python: Trabalhei com python em alguns projetos reais. Javascript: Profissionalmente no frontend e alguns estudos no backend.</description>
+    </item>
     
     <item>
       <title>Molhou O Role</title>
