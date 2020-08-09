@@ -3,8 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gomes-fdr.github.io/post/ainda-sobre-ambiente-de-desenvolvimento/</loc>
+    <lastmod>2020-08-08T21:52:20-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gomes-fdr.github.io/</loc>
-    <lastmod>2020-08-08T16:27:51-03:00</lastmod>
+    <lastmod>2020-08-08T21:52:20-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/linux/</loc>
+    <lastmod>2020-08-08T21:52:20-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/post/</loc>
+    <lastmod>2020-08-08T21:52:20-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/</loc>
+    <lastmod>2020-08-08T21:52:20-03:00</lastmod>
   </url>
   
   <url>
@@ -13,23 +33,8 @@
   </url>
   
   <url>
-    <loc>https://gomes-fdr.github.io/post/</loc>
-    <lastmod>2020-08-08T16:27:51-03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://gomes-fdr.github.io/post/programador-hello-world/</loc>
     <lastmod>2020-08-08T16:27:51-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gomes-fdr.github.io/tags/</loc>
-    <lastmod>2020-08-08T16:27:51-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gomes-fdr.github.io/tags/linux/</loc>
-    <lastmod>2020-08-03T20:31:51-03:00</lastmod>
   </url>
   
   <url>
