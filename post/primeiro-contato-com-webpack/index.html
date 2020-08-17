@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt"><head>
+	
+	<meta name="generator" content="Hugo 0.74.3" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="project,web"><meta name="description" content=""><meta property="og:title" content="Primeiro Contato Com Webpack" />
+<meta property="og:description" content="O presente e o futuro das interfaces de interação com o usuário estão na web.
+ Está é uma afirmação minha mas, acredito que poucos teriam coragem de refuta-la.
+Dito isso, podemos bater na porta das UIs na web e de suas inúmeras possibilidades.
+Já foi tentado simplesmente portar UIs de desktop para web, foram criados toolkits pensando em resolver esse problema, lembram dos applets Java? No final das contas esse problema foi resolvido usando o bom e velho html &#43; javascript &#43; css." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gomes-fdr.github.io/post/primeiro-contato-com-webpack/" />
+<meta property="article:published_time" content="2020-08-16T18:03:47-03:00" />
+<meta property="article:modified_time" content="2020-08-16T18:03:47-03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Primeiro Contato Com Webpack"/>
+<meta name="twitter:description" content="O presente e o futuro das interfaces de interação com o usuário estão na web.
+ Está é uma afirmação minha mas, acredito que poucos teriam coragem de refuta-la.
+Dito isso, podemos bater na porta das UIs na web e de suas inúmeras possibilidades.
+Já foi tentado simplesmente portar UIs de desktop para web, foram criados toolkits pensando em resolver esse problema, lembram dos applets Java? No final das contas esse problema foi resolvido usando o bom e velho html &#43; javascript &#43; css."/>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/all.css" />
+	<link rel="stylesheet" href="https://gomes-fdr.github.io/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="https://gomes-fdr.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="https://gomes-fdr.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>Primeiro Contato Com Webpack | Fabiano Gomes</title></head>
+<body><header>
+	
+	<div id="avatar">
+		<a href="https://gomes-fdr.github.io/">
+			<img src="/images/avatar.png" alt="Fabiano Gomes">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="https://gomes-fdr.github.io/">Fabiano Gomes</a></h2></div>
+	<div id="title-description"><p id="subtitle">Software Developer</p><div id=social>
+			<nav>
+				<ul><li><a href="https://www.github.com/gomes-fdr"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="https://www.linkedin.com/in/gomes-fdr"><i title="Linkedin" class="icons fab fa-linkedin-in"></i></a></li><li><a href="mailto:gomes.fdr@gmail.com"><i title="email" class="icons far fa-envelope"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/post">All Posts</a></li>
+				
+				<li><a href="/about">About</a></li>
+				
+				<li><a href="/tags">Tags</a></li>
+				
+				<li><a href="/categories">Categories</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
+</header>
+<main><div class="post">
+	
+	<div class="author">
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">16</span>
+				<span class="rest">Aug 2020</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">Primeiro Contato Com Webpack</h1>
+		</div>
+	</div>
+	<div class="markdown">
+		<blockquote>
+<p>O presente e o futuro das interfaces de interação com o usuário estão na web.</p>
+</blockquote>
+<p>Está é uma afirmação minha mas, acredito que poucos teriam coragem de refuta-la.</p>
+<p>Dito isso, podemos bater na porta das UIs na web e de suas inúmeras possibilidades.</p>
+<p>Já foi tentado simplesmente portar UIs de desktop para web, foram criados toolkits pensando em resolver esse problema, lembram dos applets Java? No final das contas esse problema foi resolvido usando o bom e velho html + javascript + css.</p>
+<p>Com essa combinação foi possível criar soluções incríveis que usamos diariamente, mas isso tem um custo, o aumento da complexidade.</p>
+<h2 id="como-organizar-e-fazer-uma-boa-cola">Como organizar e fazer uma boa cola?</h2>
+<p>Equilibrar essas três pernas e conseguir um bom balanço(produtividade + robustez) - exige um esfoço gigante, acredite eu já tentei. Mas que dificuldade é essa afinal?</p>
+<p>Existem milhares se não milhões de frameworks e bibliotecas de javascript e css por ai, cada uma com seus prós e contras, agora integrar isso em um projeto e manter a sanidade não é uma tarefa simples. Por esse motivo foram criadas ferramentas para fazer essa cola de uma maneira mais simples, a web funciona do mesmo jeito a décadas, de forma super simplificada:</p>
+<blockquote>
+<p>O browser faz uma requisição a um servidor(outro computador), este devolve um resultado, este resutado vem encapsulado de tal maneira que o browser sabe como descascar essa cebola e exibir essa resposta de forma apropriada.</p>
+</blockquote>
+<p>Mas como todo esse conteúdo foi criado?</p>
+<p>Eis a estrutura de projeto que o <a href="https://webpack.js.org/">webpack</a> sugere:</p>
+<pre><code>.
+├── dist
+│   ├── index.html
+│   └── main.js
+├── package.json
+├── package-lock.json
+└── src
+    └── index.js
+</code></pre>
+<p>Onde a pasta <code>dist</code> guarda o <em>build</em> do nosso projeto, desta forma trabalhamos a lógica de funcionamento do nosso <em>frontend</em> nos arquivos contidos na pasta <em>src</em>.</p>
+<p>O arquivo <code>index.html</code> é o container do nosso app, veja o conteúdo:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Getting Started&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script src=&quot;main.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Estes foram os comandos utilizados para fazer essa <em>mágica</em> acontecer:</p>
+<pre><code>npm init -y
+npm install webpack webpack-cli --save-dev
+npm install --save lodash
+npx webpack
+</code></pre>
+<p>Destes, apenas o último nos interessa no momento, ele que faz o <em>build</em> e cria o arquivo <code>main.js</code> concatenando toda nossa app contida na pasta src em um ÚNICO arquivo, acertando os caminhos de busca de <code>assets</code> e bibliotecas utilizados.Essa é a mágica dos <em>bundlers</em>.</p>
+<p>Este exemplo segue as orientações contidas neste artigo introdutório do site do <a href="https://webpack.js.org/guides/getting-started/">webpack</a>.</p>
+<p>Na sequência vou adicionar novos poderes ao projeto com a ajuda do webpack, vamos adicionar a capacidade de utilizar <a href="https://www.typescriptlang.org/">typescript</a> para codar nosso front.</p>
+
+	</div>
+	
+	
+	
+	
+	
+		
+	
+		
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Tags</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="https://gomes-fdr.github.io/tags/project/"> project </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="https://gomes-fdr.github.io/tags/web/"> web </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+		
+	</div></div>
+
+  </main>
+<footer>
+	 © Copyright notice | Some rights reserved 
+	
+	
+	
+</footer>
+
+
+</body>
+</html>

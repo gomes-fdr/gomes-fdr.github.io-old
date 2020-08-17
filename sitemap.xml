@@ -3,27 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gomes-fdr.github.io/</loc>
+    <lastmod>2020-08-16T18:03:47-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/post/</loc>
+    <lastmod>2020-08-16T18:03:47-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/post/primeiro-contato-com-webpack/</loc>
+    <lastmod>2020-08-16T18:03:47-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/project/</loc>
+    <lastmod>2020-08-16T18:03:47-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/</loc>
+    <lastmod>2020-08-16T18:03:47-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/web/</loc>
+    <lastmod>2020-08-16T18:03:47-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gomes-fdr.github.io/post/ainda-sobre-ambiente-de-desenvolvimento/</loc>
     <lastmod>2020-08-08T21:52:20-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gomes-fdr.github.io/</loc>
-    <lastmod>2020-08-08T21:52:20-03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://gomes-fdr.github.io/tags/linux/</loc>
-    <lastmod>2020-08-08T21:52:20-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gomes-fdr.github.io/post/</loc>
-    <lastmod>2020-08-08T21:52:20-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gomes-fdr.github.io/tags/</loc>
     <lastmod>2020-08-08T21:52:20-03:00</lastmod>
   </url>
   
