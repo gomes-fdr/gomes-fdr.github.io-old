@@ -126,6 +126,16 @@ output: {
     }
 }
 </code></pre>
+<p>Nosso código em TS, <code>index.ts</code>:</p>
+<pre><code>import * as _ from 'lodash';
+
+function component() {
+    const element = document.createElement('div');
+    element.innerHTML = _.join(['Hello2', 'webpack'], ' ');
+    return element;
+}
+</code></pre>
+<p>document.body.appendChild(component());</p>
 <p>Alterar o arquivo <code>index.html</code></p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
