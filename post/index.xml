@@ -7,10 +7,34 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Sun, 23 Aug 2020 18:36:39 -0300</lastBuildDate>
+		<lastBuildDate>Sun, 30 Aug 2020 10:48:40 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/post/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>Mídias off-line</title>
+			<link>https://gomes-fdr.github.io/post/midias-off-line/</link>
+			<pubDate>Sun, 30 Aug 2020 10:48:40 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/midias-off-line/</guid>
+			<description>
+				
+				Domingo de manhã, depois de uma noite inteira de tempestade e ventos fortes, nada de internet para escutar música, ver f...
+				
+			</description>
+		</item>
+		<item>
+			<title>Instalando Typescript</title>
+			<link>https://gomes-fdr.github.io/post/instalando-typescript/</link>
+			<pubDate>Sat, 29 Aug 2020 20:48:40 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/instalando-typescript/</guid>
+			<description>
+				
+				 TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. In this guide we will learn how to inte...
+				
+			</description>
+		</item>
 		<item>
 			<title>Hardware Wallets</title>
 			<link>https://gomes-fdr.github.io/post/hardware-wallets/</link>

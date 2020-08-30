@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt"><head>
+	
+	<meta name="generator" content="Hugo 0.74.3" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="project"><meta name="description" content=""><meta property="og:title" content="Instalando Typescript" />
+<meta property="og:description" content="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. In this guide we will learn how to integrate TypeScript with webpack. fonte
+ Uma da stacks que usamos na empresa onde trabalho é o typeScript, esse foi um dos principais motivos de adiciona-la no meu projeto de estudo. Tenho estudado mais a respeito e para quem não vem do mundo javascript, como eu, o ts como a galera chama é uma mão na roda." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gomes-fdr.github.io/post/instalando-typescript/" />
+<meta property="article:published_time" content="2020-08-29T20:48:40-03:00" />
+<meta property="article:modified_time" content="2020-08-29T20:48:40-03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Instalando Typescript"/>
+<meta name="twitter:description" content="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. In this guide we will learn how to integrate TypeScript with webpack. fonte
+ Uma da stacks que usamos na empresa onde trabalho é o typeScript, esse foi um dos principais motivos de adiciona-la no meu projeto de estudo. Tenho estudado mais a respeito e para quem não vem do mundo javascript, como eu, o ts como a galera chama é uma mão na roda."/>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/all.css" />
+	<link rel="stylesheet" href="https://gomes-fdr.github.io/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="https://gomes-fdr.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="https://gomes-fdr.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>Instalando Typescript | Fabiano Gomes</title></head>
+<body><header>
+	
+	<div id="avatar">
+		<a href="https://gomes-fdr.github.io/">
+			<img src="/images/avatar.png" alt="Fabiano Gomes">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="https://gomes-fdr.github.io/">Fabiano Gomes</a></h2></div>
+	<div id="title-description"><p id="subtitle">Software Developer</p><div id=social>
+			<nav>
+				<ul><li><a href="https://www.github.com/gomes-fdr"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="https://www.linkedin.com/in/gomes-fdr"><i title="Linkedin" class="icons fab fa-linkedin-in"></i></a></li><li><a href="mailto:gomes.fdr@gmail.com"><i title="email" class="icons far fa-envelope"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/post">All Posts</a></li>
+				
+				<li><a href="/about">About</a></li>
+				
+				<li><a href="/tags">Tags</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
+</header>
+<main><div class="post">
+	
+	<div class="author">
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">29</span>
+				<span class="rest">Aug 2020</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">Instalando Typescript</h1>
+		</div>
+	</div>
+	<div class="markdown">
+		<blockquote>
+<p>TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. In this guide we will learn how to integrate TypeScript with webpack.
+<a href="https://webpack.js.org/guides/typescript/">fonte</a></p>
+</blockquote>
+<p>Uma da <em>stacks</em> que usamos na empresa onde trabalho é o typeScript, esse foi um dos principais motivos de adiciona-la no meu projeto de estudo. Tenho estudado mais a respeito e para quem não vem do mundo javascript, como eu, o <em>ts</em> como a galera chama é uma mão na roda.</p>
+<p>Então qual é a idéia principal? Tornar-se produtivo no desenvolvimento javascript e isso também implica em cometer menos erros durante o processo de codar javascript. É aqui que <em>typescript</em> parece ser um excelente auxiliar, ele ajuda a evitar erros comuns para caras que vem de linguagens compiladas e que passaram pela checagem de um compilador.</p>
+<p>Outra face do <em>typescript</em> que achei bacana é de aproximar conceitualmente essa linguagem a outras mais conhecidas por mim, como o C++. Essa aproximação acontece na tipagem e na orientação a objetos.</p>
+<h2 id="habilitando-isso-no-webpack">Habilitando isso no webpack</h2>
+<p>No terminal:</p>
+<pre><code>npm install --save-dev typescript ts-loader
+npm install --save-dev @types/lodash
+</code></pre>
+<p>Criar um arquivo de configuração do webpack, <code>webpack.config.js</code>:</p>
+<pre><code>const path = require('path');
+
+module.exports = {
+entry: './src/index.ts',
+devtool: 'inline-source-map',
+module: {
+    rules: [
+    {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+    },
+    ],
+},
+resolve: {
+    extensions: [ '.tsx', '.ts', '.js' ],
+},
+output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+},
+};
+</code></pre>
+<p>Precisamos criar um arquivo de configuração do typescript, <code>tsconfig.json</code>:</p>
+<pre><code>{
+    &quot;compilerOptions&quot;: {
+        &quot;outDir&quot;: &quot;./dist/&quot;,
+        &quot;sourceMap&quot;: true,
+        &quot;noImplicitAny&quot;: true,
+        &quot;module&quot;: &quot;es6&quot;,
+        &quot;target&quot;: &quot;es5&quot;,
+        &quot;jsx&quot;: &quot;react&quot;,
+        &quot;allowJs&quot;: true
+    }
+}
+</code></pre>
+<p>Alterar o arquivo <code>index.html</code></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Getting Started&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;script src=&quot;bundle.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>E por fim, compilar nosso arquivo ts para js</p>
+<pre><code>npx webpack
+</code></pre>
+<p>Pronto, agora podemos codar em typescript sem complicações.</p>
+
+	</div>
+	
+	
+	
+	
+	
+		
+	
+		
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Tags</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="https://gomes-fdr.github.io/tags/project/"> project </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+		
+	</div></div>
+
+  </main>
+<footer>
+	 © Copyright notice | Some rights reserved 
+	
+	
+	
+</footer>
+
+
+</body>
+</html>

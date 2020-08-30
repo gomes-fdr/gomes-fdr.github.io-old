@@ -7,10 +7,22 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Sun, 16 Aug 2020 18:03:47 -0300</lastBuildDate>
+		<lastBuildDate>Sat, 29 Aug 2020 20:48:40 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/tags/project/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>Instalando Typescript</title>
+			<link>https://gomes-fdr.github.io/post/instalando-typescript/</link>
+			<pubDate>Sat, 29 Aug 2020 20:48:40 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/instalando-typescript/</guid>
+			<description>
+				
+				 TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. In this guide we will learn how to inte...
+				
+			</description>
+		</item>
 		<item>
 			<title>Primeiro Contato Com Webpack</title>
 			<link>https://gomes-fdr.github.io/post/primeiro-contato-com-webpack/</link>
