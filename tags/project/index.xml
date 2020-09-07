@@ -7,10 +7,22 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Sat, 29 Aug 2020 20:48:40 -0300</lastBuildDate>
+		<lastBuildDate>Mon, 07 Sep 2020 17:10:39 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/tags/project/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>Vuejs Ecosystem</title>
+			<link>https://gomes-fdr.github.io/post/vuejs-ecosystem/</link>
+			<pubDate>Mon, 07 Sep 2020 17:10:39 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/vuejs-ecosystem/</guid>
+			<description>
+				
+				No último post eu adicionei ao projeto, o poder de codar em typescript. Bom agora quando cheguei na parte de adicionar a...
+				
+			</description>
+		</item>
 		<item>
 			<title>Instalando Typescript</title>
 			<link>https://gomes-fdr.github.io/post/instalando-typescript/</link>

@@ -3,12 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gomes-fdr.github.io/tags/dlna/</loc>
-    <lastmod>2020-08-30T10:48:40-03:00</lastmod>
+    <loc>https://gomes-fdr.github.io/</loc>
+    <lastmod>2020-09-07T17:10:39-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gomes-fdr.github.io/</loc>
+    <loc>https://gomes-fdr.github.io/post/</loc>
+    <lastmod>2020-09-07T17:10:39-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/project/</loc>
+    <lastmod>2020-09-07T17:10:39-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/</loc>
+    <lastmod>2020-09-07T17:10:39-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/post/vuejs-ecosystem/</loc>
+    <lastmod>2020-09-07T17:10:39-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/dlna/</loc>
     <lastmod>2020-08-30T10:48:40-03:00</lastmod>
   </url>
   
@@ -18,22 +38,7 @@
   </url>
   
   <url>
-    <loc>https://gomes-fdr.github.io/post/</loc>
-    <lastmod>2020-08-30T10:48:40-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gomes-fdr.github.io/tags/</loc>
-    <lastmod>2020-08-30T10:48:40-03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://gomes-fdr.github.io/post/instalando-typescript/</loc>
-    <lastmod>2020-08-29T20:48:40-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gomes-fdr.github.io/tags/project/</loc>
     <lastmod>2020-08-29T20:48:40-03:00</lastmod>
   </url>
   

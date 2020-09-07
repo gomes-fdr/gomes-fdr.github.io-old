@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt"><head>
+	
+	<meta name="generator" content="Hugo 0.74.3" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="project"><meta name="description" content=""><meta property="og:title" content="Vuejs Ecosystem" />
+<meta property="og:description" content="No último post eu adicionei ao projeto, o poder de codar em typescript. Bom agora quando cheguei na parte de adicionar a capacidade de usar o framework Vuejs eu me deparei com uma ferramenta chamada vue-cli.
+Reestruturando as idéias O vue-cli é uma espécie de wrapper para uso do webpack, atrávés dele podemos:
+ Iniciar um projeto vuejs, criando um boilerplate do projeto Adicionar o uso de typescript para codarmos nosso app em vuejs usando essa linguagem Adicionar um framework de frontend  Sobre os frameworks de frontend Fiz alguns testes e eis minhas considerações:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gomes-fdr.github.io/post/vuejs-ecosystem/" />
+<meta property="article:published_time" content="2020-09-07T17:10:39-03:00" />
+<meta property="article:modified_time" content="2020-09-07T17:10:39-03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vuejs Ecosystem"/>
+<meta name="twitter:description" content="No último post eu adicionei ao projeto, o poder de codar em typescript. Bom agora quando cheguei na parte de adicionar a capacidade de usar o framework Vuejs eu me deparei com uma ferramenta chamada vue-cli.
+Reestruturando as idéias O vue-cli é uma espécie de wrapper para uso do webpack, atrávés dele podemos:
+ Iniciar um projeto vuejs, criando um boilerplate do projeto Adicionar o uso de typescript para codarmos nosso app em vuejs usando essa linguagem Adicionar um framework de frontend  Sobre os frameworks de frontend Fiz alguns testes e eis minhas considerações:"/>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/all.css" />
+	<link rel="stylesheet" href="https://gomes-fdr.github.io/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="https://gomes-fdr.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="https://gomes-fdr.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>Vuejs Ecosystem | Fabiano Gomes</title></head>
+<body><header>
+	
+	<div id="avatar">
+		<a href="https://gomes-fdr.github.io/">
+			<img src="/images/avatar.png" alt="Fabiano Gomes">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="https://gomes-fdr.github.io/">Fabiano Gomes</a></h2></div>
+	<div id="title-description"><p id="subtitle">Software Developer</p><div id=social>
+			<nav>
+				<ul><li><a href="https://www.github.com/gomes-fdr"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="https://www.linkedin.com/in/gomes-fdr"><i title="Linkedin" class="icons fab fa-linkedin-in"></i></a></li><li><a href="mailto:gomes.fdr@gmail.com"><i title="email" class="icons far fa-envelope"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/post">All Posts</a></li>
+				
+				<li><a href="/about">About</a></li>
+				
+				<li><a href="/tags">Tags</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
+</header>
+<main><div class="post">
+	
+	<div class="author">
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">07</span>
+				<span class="rest">Sep 2020</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">Vuejs Ecosystem</h1>
+		</div>
+	</div>
+	<div class="markdown">
+		<p>No último post eu adicionei ao projeto, o <em>poder</em> de codar em <em>typescript</em>. Bom agora quando cheguei na parte de adicionar a capacidade de usar o framework <a href="https://vuejs.org/">Vuejs</a> eu me deparei com uma ferramenta chamada vue-cli.</p>
+<h2 id="reestruturando-as-idéias">Reestruturando as idéias</h2>
+<p>O vue-cli é uma espécie de <em>wrapper</em> para uso do webpack, atrávés dele podemos:</p>
+<ul>
+<li>Iniciar um projeto vuejs, criando um boilerplate do projeto</li>
+<li>Adicionar o uso de typescript para codarmos nosso app em vuejs usando essa linguagem</li>
+<li>Adicionar um framework de frontend</li>
+</ul>
+<h3 id="sobre-os-frameworks-de-frontend">Sobre os frameworks de frontend</h3>
+<p>Fiz alguns testes e eis minhas considerações:</p>
+<ul>
+<li><a href="https://bootstrap-vue.org/">Bootstrap-vue</a>: Não consegui fazer funcionar com o typescript</li>
+<li><a href="https://vuetifyjs.com/en/">Vuefy</a>: Não consegui fazer funcionar</li>
+<li><a href="https://buefy.org/">Buefy</a>: Tudo funcionou out-of-the-box!</li>
+</ul>
+<p>Por motivos óbvios escolhi o Buefy.</p>
+<h2 id="processo-de-instalação">Processo de instalação</h2>
+<p>Confesso que ficava com um pé atrás com essas ferramentas que promentem fazer e configurar tudo para o desenvolvedor, mas o vue-cli é uma ferramenta bem honesta, nota para a versão gráfica chamada <em>vue ui</em> - bem legal também.</p>
+<p>Esta foi a sequência de criação da UI web usando <code>vuejs+typescript+buefy</code></p>
+<pre><code># Para instalar o vue-cli global
+npm install --global @vue/cli
+
+# Para criar nosso projeto
+#  Durante o setup escolhi a opção de configurar manualmente
+#  Nesta opção podemos, instalar o typescript, escolher a versão do vuejs, linter, etc...
+vue create tracker-ui
+cd tracker-ui
+
+# Para adicionar o framework buefy
+vue add buefy
+</code></pre>
+<p>Agora chegamos no ponto que todo deve gosta, vamos codar o front-end do nosso sistema de tracker.</p>
+
+	</div>
+	
+	
+	
+	
+	
+		
+	
+		
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Tags</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="https://gomes-fdr.github.io/tags/project/"> project </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+		
+	</div></div>
+
+  </main>
+<footer>
+	 © Copyright notice | Some rights reserved 
+	
+	
+	
+</footer>
+
+
+</body>
+</html>
