@@ -7,10 +7,22 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Mon, 07 Sep 2020 17:10:39 -0300</lastBuildDate>
+		<lastBuildDate>Sun, 13 Sep 2020 16:15:49 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>life-style</title>
+			<link>https://gomes-fdr.github.io/tags/life-style/</link>
+			<pubDate>Sun, 13 Sep 2020 16:15:49 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/tags/life-style/</guid>
+			<description>
+				
+				
+				
+			</description>
+		</item>
 		<item>
 			<title>project</title>
 			<link>https://gomes-fdr.github.io/tags/project/</link>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>life-style on Fabiano Gomes</title>
+		<link>https://gomes-fdr.github.io/tags/life-style/</link>
+		<description>Recent content in life-style on gomes-fdr.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>pt-br</language>
+		<copyright>© Copyright notice | Some rights reserved</copyright>
+		<lastBuildDate>Sun, 13 Sep 2020 16:15:49 -0300</lastBuildDate>
+		
+		<atom:link href="https://gomes-fdr.github.io/tags/life-style/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Qualidade De Vida</title>
+			<link>https://gomes-fdr.github.io/post/qualidade-de-vida/</link>
+			<pubDate>Sun, 13 Sep 2020 16:15:49 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/qualidade-de-vida/</guid>
+			<description>
+				
+				Acredito que a maioria das pessoas que trabalham com tecnologia tem uma tendência ao sedentarismo, ao longo da vida já p...
+				
+			</description>
+		</item>
+		
+	</channel>
+</rss>
