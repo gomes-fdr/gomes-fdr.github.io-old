@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>opp on Fabiano Gomes</title>
+		<link>https://gomes-fdr.github.io/tags/opp/</link>
+		<description>Recent content in opp on gomes-fdr.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>pt-br</language>
+		<copyright>© Copyright notice | Some rights reserved</copyright>
+		<lastBuildDate>Sat, 26 Sep 2020 15:36:15 -0300</lastBuildDate>
+		
+		<atom:link href="https://gomes-fdr.github.io/tags/opp/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Falando um pouco sobre SOLID</title>
+			<link>https://gomes-fdr.github.io/post/falando-um-pouco-sobre-solid/</link>
+			<pubDate>Sat, 26 Sep 2020 15:36:15 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/falando-um-pouco-sobre-solid/</guid>
+			<description>
+				
+				Semana passada fui convidado para falar um pouco sobre o que eu sabia sobre S.O.L.I.D. e eu lembrei que que tinha lido u...
+				
+			</description>
+		</item>
+		
+	</channel>
+</rss>
