@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>golang on Fabiano Gomes</title>
+		<link>https://gomes-fdr.github.io/tags/golang/</link>
+		<description>Recent content in golang on gomes-fdr.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>pt-br</language>
+		<copyright>© Copyright notice | Some rights reserved</copyright>
+		<lastBuildDate>Sun, 04 Oct 2020 18:21:27 -0300</lastBuildDate>
+		
+		<atom:link href="https://gomes-fdr.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Como Usar Interfaces Em Golang</title>
+			<link>https://gomes-fdr.github.io/post/como-usar-interfaces-em-golang/</link>
+			<pubDate>Sun, 04 Oct 2020 18:21:27 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/como-usar-interfaces-em-golang/</guid>
+			<description>
+				
+				 Golang tem algumas particularidades e escolhas de arquitetura bem interessantes, o uso de interfaces é um destes casos....
+				
+			</description>
+		</item>
+		
+	</channel>
+</rss>

@@ -7,10 +7,22 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Sat, 26 Sep 2020 15:36:15 -0300</lastBuildDate>
+		<lastBuildDate>Sun, 04 Oct 2020 18:21:27 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>Como Usar Interfaces Em Golang</title>
+			<link>https://gomes-fdr.github.io/post/como-usar-interfaces-em-golang/</link>
+			<pubDate>Sun, 04 Oct 2020 18:21:27 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/como-usar-interfaces-em-golang/</guid>
+			<description>
+				
+				 Golang tem algumas particularidades e escolhas de arquitetura bem interessantes, o uso de interfaces é um destes casos....
+				
+			</description>
+		</item>
 		<item>
 			<title>Falando um pouco sobre SOLID</title>
 			<link>https://gomes-fdr.github.io/post/falando-um-pouco-sobre-solid/</link>

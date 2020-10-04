@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt"><head>
+	
+	<meta name="generator" content="Hugo 0.74.3" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="golang,go"><meta name="description" content=""><meta property="og:title" content="Como Usar Interfaces Em Golang" />
+<meta property="og:description" content="Golang tem algumas particularidades e escolhas de arquitetura bem interessantes, o uso de interfaces é um destes casos. Encontrei esse artigo e me ajudou a entender um pouco melhor seu funcionamento, espero que seja útil para mais alguém. Está é uma tradução livre com algumas notas pessoais do artigo de Jordan Orelli
+ Antes de começar a programar em Golang, eu fazia a maior parte do meu trabalho usando Python." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gomes-fdr.github.io/post/como-usar-interfaces-em-golang/" />
+<meta property="article:published_time" content="2020-10-04T18:21:27-03:00" />
+<meta property="article:modified_time" content="2020-10-04T18:21:27-03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Como Usar Interfaces Em Golang"/>
+<meta name="twitter:description" content="Golang tem algumas particularidades e escolhas de arquitetura bem interessantes, o uso de interfaces é um destes casos. Encontrei esse artigo e me ajudou a entender um pouco melhor seu funcionamento, espero que seja útil para mais alguém. Está é uma tradução livre com algumas notas pessoais do artigo de Jordan Orelli
+ Antes de começar a programar em Golang, eu fazia a maior parte do meu trabalho usando Python."/>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://gomes-fdr.github.io/css/all.css" />
+	<link rel="stylesheet" href="https://gomes-fdr.github.io/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="https://gomes-fdr.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="https://gomes-fdr.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>Como Usar Interfaces Em Golang | Fabiano Gomes</title></head>
+<body><header>
+	
+	<div id="avatar">
+		<a href="https://gomes-fdr.github.io/">
+			<img src="/images/avatar.png" alt="Fabiano Gomes">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="https://gomes-fdr.github.io/">Fabiano Gomes</a></h2></div>
+	<div id="title-description"><p id="subtitle">Software Developer</p><div id=social>
+			<nav>
+				<ul><li><a href="https://www.github.com/gomes-fdr"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="https://www.linkedin.com/in/gomes-fdr"><i title="Linkedin" class="icons fab fa-linkedin-in"></i></a></li><li><a href="mailto:gomes.fdr@gmail.com"><i title="email" class="icons far fa-envelope"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/post">All Posts</a></li>
+				
+				<li><a href="/about">About</a></li>
+				
+				<li><a href="/tags">Tags</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
+</header>
+<main><div class="post">
+	
+	<div class="author">
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">04</span>
+				<span class="rest">Oct 2020</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">Como Usar Interfaces Em Golang</h1>
+		</div>
+	</div>
+	<div class="markdown">
+		<blockquote>
+<p>Golang tem algumas particularidades e escolhas de arquitetura bem interessantes, o uso de interfaces é um destes casos. Encontrei esse artigo e me ajudou a entender um pouco melhor seu funcionamento, espero que seja útil para mais alguém. Está é uma tradução livre com algumas notas pessoais do artigo de <a href="https://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go">Jordan Orelli</a></p>
+</blockquote>
+<p>Antes de começar a programar em Golang, eu fazia a maior parte do meu trabalho usando Python. Como programador Python, descobri que aprender a usar interfaces em Golang era extremamente difícil. Ou seja, o básico era fácil e eu sabia como usar as interfaces da biblioteca padrão, mas foi necessário alguma prática antes de saber como projetar minhas próprias interfaces. Neste artigo, discutirei o sistema de tipos de Golang em um esforço para explicar como usar interfaces de maneira eficaz.</p>
+<h2 id="introdução-às-interfaces">Introdução às interfaces</h2>
+<p>Então, o que é uma interface? Uma interface são duas coisas: é um conjunto de métodos, mas também é um tipo. Vamos nos concentrar primeiro no aspecto do conjunto de métodos das interfaces.</p>
+<p>Normalmente, somos apresentados às interfaces com alguns exemplos. Vamos usar o exemplo de escrever algum aplicativo onde você está definindo o tipo de dados  Animal, porque essa é uma situação totalmente realista que acontece o tempo todo. O tipo Animal será uma interface e definiremos um Animal como sendo  <strong>qualquer coisa que possa falar</strong> . Este é um conceito central no sistema de tipos de Golang; em vez de projetar nossas abstrações em termos de que tipo de dados nossos tipos podem conter, projetamos nossas abstrações em termos de quais ações nossos tipos podem executar.</p>
+<p>Começamos definindo nossa interface Animal:</p>
+<pre><code>type Animal interface {
+    Speak() string
+}
+</code></pre>
+<p>Muito simples: Definimos Animal como sendo qualquer tipo que tenha um método denominado <em>Speak</em>. O método <em>Speak</em> não aceita argumentos e retorna uma string. Qualquer tipo que defina esse método satisfaz a interface Animal. Não há palavra-chave <em>implements</em> em Golang; Se um tipo satisfaz ou não uma interface é determinado automaticamente. Vamos criar alguns tipos que satisfaçam esta interface:</p>
+<pre><code>type Dog struct {
+}
+
+func (d Dog) Speak() string {
+    return &quot;Woof!&quot;
+}
+
+type Cat struct {
+}
+
+func (c Cat) Speak() string {
+    return &quot;Meow!&quot;
+}
+
+type Llama struct {
+}
+
+func (l Llama) Speak() string {
+    return &quot;?????&quot;
+}
+
+type JavaProgrammer struct {
+}
+
+func (j JavaProgrammer) Speak() string {
+    return &quot;Design patterns!&quot;
+}
+</code></pre>
+<p>Agora temos quatro tipos diferentes de animais: Um cachorro, um gato, um lhama e um programador Java. Em nossa função <em>main()</em>, podemos criar um <em>slice</em> de <em>Animals</em> e colocar um de cada tipo nesse <em>slice</em> e ver o que cada animal diz.</p>
+<p>Vamos fazer isso agora:</p>
+<pre><code>func main() {
+    animals := []Animal{Dog{}, Cat{}, Llama{}, JavaProgrammer{}}
+    for _, animal := range animals {
+        fmt.Println(animal.Speak())
+    }
+}
+</code></pre>
+<p>Ótimo, agora você sabe usar interfaces e não preciso mais falar sobre elas, certo? Bem, não, realmente não. Vejamos algumas coisas que não são muito óbvias para o gopher iniciante.</p>
+<h2 id="o-tipo-interface">O tipo interface</h2>
+<p>O tipo <em>interface{}</em>, uma interface vazia, é fonte de muita confusão. O tipo <em>interface{}</em> é a interface que não possui métodos. Como não há palavra-chave <em>implements</em>, todos os tipos implementam pelo menos zero métodos, e o satisfazer a uma interface é feito automaticamente, todos os tipos atendem à interface vazia. Isso significa que, se você escrever uma função que tenha um valor de <em>interface{}</em> como parâmetro, poderá fornecer a essa função qualquer valor.</p>
+<p>Então, esta função:</p>
+<pre><code>func DoSomething(v interface{}) {
+   // ...
+}
+</code></pre>
+<p>Aceitará qualquer parâmetro que seja.</p>
+<blockquote>
+<p>Aqui a galera de <em>Rust</em> pira! Realmente, devemos ter muito cuidado com tipos sem tipos(minha nota pessoal).</p>
+</blockquote>
+<p>É aqui que fica confuso: dentro da função <em>DoSomething</em>, qual é o tipo de v? <em>Gophers</em> iniciantes são levados a acreditar que “v é de qualquer tipo”, mas isso está errado, v não é de nenhum tipo; é do tipo <em>interface{}</em>. Espere o que? Ao passar um valor para a função <em>DoSomething</em>, em tempo de execução Go executará uma conversão de tipo (se necessário) e converterá o valor em um valor de <em>interface{}</em>. Todos os valores têm exatamente um tipo em tempo de execução e v é um tipo estático de <em>interface{}</em>.</p>
+<p>Isso deve deixar você se perguntando: Ok, então se uma conversão está ocorrendo, o que está realmente sendo passado para uma função que assume um valor de <em>interface{}</em> (ou, o que está realmente armazenado em uma <em>Slice</em> []Animal)? Um valor de interface é constituído de duas <em>words</em> de dados; Uma <em>word</em> é usada para apontar para uma tabela de métodos para o tipo subjacente do valor e a outra word é usada para apontar para os dados reais mantidos por esse valor. Eu não quero falar sobre isso indefinidamente. Se você entender que um valor de interface tem duas palavras de largura e contém um ponteiro para os dados subjacentes, isso normalmente é o suficiente para evitar armadilhas comuns. Se você está curioso para saber mais sobre a implementação de interfaces, acho que a descrição de interfaces de <a href="https://research.swtch.com/interfaces">Russ Cox</a> é muito, muito útil.</p>
+<blockquote>
+<p>Lembrando que uma <em>word</em> varia em função da arquitetura do SO: 8, 16, 32 e 64 bits por exemplo(minha nota pessoal).</p>
+</blockquote>
+<p>Em nosso exemplo anterior, quando construímos um <em>slice</em> de Animais, não precisamos dizer algo oneroso como <em>Animal(Dog{})</em> para colocar um valor do tipo <em>Dog</em> no <em>slice</em> de valores de Animais, porque a conversão foi feita para nós automaticamente. Dentro do <em>slice</em> dos animais, cada elemento é do tipo Animal, mas nossos diferentes valores têm diferentes tipos subjacentes.</p>
+<p>Então, por que isso importa? Bem, entender como as interfaces são representadas na memória torna algumas coisas potencialmente confusas muito óbvias. Por exemplo, a pergunta &ldquo;posso converter um []T em uma []interface{}&rdquo; é fácil de responder, uma vez que você entenda como as interfaces são representadas na memória. Aqui está um exemplo de código que está quebrado e representa um mal-entendido comum do tipo <em>interface{}</em>:</p>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+)
+
+func PrintAll(vals []interface{}) {
+    for _, val := range vals {
+    fmt.Println(val)
+    }
+}
+
+func main() {
+    names := []string{&quot;stanley&quot;, &quot;david&quot;, &quot;oscar&quot;}
+    PrintAll(names)
+}
+
+$: cannot use names (type []string) as type []interface {} in argument to PrintAll
+</code></pre>
+<p>Ao executar isso, você pode ver que encontramos um erro. Se quisermos realmente fazer isso funcionar, teríamos que converter a <em>[]string</em> em uma <em>[]interface{}</em>:</p>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+)
+
+func PrintAll(vals []interface{}) {
+    for _, val := range vals {
+    fmt.Println(val)
+    }
+}
+
+func main() {
+    names := []string{&quot;stanley&quot;, &quot;david&quot;, &quot;oscar&quot;}
+    vals := make([]interface{}, len(names))
+    for i, v := range names {
+    vals[i] = v
+    }
+    PrintAll(vals)
+}
+
+$: stanley
+   david
+   oscar
+</code></pre>
+<p>Isso é muito feio, mas <em>c&rsquo;est la vie</em>. Nem tudo é perfeito (na realidade, isso não aparece com muita frequência, porque a <em>[]interface{}</em> acaba sendo menos útil do que você esperava inicialmente).</p>
+<h2 id="ponteiros-e-interfaces">Ponteiros e Interfaces</h2>
+<p>Outra sutileza das interfaces é que uma definição de interface não prescreve se um implementador deve implementar a interface usando um receptor de ponteiro ou um receptor de valor. Quando você recebe um valor de interface, não há garantia se o tipo subjacente é ou não um ponteiro. Em nosso exemplo anterior, definimos todos os nossos métodos em receptores de valor e colocamos os valores associados no <em>slice</em> Animal. Vamos mudar isso e fazer com que o método do gato <em>Speak()</em> receba um ponteiro:</p>
+<pre><code>func (c *Cat) Speak() string {
+    return &quot;Meow!&quot;
+}
+
+func main() {
+    animals := []Animal{Dog{}, Cat{}, Llama{}, JavaProgrammer{}}
+    for _, animal := range animals {
+        fmt.Println(animal.Speak())
+    }
+}
+
+$: cannot use Cat literal (type Cat) as type Animal in slice literal:
+Cat does not implement Animal (Speak method has pointer receiver)
+</code></pre>
+<p>Essa mensagem de erro é um pouco confusa no começo, para ser honesto. O que está dizendo não é que a interface Animal exige que você defina seu método como um receptor de ponteiro, mas que você tentou converter uma estrutura <em>Cat</em> em um valor de interface Animal, mas apenas <code>*Cat</code> satisfaz essa interface. Você pode corrigir esse bug passando um ponteiro <code>*Cat</code> para o <em>slice</em> Animal em vez de um valor <em>Cat</em>, usando <em>new(Cat)</em> em vez de <em>Cat{}</em> (você também pode dizer <em>&amp;Cat{}</em>, eu simplesmente prefiro <em>new(Cat)</em>):</p>
+<pre><code>animals := []Animal{Dog{}, new(Cat), Llama{}, JavaProgrammer{}}
+
+$: Woof!
+   Meow!
+   ?????
+   Design patterns!
+</code></pre>
+<p>Vamos na direção oposta: vamos passar um ponteiro de <code>*Dog</code> em vez de um valor de <em>Dog</em>, mas desta vez não mudaremos a definição do método Speak do tipo Dog:</p>
+<pre><code>animals := []Animal{new(Dog), new(Cat), Llama{}, JavaProgrammer{}}
+</code></pre>
+<p>Isso também funciona, mas reconheço uma diferença sutil: não precisamos alterar o tipo de receptor do método Speak. Isso funciona porque um tipo de ponteiro pode acessar os métodos de seu tipo de valor associado, mas não vice-versa. Ou seja, um valor <code>*Dog</code> pode utilizar o método <em>Speak</em> definido em <em>Dog</em>, mas, como vimos anteriormente, um valor <em>Cat</em> não pode acessar o método <em>Speak</em> definido em <code>*Cat</code>.</p>
+<p>Isso pode parecer enigmático, mas faz sentido quando você se lembra do seguinte: <strong>tudo em Go é passado por valor.</strong> Cada vez que você chama uma função, os dados que você está passando para ela são copiados. No caso de um método com receptor de valor, o valor é copiado ao chamar o método. Isso é um pouco mais óbvio quando você entende que um método com a seguinte assinatura:</p>
+<pre><code>func (t T)MyMethod(s string) {
+    // ...
+}
+</code></pre>
+<p>É uma função do tipo <code>func(T, string)</code>; receptores de método são passados para a função por valor, assim como qualquer outro parâmetro.</p>
+<p>Quaisquer alterações no receptor feitas dentro de um método definido em um tipo de valor (por exemplo, <code>func(d Dog) Speak () {...}</code>) não serão vistas pelo chamador porque o chamador está definindo um valor Dog completamente separado. Como tudo é passado por valor, deve ser óbvio por que um método <code>*Cat</code> não pode ser usado por um valor <code>Cat</code>; Qualquer valor <em>Cat</em> pode ter qualquer número de ponteiros <code>*Cat</code> que apontem para ele. Se tentarmos chamar um método <code>*Cat</code> usando um valor Cat, nunca tivemos um ponteiro <code>*Cat</code> para começar. Por outro lado, se tivermos um método do tipo <em>Dog</em> e tivermos um ponteiro <code>*Dog</code>, saberemos exatamente qual valor Dog usar ao chamar esse método, porque o ponteiro <code>*Dog</code> aponta para exatamente um valor <em>Dog</em>; Em tempo de execução Go cancelará a referência do ponteiro para seu valor <em>Dog</em> associado sempre que necessário. Ou seja, dado um valor <code>*Dog d</code> e um método do tipo <em>Speak Dog</em>, podemos apenas dizer <em>d.Speak()</em>; Não precisamos dizer algo como <em>d-&gt;Speak()</em> como faríamos em outras línguagens de programação.</p>
+<blockquote>
+<p>O artigo original segue com alguns exemplos de implementações que optei por não traduzir aqui.</p>
+</blockquote>
+<blockquote>
+<p>Gostei bastante da maneira como o autor demonstrou o funcionamento e uso de interfaces em Golang, seguimos na caminhada&hellip;</p>
+</blockquote>
+
+	</div>
+	
+	
+	
+	
+	
+		
+	
+		
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Tags</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="https://gomes-fdr.github.io/tags/go/"> go </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="https://gomes-fdr.github.io/tags/golang/"> golang </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+		
+	</div></div>
+
+  </main>
+<footer>
+	 © Copyright notice | Some rights reserved 
+	
+	
+	
+</footer>
+
+
+</body>
+</html>
