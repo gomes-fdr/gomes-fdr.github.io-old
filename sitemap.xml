@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gomes-fdr.github.io/post/como-usar-interfaces-em-golang/</loc>
-    <lastmod>2020-10-04T18:21:27-03:00</lastmod>
+    <loc>https://gomes-fdr.github.io/</loc>
+    <lastmod>2020-10-17T20:21:37-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gomes-fdr.github.io/</loc>
+    <loc>https://gomes-fdr.github.io/tags/health/</loc>
+    <lastmod>2020-10-17T20:21:37-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/post/o-medo-da-covid/</loc>
+    <lastmod>2020-10-17T20:21:37-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/post/</loc>
+    <lastmod>2020-10-17T20:21:37-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/sa%C3%BAde/</loc>
+    <lastmod>2020-10-17T20:21:37-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/</loc>
+    <lastmod>2020-10-17T20:21:37-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/post/como-usar-interfaces-em-golang/</loc>
     <lastmod>2020-10-04T18:21:27-03:00</lastmod>
   </url>
   
@@ -19,16 +44,6 @@
   
   <url>
     <loc>https://gomes-fdr.github.io/tags/golang/</loc>
-    <lastmod>2020-10-04T18:21:27-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gomes-fdr.github.io/post/</loc>
-    <lastmod>2020-10-04T18:21:27-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gomes-fdr.github.io/tags/</loc>
     <lastmod>2020-10-04T18:21:27-03:00</lastmod>
   </url>
   

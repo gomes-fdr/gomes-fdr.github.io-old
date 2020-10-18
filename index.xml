@@ -7,10 +7,23 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Sun, 04 Oct 2020 18:21:27 -0300</lastBuildDate>
+		<lastBuildDate>Sat, 17 Oct 2020 20:21:37 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>O Medo Da Covid</title>
+			<link>https://gomes-fdr.github.io/post/o-medo-da-covid/</link>
+			<pubDate>Sat, 17 Oct 2020 20:21:37 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/o-medo-da-covid/</guid>
+			<description>
+				
+				Semana passada passei por momentos tensos aqui em casa, dessas coisas que nos fazem refletir sabe.
+ Minhas esposa estava...
+				
+			</description>
+		</item>
 		<item>
 			<title>Como Usar Interfaces Em Golang</title>
 			<link>https://gomes-fdr.github.io/post/como-usar-interfaces-em-golang/</link>
