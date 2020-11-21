@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>lifestyle on Fabiano Gomes</title>
+		<link>https://gomes-fdr.github.io/tags/lifestyle/</link>
+		<description>Recent content in lifestyle on gomes-fdr.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>pt-br</language>
+		<copyright>© Copyright notice | Some rights reserved</copyright>
+		<lastBuildDate>Sat, 21 Nov 2020 16:35:23 -0300</lastBuildDate>
+		
+		<atom:link href="https://gomes-fdr.github.io/tags/lifestyle/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>My Running Routine</title>
+			<link>https://gomes-fdr.github.io/post/my-running-routing/</link>
+			<pubDate>Sat, 21 Nov 2020 16:35:23 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/my-running-routing/</guid>
+			<description>
+				
+				I’ve started to run in september 11 2020, this is the way that I found to temporarily replace jiu-jitsu. I confess...
+				
+			</description>
+		</item>
+		<item>
+			<title>What I Winned With the Quarantine</title>
+			<link>https://gomes-fdr.github.io/post/what-i-winned-with-the-quarantine/</link>
+			<pubDate>Sun, 01 Nov 2020 18:57:49 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/what-i-winned-with-the-quarantine/</guid>
+			<description>
+				
+				 Today when I wrote this post, here in Brazil we pass the 159,000 deaths of corona virus victims. In no way I try to say...
+				
+			</description>
+		</item>
+		
+	</channel>
+</rss>
