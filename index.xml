@@ -7,10 +7,22 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Sat, 21 Nov 2020 16:35:23 -0300</lastBuildDate>
+		<lastBuildDate>Sat, 19 Dec 2020 20:12:24 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>Things That I Like in Qt</title>
+			<link>https://gomes-fdr.github.io/post/things-that-i-like-in-qt/</link>
+			<pubDate>Sat, 19 Dec 2020 20:12:24 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/things-that-i-like-in-qt/</guid>
+			<description>
+				
+				I have been work along this year with Qt framework and there are a lot of things that I really liked, here we going in a...
+				
+			</description>
+		</item>
 		<item>
 			<title>My Running Routine</title>
 			<link>https://gomes-fdr.github.io/post/my-running-routing/</link>

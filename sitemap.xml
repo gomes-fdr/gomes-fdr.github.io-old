@@ -3,8 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://gomes-fdr.github.io/tags/c&#43;&#43;/</loc>
+    <lastmod>2020-12-19T20:12:24-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/cpp/</loc>
+    <lastmod>2020-12-19T20:12:24-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://gomes-fdr.github.io/</loc>
-    <lastmod>2020-11-21T16:35:23-03:00</lastmod>
+    <lastmod>2020-12-19T20:12:24-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/post/</loc>
+    <lastmod>2020-12-19T20:12:24-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/qt/</loc>
+    <lastmod>2020-12-19T20:12:24-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/tags/</loc>
+    <lastmod>2020-12-19T20:12:24-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gomes-fdr.github.io/post/things-that-i-like-in-qt/</loc>
+    <lastmod>2020-12-19T20:12:24-03:00</lastmod>
   </url>
   
   <url>
@@ -14,16 +44,6 @@
   
   <url>
     <loc>https://gomes-fdr.github.io/post/my-running-routing/</loc>
-    <lastmod>2020-11-21T16:35:23-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gomes-fdr.github.io/post/</loc>
-    <lastmod>2020-11-21T16:35:23-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gomes-fdr.github.io/tags/</loc>
     <lastmod>2020-11-21T16:35:23-03:00</lastmod>
   </url>
   
@@ -275,11 +295,6 @@
   <url>
     <loc>https://gomes-fdr.github.io/post/aprendendo-golang/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gomes-fdr.github.io/tags/cpp/</loc>
-    <lastmod>2020-06-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>

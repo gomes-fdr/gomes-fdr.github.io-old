@@ -7,10 +7,46 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Sat, 21 Nov 2020 16:35:23 -0300</lastBuildDate>
+		<lastBuildDate>Sat, 19 Dec 2020 20:12:24 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>C&#43;&#43;</title>
+			<link>https://gomes-fdr.github.io/tags/c&#43;&#43;/</link>
+			<pubDate>Sat, 19 Dec 2020 20:12:24 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/tags/c&#43;&#43;/</guid>
+			<description>
+				
+				
+				
+			</description>
+		</item>
+		<item>
+			<title>cpp</title>
+			<link>https://gomes-fdr.github.io/tags/cpp/</link>
+			<pubDate>Sat, 19 Dec 2020 20:12:24 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/tags/cpp/</guid>
+			<description>
+				
+				
+				
+			</description>
+		</item>
+		<item>
+			<title>Qt</title>
+			<link>https://gomes-fdr.github.io/tags/qt/</link>
+			<pubDate>Sat, 19 Dec 2020 20:12:24 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/tags/qt/</guid>
+			<description>
+				
+				
+				
+			</description>
+		</item>
 		<item>
 			<title>lifestyle</title>
 			<link>https://gomes-fdr.github.io/tags/lifestyle/</link>
@@ -305,18 +341,6 @@
 			<pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate>
 			
 			<guid>https://gomes-fdr.github.io/tags/matrix/</guid>
-			<description>
-				
-				
-				
-			</description>
-		</item>
-		<item>
-			<title>cpp</title>
-			<link>https://gomes-fdr.github.io/tags/cpp/</link>
-			<pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate>
-			
-			<guid>https://gomes-fdr.github.io/tags/cpp/</guid>
 			<description>
 				
 				
