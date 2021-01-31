@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>tools on Fabiano Gomes</title>
+		<link>https://gomes-fdr.github.io/tags/tools/</link>
+		<description>Recent content in tools on gomes-fdr.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>pt-br</language>
+		<copyright>© Copyright notice | Some rights reserved</copyright>
+		<lastBuildDate>Sun, 31 Jan 2021 11:49:31 -0300</lastBuildDate>
+		
+		<atom:link href="https://gomes-fdr.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Why I Keep This Blog</title>
+			<link>https://gomes-fdr.github.io/post/why-i-keep-this-blog/</link>
+			<pubDate>Sun, 31 Jan 2021 11:49:31 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/why-i-keep-this-blog/</guid>
+			<description>
+				
+				I decided to start this web log for my own sake, In different times I forget very important things. Things that I alread...
+				
+			</description>
+		</item>
+		
+	</channel>
+</rss>

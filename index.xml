@@ -7,10 +7,22 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Sat, 19 Dec 2020 20:12:24 -0300</lastBuildDate>
+		<lastBuildDate>Sun, 31 Jan 2021 11:49:31 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>Why I Keep This Blog</title>
+			<link>https://gomes-fdr.github.io/post/why-i-keep-this-blog/</link>
+			<pubDate>Sun, 31 Jan 2021 11:49:31 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/why-i-keep-this-blog/</guid>
+			<description>
+				
+				I decided to start this web log for my own sake, In different times I forget very important things. Things that I alread...
+				
+			</description>
+		</item>
 		<item>
 			<title>Things That I Like in Qt</title>
 			<link>https://gomes-fdr.github.io/post/things-that-i-like-in-qt/</link>
