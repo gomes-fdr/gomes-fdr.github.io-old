@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>neovim on Fabiano Gomes</title>
+		<link>https://gomes-fdr.github.io/tags/neovim/</link>
+		<description>Recent content in neovim on gomes-fdr.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>pt-br</language>
+		<copyright>© Copyright notice | Some rights reserved</copyright>
+		<lastBuildDate>Mon, 22 Mar 2021 15:56:42 -0300</lastBuildDate>
+		
+		<atom:link href="https://gomes-fdr.github.io/tags/neovim/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>My Vim Setup</title>
+			<link>https://gomes-fdr.github.io/post/my-vim-setup/</link>
+			<pubDate>Mon, 22 Mar 2021 15:56:42 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/my-vim-setup/</guid>
+			<description>
+				
+				So, I decided to try VIM again! Yes this is another time to try VIM, and why do I try again? Because I want, because it ...
+				
+			</description>
+		</item>
+		
+	</channel>
+</rss>

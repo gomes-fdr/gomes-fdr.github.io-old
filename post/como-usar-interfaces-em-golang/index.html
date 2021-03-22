@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt"><head>
 	
-	<meta name="generator" content="Hugo 0.79.1" />
+	<meta name="generator" content="Hugo 0.82.0" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +9,10 @@
 <meta property="og:description" content="Golang tem algumas particularidades e escolhas de arquitetura bem interessantes, o uso de interfaces é um destes casos. Encontrei esse artigo e me ajudou a entender um pouco melhor seu funcionamento, espero que seja útil para mais alguém. Está é uma tradução livre com algumas notas pessoais do artigo de Jordan Orelli
  Antes de começar a programar em Golang, eu fazia a maior parte do meu trabalho usando Python." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://gomes-fdr.github.io/post/como-usar-interfaces-em-golang/" />
+<meta property="og:url" content="https://gomes-fdr.github.io/post/como-usar-interfaces-em-golang/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-10-04T18:21:27-03:00" />
 <meta property="article:modified_time" content="2020-10-04T18:21:27-03:00" />
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Como Usar Interfaces Em Golang"/>
 <meta name="twitter:description" content="Golang tem algumas particularidades e escolhas de arquitetura bem interessantes, o uso de interfaces é um destes casos. Encontrei esse artigo e me ajudou a entender um pouco melhor seu funcionamento, espero que seja útil para mais alguém. Está é uma tradução livre com algumas notas pessoais do artigo de Jordan Orelli
@@ -156,7 +157,7 @@ import (
 
 func PrintAll(vals []interface{}) {
     for _, val := range vals {
-    fmt.Println(val)
+	fmt.Println(val)
     }
 }
 
@@ -176,7 +177,7 @@ import (
 
 func PrintAll(vals []interface{}) {
     for _, val := range vals {
-    fmt.Println(val)
+	fmt.Println(val)
     }
 }
 
@@ -184,7 +185,7 @@ func main() {
     names := []string{&quot;stanley&quot;, &quot;david&quot;, &quot;oscar&quot;}
     vals := make([]interface{}, len(names))
     for i, v := range names {
-    vals[i] = v
+	vals[i] = v
     }
     PrintAll(vals)
 }
@@ -201,10 +202,10 @@ $: stanley
 }
 
 func main() {
-    animals := []Animal{Dog{}, Cat{}, Llama{}, JavaProgrammer{}}
-    for _, animal := range animals {
+	animals := []Animal{Dog{}, Cat{}, Llama{}, JavaProgrammer{}}
+	for _, animal := range animals {
         fmt.Println(animal.Speak())
-    }
+	}
 }
 
 $: cannot use Cat literal (type Cat) as type Animal in slice literal:
@@ -310,6 +311,10 @@ $: Woof!
 			
 			
 			<a href="https://gomes-fdr.github.io/tags/golang/"> golang </a>
+			
+			
+			
+			
 			
 			
 			

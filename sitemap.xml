@@ -1,391 +1,241 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://gomes-fdr.github.io/</loc>
-    <lastmod>2021-01-31T11:49:31-03:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-22T15:56:42-03:00</lastmod>
+  </url><url>
+    <loc>https://gomes-fdr.github.io/post/my-vim-setup/</loc>
+    <lastmod>2021-03-22T15:56:42-03:00</lastmod>
+  </url><url>
+    <loc>https://gomes-fdr.github.io/tags/neovim/</loc>
+    <lastmod>2021-03-22T15:56:42-03:00</lastmod>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/</loc>
-    <lastmod>2021-01-31T11:49:31-03:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-22T15:56:42-03:00</lastmod>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/</loc>
-    <lastmod>2021-01-31T11:49:31-03:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-03-22T15:56:42-03:00</lastmod>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/tools/</loc>
     <lastmod>2021-01-31T11:49:31-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/why-i-keep-this-blog/</loc>
     <lastmod>2021-01-31T11:49:31-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/c&#43;&#43;/</loc>
     <lastmod>2020-12-19T20:12:24-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/cpp/</loc>
     <lastmod>2020-12-19T20:12:24-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/qt/</loc>
     <lastmod>2020-12-19T20:12:24-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/things-that-i-like-in-qt/</loc>
     <lastmod>2020-12-19T20:12:24-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/lifestyle/</loc>
     <lastmod>2020-11-21T16:35:23-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/my-running-routing/</loc>
     <lastmod>2020-11-21T16:35:23-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/what-i-winned-with-the-quarantine/</loc>
     <lastmod>2020-11-01T18:57:49-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/english/</loc>
     <lastmod>2020-10-24T19:02:09-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/its-time-to-improve-my-english/</loc>
     <lastmod>2020-10-24T19:02:09-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/learn/</loc>
     <lastmod>2020-10-24T19:02:09-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/health/</loc>
     <lastmod>2020-10-17T20:21:37-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/o-medo-da-covid/</loc>
     <lastmod>2020-10-17T20:21:37-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/sa%C3%BAde/</loc>
     <lastmod>2020-10-17T20:21:37-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/como-usar-interfaces-em-golang/</loc>
     <lastmod>2020-10-04T18:21:27-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/go/</loc>
     <lastmod>2020-10-04T18:21:27-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/golang/</loc>
     <lastmod>2020-10-04T18:21:27-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/falando-um-pouco-sobre-solid/</loc>
     <lastmod>2020-09-26T15:36:15-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/oop/</loc>
     <lastmod>2020-09-26T15:36:15-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/solid/</loc>
     <lastmod>2020-09-26T15:36:15-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/book/</loc>
     <lastmod>2020-09-20T11:21:57-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/livro/</loc>
     <lastmod>2020-09-20T11:21:57-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/o-problema-dos-tres-corpos/</loc>
     <lastmod>2020-09-20T11:21:57-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/syfy/</loc>
     <lastmod>2020-09-20T11:21:57-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/life-style/</loc>
     <lastmod>2020-09-13T16:15:49-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/qualidade-de-vida/</loc>
     <lastmod>2020-09-13T16:15:49-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/project/</loc>
     <lastmod>2020-09-07T17:10:39-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/vuejs-ecosystem/</loc>
     <lastmod>2020-09-07T17:10:39-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/dlna/</loc>
     <lastmod>2020-08-30T10:48:40-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/midias-off-line/</loc>
     <lastmod>2020-08-30T10:48:40-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/instalando-typescript/</loc>
     <lastmod>2020-08-29T20:48:40-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/crypto-currency/</loc>
     <lastmod>2020-08-23T18:36:39-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/hardware-wallets/</loc>
     <lastmod>2020-08-23T18:36:39-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/hardware-wallet/</loc>
     <lastmod>2020-08-23T18:36:39-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/security/</loc>
     <lastmod>2020-08-23T18:36:39-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/primeiro-contato-com-webpack/</loc>
     <lastmod>2020-08-16T18:03:47-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/web/</loc>
     <lastmod>2020-08-16T18:03:47-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/ainda-sobre-ambiente-de-desenvolvimento/</loc>
     <lastmod>2020-08-08T21:52:20-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/linux/</loc>
     <lastmod>2020-08-08T21:52:20-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/opini%C3%A3o/</loc>
     <lastmod>2020-08-08T16:27:51-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/programador-hello-world/</loc>
     <lastmod>2020-08-08T16:27:51-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/molhou-o-role/</loc>
     <lastmod>2020-08-03T20:31:51-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/novo-setup/</loc>
     <lastmod>2020-08-02T19:18:59-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/inicio-do-projeto/</loc>
     <lastmod>2020-07-26T12:13:29-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/projeto/</loc>
     <lastmod>2020-07-26T12:13:29-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/life/</loc>
     <lastmod>2020-07-26T11:48:35-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/o-jeito-akita-de-ser/</loc>
     <lastmod>2020-07-26T11:48:35-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/vida/</loc>
     <lastmod>2020-07-26T11:48:35-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/um-projeto-para-estudo-de-tecnologias/</loc>
     <lastmod>2020-07-18T18:33:50-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/4-dicas-para-aprender-golang/</loc>
     <lastmod>2020-07-11T16:18:52-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/minha-primeira-treta-com-systemd/</loc>
     <lastmod>2020-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/switch-case-golang/</loc>
     <lastmod>2020-07-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/matrix/</loc>
     <lastmod>2020-06-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/redescobrindo-o-uso-de-feeds/</loc>
     <lastmod>2020-06-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/ponteiros-em-golang/</loc>
     <lastmod>2020-06-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/golang-sobre-strings/</loc>
     <lastmod>2020-06-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/aprendendo-golang/</loc>
     <lastmod>2020-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/notas-sobre-cpp-e-o-framework-qt/</loc>
     <lastmod>2020-06-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/bash/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/oh-my-bash/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/conhecendo-deno-a-node-killer/</loc>
     <lastmod>2020-05-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/javascript/</loc>
     <lastmod>2020-05-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/setup-de-um-linux-para-dev/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/wiki/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/about/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/dicas-para-uso-do-docker/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/docker/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/asdf-uma-ferramenta-para-devs/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/tags/git/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/post/minhas-notas-sobre-uso-do-git/</loc>
     <lastmod>2020-05-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/books/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/lists/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://gomes-fdr.github.io/series/</loc>
   </url>
-  
 </urlset>

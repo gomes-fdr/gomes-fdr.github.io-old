@@ -7,10 +7,22 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Sun, 31 Jan 2021 11:49:31 -0300</lastBuildDate>
+		<lastBuildDate>Mon, 22 Mar 2021 15:56:42 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>neovim</title>
+			<link>https://gomes-fdr.github.io/tags/neovim/</link>
+			<pubDate>Mon, 22 Mar 2021 15:56:42 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/tags/neovim/</guid>
+			<description>
+				
+				
+				
+			</description>
+		</item>
 		<item>
 			<title>tools</title>
 			<link>https://gomes-fdr.github.io/tags/tools/</link>

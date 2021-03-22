@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt"><head>
 	
-	<meta name="generator" content="Hugo 0.79.1" />
+	<meta name="generator" content="Hugo 0.82.0" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +9,10 @@
 <meta property="og:description" content="Semana passada fui convidado para falar um pouco sobre o que eu sabia sobre S.O.L.I.D. e eu lembrei que que tinha lido um livro a respeito em 2016, lembrava pouco sobre o que tinha lido e percebi que estava na hora de revisitar esse conteúdo.
 O livro em questão é o Orientação a Objetos e SOLID para Ninjas do Maurício Aniche. Excelente conteúdo e didatica de ensino. Seguem algumas notas que resolvi fazer para usar como referência no dia-a-dia." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://gomes-fdr.github.io/post/falando-um-pouco-sobre-solid/" />
+<meta property="og:url" content="https://gomes-fdr.github.io/post/falando-um-pouco-sobre-solid/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-09-26T15:36:15-03:00" />
 <meta property="article:modified_time" content="2020-09-26T15:36:15-03:00" />
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Falando um pouco sobre SOLID"/>
 <meta name="twitter:description" content="Semana passada fui convidado para falar um pouco sobre o que eu sabia sobre S.O.L.I.D. e eu lembrei que que tinha lido um livro a respeito em 2016, lembrava pouco sobre o que tinha lido e percebi que estava na hora de revisitar esse conteúdo.
@@ -99,15 +100,15 @@ O livro em questão é o Orientação a Objetos e SOLID para Ninjas do Maurício
 </blockquote>
 <p>Aqui entra uma das coisas que me fizeram revisar a leitura sobre SOLID, este princípio dá a real importância do uso de interfaces. O conceito de interfaces permite a criação de <em>contratos</em> no momento de criarmos nossas classe, por exemplo:</p>
 <pre><code>interface ShapeInterface {
-    public function area()
+	public function area()
 }
 
 class Circle implements ShapeInterface {
-    public radius
+	public radius
 	
-    public function area() {
+	public function area() {
         ...
-    }
+	}
 }
 </code></pre>
 <p>Essa promessa, ou contrato, obriga quem deseja fazer parte da <em>turminha</em> de <em>shapes</em> a implementar o método área. Projetar interfaces de forma correta é a parte mais refinada de um sistema orientado a objetos, uma excelente analogia feita no livro, com relação a interfaces é mostrada na figura abaixo.</p>
@@ -165,6 +166,10 @@ class Circle implements ShapeInterface {
 		</div>
 		<div class="termsfloating_right">
 			<p>
+			
+			
+			
+			
 			
 			
 			
