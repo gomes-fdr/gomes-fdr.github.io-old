@@ -7,10 +7,23 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Mon, 22 Mar 2021 15:56:42 -0300</lastBuildDate>
+		<lastBuildDate>Fri, 07 May 2021 11:50:45 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>My Actual Setup</title>
+			<link>https://gomes-fdr.github.io/post/my-actual-setup/</link>
+			<pubDate>Fri, 07 May 2021 11:50:45 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/my-actual-setup/</guid>
+			<description>
+				
+				Yes another post about my setup.
+Debian as base system The universal operating system, netinstall with minimal number of...
+				
+			</description>
+		</item>
 		<item>
 			<title>My Vim Setup</title>
 			<link>https://gomes-fdr.github.io/post/my-vim-setup/</link>

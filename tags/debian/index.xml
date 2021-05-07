@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>debian on Fabiano Gomes</title>
+		<link>https://gomes-fdr.github.io/tags/debian/</link>
+		<description>Recent content in debian on gomes-fdr.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>pt-br</language>
+		<copyright>© Copyright notice | Some rights reserved</copyright>
+		<lastBuildDate>Fri, 07 May 2021 11:50:45 -0300</lastBuildDate>
+		
+		<atom:link href="https://gomes-fdr.github.io/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>My Actual Setup</title>
+			<link>https://gomes-fdr.github.io/post/my-actual-setup/</link>
+			<pubDate>Fri, 07 May 2021 11:50:45 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/my-actual-setup/</guid>
+			<description>
+				
+				Yes another post about my setup.
+Debian as base system The universal operating system, netinstall with minimal number of...
+				
+			</description>
+		</item>
+		
+	</channel>
+</rss>

@@ -7,10 +7,58 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Mon, 22 Mar 2021 15:56:42 -0300</lastBuildDate>
+		<lastBuildDate>Fri, 07 May 2021 11:50:45 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>debian</title>
+			<link>https://gomes-fdr.github.io/tags/debian/</link>
+			<pubDate>Fri, 07 May 2021 11:50:45 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/tags/debian/</guid>
+			<description>
+				
+				
+				
+			</description>
+		</item>
+		<item>
+			<title>kde</title>
+			<link>https://gomes-fdr.github.io/tags/kde/</link>
+			<pubDate>Fri, 07 May 2021 11:50:45 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/tags/kde/</guid>
+			<description>
+				
+				
+				
+			</description>
+		</item>
+		<item>
+			<title>linux</title>
+			<link>https://gomes-fdr.github.io/tags/linux/</link>
+			<pubDate>Fri, 07 May 2021 11:50:45 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/tags/linux/</guid>
+			<description>
+				
+				
+				
+			</description>
+		</item>
+		<item>
+			<title>setup</title>
+			<link>https://gomes-fdr.github.io/tags/setup/</link>
+			<pubDate>Fri, 07 May 2021 11:50:45 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/tags/setup/</guid>
+			<description>
+				
+				
+				
+			</description>
+		</item>
 		<item>
 			<title>neovim</title>
 			<link>https://gomes-fdr.github.io/tags/neovim/</link>
@@ -293,18 +341,6 @@
 			<pubDate>Sun, 16 Aug 2020 18:03:47 -0300</pubDate>
 			
 			<guid>https://gomes-fdr.github.io/tags/web/</guid>
-			<description>
-				
-				
-				
-			</description>
-		</item>
-		<item>
-			<title>linux</title>
-			<link>https://gomes-fdr.github.io/tags/linux/</link>
-			<pubDate>Sat, 08 Aug 2020 21:52:20 -0300</pubDate>
-			
-			<guid>https://gomes-fdr.github.io/tags/linux/</guid>
 			<description>
 				
 				
