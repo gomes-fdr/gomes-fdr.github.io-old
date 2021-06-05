@@ -2,10 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://gomes-fdr.github.io/tags/debian/</loc>
-    <lastmod>2021-05-07T11:50:45-03:00</lastmod>
+    <loc>https://gomes-fdr.github.io/post/conspiracy-theories/</loc>
+    <lastmod>2021-06-05T16:26:54-03:00</lastmod>
   </url><url>
     <loc>https://gomes-fdr.github.io/</loc>
+    <lastmod>2021-06-05T16:26:54-03:00</lastmod>
+  </url><url>
+    <loc>https://gomes-fdr.github.io/post/</loc>
+    <lastmod>2021-06-05T16:26:54-03:00</lastmod>
+  </url><url>
+    <loc>https://gomes-fdr.github.io/tags/</loc>
+    <lastmod>2021-06-05T16:26:54-03:00</lastmod>
+  </url><url>
+    <loc>https://gomes-fdr.github.io/tags/thoughts/</loc>
+    <lastmod>2021-06-05T16:26:54-03:00</lastmod>
+  </url><url>
+    <loc>https://gomes-fdr.github.io/tags/debian/</loc>
     <lastmod>2021-05-07T11:50:45-03:00</lastmod>
   </url><url>
     <loc>https://gomes-fdr.github.io/tags/kde/</loc>
@@ -17,13 +29,7 @@
     <loc>https://gomes-fdr.github.io/post/my-actual-setup/</loc>
     <lastmod>2021-05-07T11:50:45-03:00</lastmod>
   </url><url>
-    <loc>https://gomes-fdr.github.io/post/</loc>
-    <lastmod>2021-05-07T11:50:45-03:00</lastmod>
-  </url><url>
     <loc>https://gomes-fdr.github.io/tags/setup/</loc>
-    <lastmod>2021-05-07T11:50:45-03:00</lastmod>
-  </url><url>
-    <loc>https://gomes-fdr.github.io/tags/</loc>
     <lastmod>2021-05-07T11:50:45-03:00</lastmod>
   </url><url>
     <loc>https://gomes-fdr.github.io/post/my-vim-setup/</loc>
