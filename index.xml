@@ -7,10 +7,22 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Sat, 05 Jun 2021 16:26:54 -0300</lastBuildDate>
+		<lastBuildDate>Sun, 25 Jul 2021 15:38:38 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>Revisiting Python</title>
+			<link>https://gomes-fdr.github.io/post/revisiting-python/</link>
+			<pubDate>Sun, 25 Jul 2021 15:38:38 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/revisiting-python/</guid>
+			<description>
+				
+				I am a huge fan of Python, I remember that I meet Python in 2003, I guess - In those time I’ve never worked as a s...
+				
+			</description>
+		</item>
 		<item>
 			<title>Conspiracy Theories</title>
 			<link>https://gomes-fdr.github.io/post/conspiracy-theories/</link>

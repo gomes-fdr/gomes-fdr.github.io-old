@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Python on Fabiano Gomes</title>
+		<link>https://gomes-fdr.github.io/tags/python/</link>
+		<description>Recent content in Python on gomes-fdr.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>pt-br</language>
+		<copyright>© Copyright notice | Some rights reserved</copyright>
+		<lastBuildDate>Sun, 25 Jul 2021 15:38:38 -0300</lastBuildDate>
+		
+		<atom:link href="https://gomes-fdr.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Revisiting Python</title>
+			<link>https://gomes-fdr.github.io/post/revisiting-python/</link>
+			<pubDate>Sun, 25 Jul 2021 15:38:38 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/revisiting-python/</guid>
+			<description>
+				
+				I am a huge fan of Python, I remember that I meet Python in 2003, I guess - In those time I’ve never worked as a s...
+				
+			</description>
+		</item>
+		
+	</channel>
+</rss>
