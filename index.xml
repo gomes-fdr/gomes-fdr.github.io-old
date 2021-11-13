@@ -7,10 +7,23 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>pt-br</language>
 		<copyright>© Copyright notice | Some rights reserved</copyright>
-		<lastBuildDate>Sun, 25 Jul 2021 15:38:38 -0300</lastBuildDate>
+		<lastBuildDate>Sat, 13 Nov 2021 16:56:41 -0300</lastBuildDate>
 		
 		<atom:link href="https://gomes-fdr.github.io/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>My fresh new Debian Bullseye</title>
+			<link>https://gomes-fdr.github.io/post/fresh-new-debian-bullseye/</link>
+			<pubDate>Sat, 13 Nov 2021 16:56:41 -0300</pubDate>
+			
+			<guid>https://gomes-fdr.github.io/post/fresh-new-debian-bullseye/</guid>
+			<description>
+				
+				So, new debian version on the block, I decided wait a few mounths and time comes!
+Update your source list deb http://deb...
+				
+			</description>
+		</item>
 		<item>
 			<title>Revisiting Python</title>
 			<link>https://gomes-fdr.github.io/post/revisiting-python/</link>
